@@ -1,0 +1,165 @@
+.chardinjs-overlay {
+  position: absolute;
+  z-index: 999999;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.chardinjs-helper-layer {
+  position: absolute;
+  z-index: 9999998;
+  color: white;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+  .chardinjs-helper-layer.chardinjs-left {
+    border-left: solid #F5CE00 2px;
+    margin-left: -10px; 
+    margin-right: -10px;}
+
+  .chardinjs-helper-layer.chardinjs-right {
+    border-right: solid #F5CE00 2px;
+    padding-right: 10px; 
+    margin-left: 10px; }
+  .chardinjs-helper-layer.chardinjs-bottom {
+    border-bottom: solid #F5CE00 2px;
+    padding-bottom: 10px; 
+    margin-top: 10px; }
+  .chardinjs-helper-layer.chardinjs-top {
+    border-top: solid #F5CE00 2px;
+    padding-top: 10px; 
+    margin-top: -10px; }
+
+.chardinjs-tooltip {
+  position: absolute;
+  -webkit-transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  -ms-transition: opacity 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
+  max-width: 280px; }
+  .chardinjs-tooltip.chardinjs-left {
+    margin-left: -135px;
+    padding-right: 10px; }
+  .chardinjs-tooltip.chardinjs-right {
+    margin-right: -135px;
+    padding-left: 10px; }
+  .chardinjs-tooltip.chardinjs-bottom {
+    margin-bottom: -50px;
+    padding-top: 10px; }
+  .chardinjs-tooltip.chardinjs-top {
+    margin-top: -50px;
+    padding-bottom: 10px; }
+  .chardinjs-tooltip.chardinjs-right:after, .chardinjs-tooltip.chardinjs-left:after, .chardinjs-tooltip.chardinjs-bottom:after, .chardinjs-tooltip.chardinjs-top:after {
+    content: "";
+    display: inline-block;
+    background-color: #F5CE00;
+    height: 2px;
+    overflow: hidden;
+    position: absolute; }
+  .chardinjs-tooltip.chardinjs-right:after, .chardinjs-tooltip.chardinjs-left:after {
+    width: 80px;
+    top: 50%; }
+  .chardinjs-tooltip.chardinjs-bottom:after, .chardinjs-tooltip.chardinjs-top:after {
+    width: 2px;
+    height: 37px;
+    left:0px;
+    right: 0px;
+    margin:0px auto; }
+  .chardinjs-tooltip.chardinjs-bottom:after {
+    top: -50px; }
+  .chardinjs-tooltip.chardinjs-top:after {
+    bottom: -50px; }
+  .chardinjs-tooltip.chardinjs-right:after {
+    left: -100px; }
+  .chardinjs-tooltip.chardinjs-left:after {
+    right: -100px; }
+
+.chardinjs-show-element {
+  z-index: 9999999;
+  opacity: 0.8; 
+}
+
+.chardinjs-relative-position {
+  position: relative; }
+
+/**
+ *connxt edit
+ */
+.chardinjs-tooltip.chardinjs-top:before{
+  content: "";
+  display: inline-block;
+  border: 2px solid #F5CE00;
+  overflow: hidden;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  bottom:-15px;
+  left:0px;
+  right: 0px;
+  margin:0px auto; 
+}
+.chardinjs-tooltip.chardinjs-bottom:before{
+  content: "";
+  display: inline-block;
+  border: 2px solid #F5CE00;
+  overflow: hidden;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  top:-15px;
+  left:0px;
+  right: 0px;
+  margin:0px auto; 
+}
+.chardinjs-tooltip.chardinjs-right:before{
+  content: "";
+  display: inline-block;
+  border: 2px solid #F5CE00;
+  overflow: hidden;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  left: -11px;
+  transform: translate(-50%,-50%);
+  top: 50%;
+}
+.chardinjs-tooltip.chardinjs-left:before{
+  content: "";
+  display: inline-block;
+  border: 2px solid #F5CE00;
+  overflow: hidden;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  right: -30px;
+  transform: translate(-50%,-50%);
+  top: 50%;
+}
+div.overlay{
+  display: none;
+  width: 340px;
+  margin-top: -170px;
+  margin-left: -170px;
+  text-align: center;
+  color: #FFF;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin: 0px auto;
+  z-index: 9999999;
+  transform: translate(-50%,-50%);
+}
+div.overlay h1{
+  color :#FFF;
+}

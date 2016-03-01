@@ -1,0 +1,1067 @@
+@import url("fonts.css");
+
+/**
+ *Interactive Map
+ */
+body#interactive-map div#container{
+    z-index: auto;
+}
+div.interactive-map-container{
+    width: 100%;
+    height: calc((100%) - (75px));
+    background-color: #323841;
+}
+div.interactive-map-sidebar-container{
+    width: 22%;
+    float:left;
+    position: relative;
+    top:0px;
+    left: 0px;
+    height: 100%;
+}
+section.interactive-map-sidebar{
+    border-right: 5px solid #323841;
+    border-left: 5px solid #323841;
+    background-color: #323841;
+    height: 100%;
+    float:left;
+    width: 100%;
+    /*border-radius: 3px;*/
+    /*box-shadow: 2px 2px 10px #323841;*/
+}
+div.interactive-map-sidebar-container > section.interactive-map-sidebar > div.sidebar-body{
+    overflow-y: auto;
+}
+div.dimension-title-container{
+    width: 85%;
+    vertical-align: middle;
+    border-right: 1px solid #323841;
+    padding: 2px 0px 2px 0px;
+    display: table-cell;
+    background-color: #fff;
+}
+div.sidebar-header > p{
+    color: #FFF;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    margin-bottom: 0px;
+    padding: 15px 15px 12px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    font-family: "AlternateGothicW01-No3_691802",sans-serif;
+}
+div.sidebar-toggle{
+    background-color: #454E59;
+    padding:10px;
+    border-bottom: 1px solid #323841;
+}
+div.sidebar-body{
+    height: calc((100%) - (190px));
+    position: relative;
+    width: 100%;
+}
+div.us-toggle{
+    display: block;
+    height: 100%;
+}
+div.us-toggle > ul{
+    overflow-y: auto;
+    height: 100%;
+    margin:0;
+}
+div.world-toggle > ul{
+    overflow-y: auto;
+    height: 100%;
+    margin:0;
+}
+div.dimensions  > p{
+    padding: 5px 0px 5px;
+    font-family: "AlternateGothicW01-No3_691802",sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline;
+}
+div.component-title-container > h3{
+    font-size: 15px;
+    color:#fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+}
+div.component-title-container{
+    width: 65%;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+}
+div.dimension{
+    position: relative;
+}
+div.dimension-title-container > i{
+    color: #fff;
+    position: absolute;
+    right: 40px;
+    font-size: 25px;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    display: inline;
+    height: 100%;
+}
+
+#image-container{
+    margin:0;
+    padding: 0;
+    width: 20px;
+    height:20px;
+    margin-left: 5px;
+}
+div.components{
+    width: 100%;
+    padding: 2px 0px 2px;
+    border-bottom: 1px solid #323841;
+    cursor: pointer;
+    display: table;
+}
+div.sidebar-footer{
+    background-color: #323841;
+    padding: 10px;
+    position: relative;
+    right: 0px;
+    /*z-index: 2;*/ /*remove for overlay */
+    width:100%;
+}
+div.sidebar-footer .btn-reset{
+    text-align: center;
+    border: 1px solid rgba(255,255,255,.4);
+    text-decoration: none;
+    color: rgba(255,255,255,.4);
+    padding: 12px 25px;
+    appearance: none;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "AlternateGothicW01-No3_691802",sans-serif;
+    width: 49%;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    border-radius: 3px;
+}
+div.sidebar-footer .btn-rank{
+    width:49%;;
+}
+div.sidebar-footer .btn-reset:hover{
+    background-color: rgba(255,255,255,.4);
+    color: #323841;
+}
+/**
+ *dimension toggle
+ */
+div.sidebar-body > div.dimension-toggle-us > ul > li,
+div.sidebar-body > div.dimension-toggle-world > ul > li{
+    border-bottom: 1px solid #323841;  
+}
+div.sidebar-body > div.dimension-toggle-us > ul > li:last-child,
+div.sidebar-body > div.dimension-toggle-world > ul > li:last-child{
+    border-bottom: none;  
+}
+div.sidebar-body > div.dimension-toggle-us > ul > li > div.dimension,
+div.sidebar-body > div.dimension-toggle-world > ul > li > div.dimension{
+    display: table;
+    width: 100%;
+    cursor: pointer;
+}
+div.dimension-toggle-us,
+div.dimension-toggle-world{
+    display: block;
+    height: auto;
+}
+div.dimension-toggle-us > ul,
+div.dimension-toggle-world > ul{
+    height: auto;
+    margin:0;
+}
+div.sidebar-body > div.dimension-toggle-us > ul > li > div.dimension > div.selectedbox,
+div.sidebar-body > div.dimension-toggle-world > ul > li > div.dimension > div.selectedbox{
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0px auto;
+    width: 15%;
+}
+div.sidebar-body > div.dimension-toggle-us > ul > li > div.dimension > div.selectedbox > span.check,
+div.sidebar-body > div.dimension-toggle-world > ul > li > div.dimension > div.selectedbox > span.check{
+    /*border: 1px solid #323841;*/
+    border-radius: 100%;
+    display: block;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto;
+}
+div.sidebar-body > div.dimension-toggle-us > ul > li > div.dimension > div.selectedbox > span.check:after,
+div.sidebar-body > div.dimension-toggle-world > ul > li > div.dimension > div.selectedbox > span.check:after{
+    content: "\f126";
+    color: #000;
+    font-family: foundation-icons;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 20px;
+    /*line-height: 1.25rem;*/
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+div.sidebar-body > div.dimension-toggle-us > ul > li > div.dimension.active > div.selectedbox > span.check,
+div.sidebar-body > div.dimension-toggle-world > ul > li > div.dimension.active > div.selectedbox > span.check{
+    background-color: #F5CE00;
+}
+div.dimension > div.dimension-title-container > p,
+div.dimension > div.dimension-title-container > p{
+    padding: 0px;
+    margin: 0px;
+    padding: 20px 10px;
+    font-family: "AlternateGothicW01-No3_691802",sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #323841;
+    text-transform: uppercase;
+    display: inline;
+}
+div.dimension.active div.dimension-title-container > p,
+div.dimension.active div.dimension-title-container > p{
+    color:#fff;
+}
+div.dimension.active > div.dimension-title-container.opportunity,
+div.dimension.active > div.dimension-title-container.opportunity{
+    background-color: #4E5AA2;
+}
+div.dimension.active > div.dimension-title-container.health_and_environment,
+div.dimension.active > div.dimension-title-container.health_and_environment{
+    background-color: #F60;
+}
+div.dimension.active > div.dimension-title-container.freedom,
+div.dimension.active > div.dimension-title-container.freedom{
+    background-color: #00ACFF;
+}
+div.dimension.active > div.dimension-title-container.community_and_relationships,
+div.dimension.active > div.dimension-title-container.community_and_relationships{
+    background-color: #DA2834;
+}
+div.dimension.active > div.dimension-title-container.living_standard,
+div.dimension.active > div.dimension-title-container.living_standard{
+    background-color: #009855;
+}
+div.dimension.active > div.dimension-title-container.peace_and_security,
+div.dimension.active > div.dimension-title-container.peace_and_security{
+    background-color: #7A197A;
+}
+div.sidebar-years-list{
+    background-color: #454E59;
+    /*border-bottom: 1px solid #272C33;*/
+}
+div.years-list-header{
+    background-color: #323841;
+    border: 1px solid #272C33;
+}
+div.years-list-header > p{
+    color:#fff;
+    padding: 0px;
+    font-family: "AlternateGothicW01-No3_691802",sans-serif;
+    margin: 0px;
+    padding: 5px 5px;
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+div.years-list-body{
+    min-height: 100px;
+    padding: 10px 10px 10px 10px;
+    background-color: #454E59;
+    display: table;
+
+}
+div.years-list-body > ul{
+    vertical-align: middle;
+    display: table-cell;
+    padding: 0px;
+    width: 100%;
+    /*margin: auto;*/
+    text-align: center;
+}
+div.years-list-body > ul > li{
+    display: inline-block;
+    width:40px;
+    padding: 5px 0px 5px 0px;
+}
+div.years-list-body > ul > li:last-child{
+    text-align: center;
+}
+/*div.years-list-body > ul > li:last-child > a{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8125rem;
+    font-style: italic;
+}*/
+div.sidebar-selected-states-list{
+    background-color: #454E59;
+}
+div.selected-states-list-header{
+    background-color: #323841;
+    border: 1px solid #272C33;
+}
+div.selected-states-list-header > p{
+    color:#fff;
+    padding: 0px;
+    font-family: "AlternateGothicW01-No3_691802",sans-serif;
+    margin: 0px;
+    padding: 5px 5px;
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+div.selected-states-list-body{
+    min-height: 200px;
+    background-color: #454E59;
+    position: relative;
+}
+div.selected-states-list-body > table > thead{
+    background-color: #454E59;
+    width: 100%;
+}
+div.selected-states-list-body > table > thead > tr > th{
+    border-bottom: 1px solid #3D454F;
+    padding: 1px 4px 1px 4px;
+}
+div.selected-states-list-body > table > tbody > tr > td{
+    padding: 0px;
+    margin: 0px;
+    background-color: #F5CE00;
+    border-bottom: 1px solid #3D454F;
+    margin-bottom: 2px;
+}
+div.selected-states-list-body > table > tbody > tr > td > h3{
+    font-size: 12px;
+    text-align: left;
+    padding-left: 4px;
+    margin: 0px;
+    color: #222;
+    font-family: "Source Sans Pro",sans-serif;
+}
+div.selected-states-list-body > table > thead > tr > th > h3{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+    text-align: left;
+    font-weight: normal;
+    margin: 0px;
+    padding: 2px 0px 2px 0px;
+
+}
+div.selected-states-list-body > table > tbody > tr > td > a{
+    display: block;
+    padding: 4px 0px;
+    position: relative;
+}
+div.selected-states-list-body > table > tbody > tr > td:last-child{
+    border-left: 1px solid #3D454F;
+}
+div.selected-states-list-body > table > tbody > tr > td > a > span{
+    background-color: #000;
+    border-radius: 100%;
+    display: block;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    margin: 0px auto;
+}
+div.selected-states-list-body > table > tbody > tr > td > a > span::after{
+    content: "\f217";
+    color: #FFF;
+    font-family: foundation-icons;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    position: absolute;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+div.selected-states-list-body > a{
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    font-size: 0.8125rem;
+    font-style: italic;
+    margin-top: 7px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 8px;
+}
+
+/**
+ *Components 
+ */
+div.components-toggle-us > ul,
+div.components-toggle-world > ul{
+    padding:0px;
+    margin:0px;
+}
+div.sidebar-body > div.components-toggle-us > ul > li,
+div.sidebar-body > div.components-toggle-world > ul > li{
+    border-bottom: 1px solid #323841;  
+}
+div.sidebar-body > div.components-toggle-us > ul > li:last-child,
+div.sidebar-body > div.components-toggle-world > ul > li:last-child{
+    border-bottom: none;  
+}
+div.sidebar-body > div.components-toggle-us > ul > li > div.dimension,
+div.sidebar-body > div.components-toggle-world > ul > li > div.dimension{
+    display: table;
+    width: 100%;
+    cursor: pointer;
+    background-color: #454E59;
+}
+div.sidebar-body > div.components-toggle-us > ul > li > div.dimension > div.selectedbox,
+div.sidebar-body > div.components-toggle-world > ul > li > div.dimension > div.selectedbox{
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0px auto;
+    width: 15%;
+}
+div.sidebar-body > div.components-toggle-us > ul > li > div.dimension > div.selectedbox > span.check,
+div.sidebar-body > div.components-toggle-world > ul > li > div.dimension > div.selectedbox > span.check{
+    /*border: 1px solid #323841;*/
+    border-radius: 100%;
+    display: block;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto;
+}
+div.sidebar-body > div.components-toggle-us > ul > li > div.dimension > div.selectedbox > span.check:after,
+div.sidebar-body > div.components-toggle-world > ul > li > div.dimension > div.selectedbox > span.check:after{
+    content: "\E75E";
+    color: #fff;
+    font-family: EntypoRegular;
+    font-size: 32px;
+    line-height: 8px;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+}
+div.sidebar-body > div.components-toggle-us > ul > li.opened > div.dimension > div.selectedbox > span.check:after,
+div.sidebar-body > div.components-toggle-world > ul > li.opened > div.dimension > div.selectedbox > span.check:after{
+    content: "\f217";
+    color: #fff;
+    font-family: foundation-icons;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 20px;
+    /*line-height: 1.25rem;*/
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+}
+div.sidebar-body > div.components-toggle-us > ul > li > div.dimension.active > div.selectedbox > span.check,
+div.sidebar-body > div.components-toggle-world > ul > li > div.dimension.active > div.selectedbox > span.check{
+    background-color: #000;
+}
+
+/*-------------------------------------------------------------------------*/
+
+div.sidebar-body > div.components-toggle-us > ul > li > ul,
+div.sidebar-body > div.components-toggle-world > ul > li > ul{
+    margin:0px;
+    padding:0px;
+    display:none;
+}
+div.sidebar-body > div.components-toggle-us > ul > li > ul > li,
+div.sidebar-body > div.components-toggle-world > ul > li > ul > li{
+    border-bottom: 1px solid #323841;  
+}
+div.sidebar-body > div.components-toggle-us > ul > li > ul > li:last-child,
+div.sidebar-body > div.components-toggle-world > ul > li > ul > li:last-child{
+    border-bottom: none;  
+}
+div.sidebar-body > div.components-toggle-us > ul > li > ul > li > div.components-us,
+div.sidebar-body > div.components-toggle-world > ul > li > ul > li > div.components-world{
+    padding:0px;
+    display: table;
+    width: 100%;
+    cursor: pointer;
+    background-color: #454E59;
+}
+div.sidebar-body > div.components-toggle-us > ul > li > ul > li > div.components-us > div.selectedbox,
+div.sidebar-body > div.components-toggle-world > ul > li > ul > li > div.components-world > div.selectedbox{
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0px auto;
+    width: 15%;
+}
+div.sidebar-body > div.components-toggle-us > ul > li > ul > li > div.components-us > div.selectedbox > span.check,
+div.sidebar-body > div.components-toggle-world > ul > li > ul > li > div.components-world > div.selectedbox > span.check{
+    border-radius: 100%;
+    display: block;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto;
+}
+div.sidebar-body > div.components-toggle-us > ul > li > ul > li > div.components-us.active > div.selectedbox > span.check:after,
+div.sidebar-body > div.components-toggle-world > ul > li > ul > li > div.components-world.active > div.selectedbox > span.check:after{
+    content: "\f126";
+    color: #000;
+    font-family: foundation-icons;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 20px;
+    /*line-height: 1.25rem;*/
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+div.sidebar-body > div.components-toggle-us > ul > li > ul > li > div.components-us.active > div.selectedbox > span.check,
+div.sidebar-body > div.components-toggle-world > ul > li > ul > li > div.components-world.active > div.selectedbox > span.check{
+    background-color: #F5CE00;
+}
+div.components-us > div.components-title-container,
+div.components-world > div.components-title-container{
+    width: 85%;
+    vertical-align: middle;
+    border-right: 1px solid #323841;
+    display: table-cell;
+    padding: 2px 0px 2px 0px;
+}
+div.components-us > div.components-title-container > p,
+div.components-world > div.components-title-container > p{
+    margin:0px;
+    padding:0px 0px 0px 7px;
+    font-size: 15px;
+    font-family: "AlternateGothicW01-No3_691802",sans-serif;
+    text-transform: uppercase;
+}
+div.components-us > div.components-title-container,
+div.components-world > div.components-title-container{
+    background-color: #fff;
+    color: #323841;
+}
+/**
+ *WORLD COMPONENTS COLORS
+ */
+
+/*--------------------------------------------------------------------*/
+
+/**
+ *poverty_components_world
+ */
+div.components-world.world_poverty.active > div.components-title-container{
+    background-color: #5663B2;
+    color:#fff;
+}
+div.components-world.world_employment.active > div.components-title-container{
+    background-color: #5E6CC2;
+    color:#fff;
+}
+div.components-world.world_community_basics.active > div.components-title-container{
+    background-color: #6575D3;
+    color:#fff;
+}
+div.components-world.world_entrepreneurship.active > div.components-title-container{
+    background-color: #6D7EE3;
+    color:#fff;
+}
+/**
+ *health_and_environment_world
+ */
+div.components-world.world_physical_health.active > div.components-title-container{
+    background-color: #FF7000;
+    color:#fff;
+}
+div.components-world.world_mental_health.active > div.components-title-container{
+    background-color: #FF7A00;
+    color:#fff;
+}
+div.components-world.world_environmental_health.active > div.components-title-container{
+    background-color: #FF8500;
+    color:#fff;
+}
+
+/**
+ *freedom_World
+ */
+div.components-world.world_political_freedom.active > div.components-title-container{
+    background-color: #00BDFF;
+    color:#fff;
+}
+div.components-world.world_civil_liberties.active > div.components-title-container{
+    background-color: #00CEFF;
+    color:#fff;
+}
+div.components-world.world_religious_freedom.active > div.components-title-container{
+    background-color: #00E0FF;
+    color:#fff;
+}
+div.components-world.world_economic_freedom.active > div.components-title-container{
+    background-color: #00F1FF;
+    color:#fff;
+}
+div.components-world.world_perceived_freedom.active > div.components-title-container{
+    background-color: #0FF;
+    color:#fff;
+}
+/**
+ *community_and_relationships_world
+ */
+div.components-world.world_community_life.active > div.components-title-container{
+    background-color: #F02C39;
+    color:#fff;
+}
+div.components-world.world_family_life.active > div.components-title-container{
+    background-color: #FF303E;
+    color:#fff;
+}
+/**
+ *living_standard_world
+ */
+div.components-world.world_current_living_standard.active > div.components-title-container{
+    background-color: #00A75E;
+    color:#fff;
+}
+div.components-world.world_improvement_in_living_standard.active > div.components-title-container{
+    background-color: #00B666;
+    color:#fff;
+}
+/**
+ *peace_and_security
+ */
+div.components-world.world_violence_and_ethnic_warfare.active > div.components-title-container{
+    background-color: #861C86;
+    color:#fff;
+}
+div.components-world.world_human_rights_violations.active > div.components-title-container{
+    background-color: #921E92;
+    color:#fff;
+}
+div.components-world.world_law_and_order.active > div.components-title-container{
+    background-color: #921E92;
+    color:#fff;
+}
+div.components-world.world_trust_in_national_institutions.active > div.components-title-container{
+    background-color: #9F219F;
+    color:#fff;
+}
+div.components-world.world_corruption_in_business_and_government.active > div.components-title-container{
+    background-color: #B726B7;
+    color:#fff;
+}
+div.components-world.world_bureaucracy_quality.active > div.components-title-container{
+    background-color: #C328C3;
+    color:#fff;
+}
+
+/**
+ * US COMPONENTS COLORS
+ */
+
+/*--------------------------------------------------------------------*/
+
+/**
+ *poverty_components_us
+ */
+div.components-us.us_poverty.active > div.components-title-container{
+    background-color: #5663B2;
+    color:#fff;
+}
+div.components-us.us_employment.active > div.components-title-container{
+    background-color: #5E6CC2;
+    color:#fff;
+}
+div.components-us.us_community_vitality.active > div.components-title-container{
+    background-color: #6575D3;
+    color:#fff;
+}
+div.components-us.us_education.active > div.components-title-container{
+    background-color: #6D7EE3;
+    color:#fff;
+}
+
+/**
+ *health_and_environmet_components_us
+ */
+div.components-us.us_physical_health.active > div.components-title-container{
+    background-color: #FF7000;
+    color:#fff;
+}
+div.components-us.us_mental_health.active > div.components-title-container{
+    background-color: #FF7A00;
+    color:#fff;
+}
+div.components-us.us_environmental_health.active > div.components-title-container{
+    background-color: #FF8500;
+    color:#fff;
+}
+/**
+ *freedom
+ */
+div.components-us.us_personal_freedom.active > div.components-title-container{
+    background-color: #00BDFF;
+    color:#fff;
+}
+div.components-us.us_economic_freedom.active > div.components-title-container{
+    background-color: #00CEFF;
+    color:#fff;
+}
+/**
+ *community_and_relationships
+ */
+div.components-us.us_community_life.active > div.components-title-container{
+    background-color: #F02C39;
+    color:#fff;
+}
+div.components-us.us_family_life.active > div.components-title-container{
+    background-color: #FF303E;
+    color:#fff;
+}
+/**
+ *living standard
+ */
+div.components-us.us_current_living_standard.active > div.components-title-container{
+    background-color: #00A75E;
+    color:#fff;
+}
+div.components-us.us_improvement_in_living_standard.active > div.components-title-container{
+    background-color: #00B666;
+    color:#fff;
+}
+/**
+ *peace_and_security
+ */
+div.components-us.us_violent_crime_rate.active > div.components-title-container{
+    background-color: #861C86;
+    color:#fff;
+}
+div.components-us.us_property_crime_rate.active > div.components-title-container{
+    background-color: #921E92;
+    color:#fff;
+}
+div.components-us.us_perceived_local_safety.active > div.components-title-container{
+    background-color: #9F219F;
+    color:#fff;
+}
+div.components-us.us_trust.active > div.components-title-container{
+    background-color: #AB23AB;
+    color:#fff;
+}
+
+/** 
+ *Maps section
+ */
+div.interactive-map-maps-container{
+    float:right;
+    /*background-color: #fff;*/
+    width:78%;
+    height: 100%;
+    position: relative;
+}
+div.interactive-map-body > #pre_loader{
+    width: 100%; 
+    height: 100%;
+    position:relative;
+}
+div.interactive-map-body > #pre_loader > img{
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0;  
+    right: 0; 
+    margin: auto;
+}
+div.interactive-map-maps-container > div.interactive-map-header{
+    width: 100%;
+    height: 65px;
+    background-color: #323841;
+    border-bottom: 1px solid #C0C0C0;
+    position: relative;
+    display: table;
+}
+div.interactive-map-maps-container > div.interactive-map-body{
+    background-color: #fff;
+    height: calc((100%) - (65px));
+    position: relative;
+}
+div.interactive-map-header > div.map-search{
+    width: auto;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+div.interactive-map-header > div.map-search > i.fi-magnifying-glass{
+    color: #C0C0C0;
+    font-size: 1.5rem;
+    float: left;
+    text-align: center;
+    padding: 5px;
+}
+div.interactive-map-header > div.map-search input[type="search"]{
+    background: transparent none repeat scroll 0px 0px;
+    box-shadow: none;
+    border: 0px none;
+    color: #fff;
+    float: left;
+    font-family: source-sans-pro,sans-serif;
+    font-size: 1.125rem;
+    margin: 0px;
+    width: 60%;
+}
+div.map-buttons{
+    width: 500px;
+    padding: 9px;
+    display: table-cell;
+    vertical-align: middle;
+}
+div.map-buttons > div.toggle-dark{
+    width: 320px;
+    float: right;
+}
+div.map-buttons > div.addthis_toolbox{
+    width: 120px;
+    float: right;
+}
+div.map-buttons > a.showcoach{
+    background-color: #323841;
+    border-bottom: 1px solid #323841;
+    border-left: 1px solid #323841;
+    border-right: 1px solid #323841;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-style: italic;
+    font-size: 0.8125rem;
+    padding: 5px 10px;
+    position: absolute;
+    right: 8px;
+    bottom: -20px;
+    z-index: 1;
+}
+div.interactive-map-body > div.btn-show-result > a.btn-show-results-interactive-map{
+    position: absolute;
+    /*z-index: 1; */ /*remove for overlay */
+    bottom:20px;
+    right: 25px;
+    background-color: #323841;
+    padding: 12px 25px;
+    border-radius: 3px;
+    background-color: #0073aa;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px 25px;
+    text-shadow: 0 1px 1px #00405d;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    
+}
+div.interactive-map-body > div.btn-show-result > a.btn-show-results-interactive-map:hover{
+    background-color: #0073aa;
+    color: #fff;
+}
+@media screen and (max-width: 1230px) {
+    div.interactive-map-sidebar-container{
+        width:27%;
+    }
+    div.interactive-map-maps-container{
+        width:73%;
+    }
+}
+@media screen and (max-width: 1100px){
+    div.interactive-map-sidebar-container{
+        width:32%;
+    }
+    div.interactive-map-maps-container{
+        width:68%;
+    }
+}
+
+/**
+ * Map section
+ */
+
+body#interactive-map .jvectormap-tip {
+    position: absolute;
+    display: none;
+    border: solid 0px #CDCDCD;
+    border-radius: 0px;
+    background: white;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    font-family: sans-serif, Verdana;
+    font-size: smaller;
+    padding: 0px;
+}
+
+body#interactive-map .dim.average_score,.dimension.average_score {
+    background-color: #7688A2;
+}
+
+/**
+ *Opportunity 
+ */
+body#interactive-map .dim.poverty,.dimension.poverty {
+    background-color: rgb(86, 99, 178);;
+}
+
+body#interactive-map .dim.employment,.dimension.employment {
+    background-color: rgb(94, 108, 194);
+}
+
+body#interactive-map .dim.community_vitality,.dimension.community_vitality {
+    background-color: rgb(101, 117, 211);
+}
+
+body#interactive-map .dim.education,.dimension.education {
+    background-color: rgb(109, 126, 227);
+}
+
+body#interactive-map .dim.community_basics,.dimension.community_basics {
+    background-color: rgb(101, 117, 211);
+}
+
+body#interactive-map .dim.entrepreneurship,.dimension.entrepreneurship {
+    background-color: rgb(109, 126, 227);
+}
+
+/**
+ *Health and Environment 
+ */
+body#interactive-map .dim.physical_health,.dimension.physical_health {
+    background-color: rgb(255, 112, 0);
+}
+
+body#interactive-map .dim.mental_health,.dimension.mental_health {
+    background-color: rgb(255, 122, 0);
+}
+
+body#interactive-map .dim.environmental_health,.dimension.environmental_health {
+    background-color: rgb(255, 133, 0);
+}
+
+/** 
+ *Freedom 
+ */
+body#interactive-map .dim.personal_freedom,.dimension.personal_freedom {
+    background-color: rgb(0, 189, 255);
+}
+
+body#interactive-map .dim.economic_freedom,.dimension.economic_freedom {
+    background-color: rgb(0, 189, 255);
+}
+
+body#interactive-map .dim.political_freedom,.dimension.political_freedom {
+    background-color: rgb(0, 189, 255);;
+}
+
+body#interactive-map .dim.civil_liberties,.dimension.civil_liberties {
+    background-color: rgb(0, 206, 255);
+}
+
+body#interactive-map .dim.religious_freedom,.dimension.religious_freedom {
+    background-color: rgb(0, 224, 255);
+}
+
+body#interactive-map .dim.economic_freedom,.dimension.economic_freedom {
+    background-color: rgb(0, 241, 255);
+}
+
+body#interactive-map .dim.perceived_freedom,.dimension.perceived_freedom {
+    background-color: rgb(0, 255, 255);
+}
+
+/** 
+ *Community and Relationships 
+ */
+body#interactive-map .dim.community_life,.dimension.community_life {
+    background-color: rgb(240, 44, 57);
+}
+
+body#interactive-map .dim.family_life,.dimension.family_life {
+    background-color: rgb(255, 48, 62);
+}
+
+/** 
+ *Living Standard 
+ */
+body#interactive-map .dim.current_living_standard,.dimension.current_living_standard {
+    background-color: rgb(0, 167, 94);
+}
+
+body#interactive-map .dim.improvement_in_living_standard,.dimension.improvement_in_living_standard {
+    background-color: rgb(0, 182, 102);
+}
+
+/** 
+ *Peace and Security 
+ */
+body#interactive-map .dim.violent_crime_rate,.dimension.violent_crime_rate {
+    background-color: rgb(134, 28, 134);
+}
+
+body#interactive-map .dim.property_crime_rate,.dimension.property_crime_rate {
+    background-color: rgb(146, 30, 146);
+}
+
+body#interactive-map .dim.perceived_local_safety,.dimension.perceived_local_safety {
+    background-color: rgb(159, 33, 159);
+}
+
+body#interactive-map .dim.trust,.dimension.trust {
+    background-color: rgb(171, 35, 171);
+}
+
+body#interactive-map .dim.violence_and_ethnic_warfare,.dimension.violence_and_ethnic_warfare {
+    background-color: rgb(134, 28, 134);
+}
+
+body#interactive-map .dim.human_rights_violations,.dimension.human_rights_violations {
+    background-color: rgb(146, 30, 146);
+}
+
+body#interactive-map .dim.law_and_order,.dimension.law_and_order {
+    background-color: rgb(159, 33, 159);
+}
+
+body#interactive-map .dim.trust_in_national_institutions,.dimension.trust_in_national_institutions {
+    background-color: rgb(171, 35, 171);
+}
+
+body#interactive-map .dim.corruption_in_business_and_government,.dimension.corruption_in_business_and_government {
+    background-color: rgb(183, 38, 183);
+}
+
+body#interactive-map .dim.bureaucracy_quality,.dimension.bureaucracy_quality {
+    background-color: rgb(195, 40, 195);
+}
+
+body#interactive-map #content section.cards .card .face.back .dimension-container .component .name, body#interactive-map #content section.cards .card .face.back .dimension-container .dimension .name {
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
+}
+
+body#interactive-map #content section.cards .card .face.back .dimension-container .component .score, body#interactive-map #content section.cards .card .face.back .dimension-container .dimension .score {
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
+}
+
+body#interactive-map #content section.cards .card .face.front .ranking {
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
+}

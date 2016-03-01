@@ -1,0 +1,143 @@
+@import url("fonts.css");
+
+/**
+ * Results Page
+ */
+
+/** 
+ *Opportunity 
+ */
+body#results .dim.poverty,.dimension.poverty {
+    background-color: rgb(86, 99, 178);;
+}
+
+body#results .dim.employment,.dimension.employment {
+    background-color: rgb(94, 108, 194);
+}
+
+body#results .dim.community_vitality,.dimension.community_vitality {
+    background-color: rgb(101, 117, 211);
+}
+
+body#results .dim.education,.dimension.education {
+    background-color: rgb(109, 126, 227);
+}
+
+body#results .dim.community_basics,.dimension.community_basics {
+    background-color: rgb(101, 117, 211);
+}
+
+body#results .dim.entrepreneurship,.dimension.entrepreneurship {
+    background-color: rgb(109, 126, 227);
+}
+
+/** 
+ * Health and Environment 
+ */
+body#results .dim.physical_health,.dimension.physical_health {
+    background-color: rgb(255, 112, 0);
+}
+
+body#results .dim.mental_health,.dimension.mental_health {
+    background-color: rgb(255, 122, 0);
+}
+
+body#results .dim.environmental_health,.dimension.environmental_health {
+    background-color: rgb(255, 133, 0);
+}
+
+/** 
+ *Freedom 
+ */
+body#results .dim.personal_freedom,.dimension.personal_freedom {
+    background-color: rgb(0, 189, 255);
+}
+
+body#results .dim.economic_freedom,.dimension.economic_freedom {
+    background-color: rgb(0, 189, 255);
+}
+
+body#results .dim.political_freedom,.dimension.political_freedom {
+    background-color: rgb(0, 189, 255);;
+}
+
+body#results .dim.civil_liberties,.dimension.civil_liberties {
+    background-color: rgb(0, 206, 255);
+}
+
+body#results .dim.religious_freedom,.dimension.religious_freedom {
+    background-color: rgb(0, 224, 255);
+}
+
+body#results .dim.economic_freedom,.dimension.economic_freedom {
+    background-color: rgb(0, 241, 255);
+}
+
+body#results .dim.perceived_freedom,.dimension.perceived_freedom {
+    background-color: rgb(0, 255, 255);
+}
+
+/**
+ *Community and Relationships 
+ */
+body#results .dim.community_life,.dimension.community_life {
+    background-color: rgb(240, 44, 57);
+}
+
+body#results .dim.family_life,.dimension.family_life {
+    background-color: rgb(255, 48, 62);
+}
+
+/** 
+ *Living Standard 
+ */
+body#results .dim.current_living_standard,.dimension.current_living_standard {
+    background-color: rgb(0, 167, 94);
+}
+
+body#results .dim.improvement_in_living_standard,.dimension.improvement_in_living_standard {
+    background-color: rgb(0, 182, 102);
+}
+
+/** 
+ *Peace and Security 
+ */
+body#results .dim.violent_crime_rate,.dimension.violent_crime_rate {
+    background-color: rgb(134, 28, 134);
+}
+
+body#results .dim.property_crime_rate,.dimension.property_crime_rate {
+    background-color: rgb(146, 30, 146);
+}
+
+body#results .dim.perceived_local_safety,.dimension.perceived_local_safety {
+    background-color: rgb(159, 33, 159);
+}
+
+body#results .dim.trust,.dimension.trust {
+    background-color: rgb(171, 35, 171);
+}
+
+body#results .dim.violence_and_ethnic_warfare,.dimension.violence_and_ethnic_warfare {
+    background-color: rgb(134, 28, 134);
+}
+
+body#results .dim.human_rights_violations,.dimension.human_rights_violations {
+    background-color: rgb(146, 30, 146);
+}
+
+body#results .dim.law_and_order,.dimension.law_and_order {
+    background-color: rgb(159, 33, 159);
+}
+
+body#results .dim.trust_in_national_institutions,.dimension.trust_in_national_institutions {
+    background-color: rgb(171, 35, 171);
+}
+
+body#results .dim.corruption_in_business_and_government,.dimension.corruption_in_business_and_government {
+    background-color: rgb(183, 38, 183);
+}
+
+body#results .dim.bureaucracy_quality,.dimension.bureaucracy_quality {
+    background-color: rgb(195, 40, 195);
+}
