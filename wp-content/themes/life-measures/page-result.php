@@ -261,8 +261,7 @@
 									size: 15,
 									weight: 300
 								},
-								format: "fixedPoint",
-								precision: 0
+								format: "fixedPoint"
 							},
 							visible: true
 						},
@@ -314,6 +313,15 @@
 								return this.seriesName.toUpperCase() + ": " + Number(this.valueText).toFixed(1);
 							}
 						},
+						valueAxis: {
+							grid: {
+								color: "#ccc",
+								visible: true
+							},
+							max: 10,
+							min: 0,
+							valueMarginsEnabled: false
+						}
 					}).dxChart("instance");
 
 					$trendsChart.zoomArgument(300, 500);
