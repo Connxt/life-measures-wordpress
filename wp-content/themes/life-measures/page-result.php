@@ -2,7 +2,6 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/globalize/globalize.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/dx_chartjs/dx.chartjs.js"></script>
 <main role="main">
-	<body id="results" class="page page-id-434 page-child parent-pageid-15 page-template page-template-page-results-php win8.1 chrome chrome-0">
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 	<?php
 		require_once("api/db.php");
