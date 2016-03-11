@@ -180,35 +180,66 @@
 		        </div>
 			</div>
 			<div class="sidebar-body">
+				<!-- US COMPONENTS -->
 				<div class="us-toggle" id="toggle_container_us">
 					<ul class="scroll-us">
 						<li>
-							<div class="opportunity-header dimensions">
+							<div class="community-and-relationships-header dimensions">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-CommunityRelationships.png" id="image-container">
+								<p>Community & Relationships</p>
+							</div>
+							<div class="community-life components clearfix">
+								<div class="component-title-container">
+									<h3>Community Life</h3>
+								</div>
+								<div class="range-slider-container">
+									<div id="us_community_life" class="weight-slider"></div>
+								</div>
+							</div>
+							<div class="family-life components clearfix">
+								<div class="component-title-container">
+									<h3>Family Life</h3>
+								</div>
+								<div class="range-slider-container">
+									<div id="us_family_life" class="weight-slider"></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="freedom-and-opportunity-header dimensions">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol_Opportunity.png" id="image-container">
-								<p>Opportunity</p>
+								<p>Freedom & Opportunity</p>
 							</div>
-							<div class="poverty components clearfix">
+							<div class="personal-freedom components clearfix">
 								<div class="component-title-container">
-									<h3>Poverty</h3>
+									<h3>Personal Freedom</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="us_poverty" class="weight-slider"></div>
+									<div id="us_personal_freedom" class="weight-slider"></div>
 								</div>
 							</div>
-							<div class="employment components clearfix">
+							<div class="economic-freedom components clearfix">
 								<div class="component-title-container">
-									<h3>Employment</h3>
+									<h3>Economic Freedom</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="us_employment" class="weight-slider"></div>
+									<div id="us_economic_freedom" class="weight-slider"></div>
 								</div>
 							</div>
-							<div class="community-vitality components clearfix">
+							<div class="work components clearfix">
 								<div class="component-title-container">
-									<h3>Community Vitality</h3>
+									<h3>Work</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="us_community_vitality" class="weight-slider"></div>
+									<div id="us_work" class="weight-slider"></div>
+								</div>
+							</div>
+							<div class="local-opportunity components clearfix">
+								<div class="component-title-container">
+									<h3>Local Opportunity</h3>
+								</div>
+								<div class="range-slider-container">
+									<div id="us_local_opportunity" class="weight-slider"></div>
 								</div>
 							</div>
 							<div class="education components clearfix">
@@ -251,68 +282,32 @@
 							</div>
 						</li>
 						<li>
-							<div class="freedom-header dimensions">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-Freedom.png" id="image-container">
-								<p>Freedom</p>
-							</div>
-							<div class="personal-freedom components clearfix">
-								<div class="component-title-container">
-									<h3>Personal Freedom</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="us_personal_freedom" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="economic-freedom components clearfix">
-								<div class="component-title-container">
-									<h3>Economic Freedom</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="us_economic_freedom" class="weight-slider"></div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="community-and-relationships-header dimensions">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-CommunityRelationships.png" id="image-container">
-								<p>Community and Relationships</p>
-							</div>
-							<div class="community-life components clearfix">
-								<div class="component-title-container">
-									<h3>Community Life</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="us_community_life" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="family-life components clearfix">
-								<div class="component-title-container">
-									<h3>Family Life</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="us_family_life" class="weight-slider"></div>
-								</div>
-							</div>
-						</li>
-						<li>
 							<div class="living-standard-header dimensions">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-LivingStandard.png" id="image-container">
 								<p>Living Standard</p>
 							</div>
-							<div class="current-living-standard components clearfix">
+							<div class="income components clearfix">
 								<div class="component-title-container">
-									<h3>Current Living Standard</h3>
+									<h3>Income</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="us_current_living_standard" class="weight-slider"></div>
+									<div id="us_income" class="weight-slider"></div>
 								</div>
 							</div>
-							<div class="improvement-in-living-standard components clearfix">
+							<div class="poverty components clearfix">
 								<div class="component-title-container">
-									<h3>Improvement in Living Standard</h3>
+									<h3>Poverty</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="us_improvement_in_living_standard" class="weight-slider"></div>
+									<div id="us_poverty" class="weight-slider"></div>
+								</div>
+							</div>
+							<div class="living-standard-perceptions components clearfix">
+								<div class="component-title-container">
+									<h3>Living Standard Perceptions</h3>
+								</div>
+								<div class="range-slider-container">
+									<div id="us_living_standard_perceptions" class="weight-slider"></div>
 								</div>
 							</div>
 						</li>
@@ -321,115 +316,54 @@
 								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-PeaceSecurity.png" id="image-container">
 								<p>Peace & Security</p>
 							</div>
-							<div class="violent-crime-rate components clearfix">
+							<div class="crime components clearfix">
 								<div class="component-title-container">
-									<h3>Violent Crime Rate</h3>
+									<h3>Crime</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="us_violent_crime_rate" class="weight-slider"></div>
+									<div id="us_crime" class="weight-slider"></div>
 								</div>
 							</div>
-							<div class="property-crime-rate components clearfix">
+							<div class="peace-and-security-perceptions components clearfix">
 								<div class="component-title-container">
-									<h3>Property Crime Rate</h3>
+									<h3>Peace and Security Perceptions</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="us_property_crime_rate" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="perceived-local-safety components clearfix">
-								<div class="component-title-container">
-									<h3>Perceived Local Safety</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="us_perceived_local_safety" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="trust components clearfix">
-								<div class="component-title-container">
-									<h3>Trust</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="us_trust" class="weight-slider"></div>
+									<div id="us_peace_and_security_perceptions" class="weight-slider"></div>
 								</div>
 							</div>
 						</li>
 					</ul>
 				</div>
+				<!-- WORLD COMPONENTS -->
 				<div class="world-toggle" id="toggle_container_world">
 					<ul class="scroll-world simplebar vertical">
 						<li>
-							<div class="opportunity-header dimensions">
+							<div class="community-and-relationships-header dimensions">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-CommunityRelationships.png" id="image-container">
+								<p>Community & Relationships</p>
+							</div>
+							<div class="community-life components">
+								<div class="component-title-container">
+									<h3>Community Life</h3>
+								</div>
+								<div class="range-slider-container">
+									<div id="world_community_life" class="weight-slider"></div>
+								</div>
+							</div>
+							<div class="family-life components">
+								<div class="component-title-container">
+									<h3>Family Life</h3>
+								</div>
+								<div class="range-slider-container">
+									<div id="world_family_life" class="weight-slider"></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="freedom-and-opportunity-header dimensions">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol_Opportunity.png" id="image-container">
-								<p>Opportunity</p>
-							</div>
-							<div class="poverty components">
-								<div class="component-title-container">
-									<h3>Poverty</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="world_poverty" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="employment components">
-								<div class="component-title-container">
-									<h3>Employment</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="world_employment" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="community-basics components">
-								<div class="component-title-container">
-									<h3>Community Basics</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="world_community_basics" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="entrepreneurship components">
-								<div class="component-title-container">
-									<h3>Entrepreneurship</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="world_entrepreneurship" class="weight-slider"></div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="health-and-environment-header dimensions">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-HealthEnvironment.png" id="image-container">
-								<p>Health & Environment</p>
-							</div>
-							<div class="physical-health components">
-								<div class="component-title-container">
-									<h3>Physical Health</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="world_physical_health" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="mental-health components">
-								<div class="component-title-container">
-									<h3>Mental Health</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="world_mental_health" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="environmental-health components">
-								<div class="component-title-container">
-									<h3>Environmental Health</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="world_environmental_health" class="weight-slider"></div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="freedom-header dimensions">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-Freedom.png" id="image-container">
-								<p>Freedom</p>
+								<p>Freedom & Opportunity</p>
 							</div>
 							<div class="political-freedom components">
 								<div class="component-title-container">
@@ -463,34 +397,59 @@
 									<div id="world_economic_freedom" class="weight-slider"></div>
 								</div>
 							</div>
-							<div class="perceived-freedom components">
+							<div class="perceived-opportunities components">
 								<div class="component-title-container">
-									<h3>Perceived Freedom</h3>
+									<h3>Perceived Opportunities</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="world_perceived_freedom" class="weight-slider"></div>
+									<div id="world_perceived_opportunities" class="weight-slider"></div>
 								</div>
 							</div>
+							<div class="entrepreneurship components">
+								<div class="component-title-container">
+									<h3>Entrepreneurship</h3>
+								</div>
+								<div class="range-slider-container">
+									<div id="world_entrepreneurship" class="weight-slider"></div>
+								</div>
+							</div>
+							<div class="employment components">
+								<div class="component-title-container">
+									<h3>Employment</h3>
+								</div>
+								<div class="range-slider-container">
+									<div id="world_employment" class="weight-slider"></div>
+								</div>
+							</div>
+
 						</li>
 						<li>
-							<div class="community-and-relationships-header dimensions">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-CommunityRelationships.png" id="image-container">
-								<p>Community and Relationships</p>
+							<div class="health-and-environment-header dimensions">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-HealthEnvironment.png" id="image-container">
+								<p>Health & Environment</p>
 							</div>
-							<div class="community-life components">
+							<div class="physical-health components">
 								<div class="component-title-container">
-									<h3>Community Life</h3>
+									<h3>Physical Health</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="world_community_life" class="weight-slider"></div>
+									<div id="world_physical_health" class="weight-slider"></div>
 								</div>
 							</div>
-							<div class="family-life components">
+							<div class="mental-health components">
 								<div class="component-title-container">
-									<h3>Family Life</h3>
+									<h3>Mental Health</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="world_family_life" class="weight-slider"></div>
+									<div id="world_mental_health" class="weight-slider"></div>
+								</div>
+							</div>
+							<div class="environmental-health components">
+								<div class="component-title-container">
+									<h3>Environmental Health</h3>
+								</div>
+								<div class="range-slider-container">
+									<div id="world_environmental_health" class="weight-slider"></div>
 								</div>
 							</div>
 						</li>
@@ -499,20 +458,28 @@
 								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-LivingStandard.png" id="image-container">
 								<p>Living Standard</p>
 							</div>
-							<div class="current-living-standard components">
+							<div class="income components">
 								<div class="component-title-container">
-									<h3>Current Living Standard</h3>
+									<h3>Income</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="world_current_living_standard" class="weight-slider"></div>
+									<div id="world_income" class="weight-slider"></div>
 								</div>
 							</div>
-							<div class="improvement-in-living-standard components">
+							<div class="poverty components">
 								<div class="component-title-container">
-									<h3>Improvement in Living Standard</h3>
+									<h3>Poverty</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="world_improvement_in_living_standard" class="weight-slider"></div>
+									<div id="world_poverty" class="weight-slider"></div>
+								</div>
+							</div>
+							<div class="resources components">
+								<div class="component-title-container">
+									<h3>Resources</h3>
+								</div>
+								<div class="range-slider-container">
+									<div id="world_resources" class="weight-slider"></div>
 								</div>
 							</div>
 						</li>

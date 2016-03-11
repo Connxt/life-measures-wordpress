@@ -126,25 +126,53 @@ div.components{
 /** 
  *us toggle 
  */
-div.us-toggle div.opportunity-header{
+
+
+/* 
+Community and Relationships
+*/
+div.us-toggle div.community-and-relationships-header{
+    background-color:#fff;
+    color:#DA2834;
+    padding: 3px 0px 3px 0px;
+}
+div.us-toggle div.community-life{
+    background-color:#F02C39;
+}
+div.us-toggle div.family-life{
+    background-color:#FF303E;
+}
+
+/*
+Freedom and Opportunity
+ */
+div.us-toggle div.freedom-and-opportunity-header{
     background-color: #fff;
     color:#4E5AA2;
+    padding: 3px 0px 3px 0px;
 }
-div.us-toggle div.poverty{
+div.us-toggle div.personal-freedom{
     background-color:#5663B2;
 }
-div.us-toggle div.employment{
+div.us-toggle div.economic-freedom{
     background-color:#5E6CC2;
 }
-div.us-toggle div.community-vitality{
+div.us-toggle div.work{
     background-color:#6575D3;
 }
-div.us-toggle div.education{
+div.us-toggle div.local-opportunity{
     background-color:#6D7EE3;
 }
+div.us-toggle div.education{
+    background-color:#6d7eed;
+}
+/*
+Health and Environment
+ */
 div.us-toggle div.health-and-environment-header{
     background-color:#fff;
     color:#F60;
+    padding: 3px 0px 3px 0px;
 }
 div.us-toggle div.physical-health{
     background-color:#FF7000;
@@ -155,75 +183,103 @@ div.us-toggle div.mental-health{
 div.us-toggle div.environmental-health{
     background-color:#FF8500;
 }
-div.us-toggle div.freedom-header{
-    background-color:#fff;
-    color:#00ACFF;
-}
-div.us-toggle div.personal-freedom{
-    background-color:#00BDFF;
-}
-div.us-toggle div.economic-freedom{
-    background-color:#00CEFF;
-}
-div.us-toggle div.community-and-relationships-header{
-    background-color:#fff;
-    color:#DA2834;
-}
-div.us-toggle div.community-life{
-    background-color:#F02C39;
-}
-div.us-toggle div.family-life{
-    background-color:#FF303E;
-}
+
+/*
+Living Standard
+ */
 div.us-toggle div.living-standard-header{
     background-color:#fff;
     color:#009855;
+    padding: 3px 0px 3px 0px;
 }
-div.us-toggle div.current-living-standard{
+div.us-toggle div.income{
     background-color:#00A75E;
 }
-div.us-toggle div.improvement-in-living-standard{
+div.us-toggle div.poverty{
     background-color:#00B666;
 }
+div.us-toggle div.living-standard-perceptions{
+    background-color:#00b66c;
+}
+
+/*
+Peace and Security
+ */
 div.us-toggle div.peace-and-security-header{
     background-color:#fff;
     color:#861C86;
+    padding: 3px 0px 3px 0px;
 }
-div.us-toggle div.violent-crime-rate{
+div.us-toggle div.crime{
     background-color:#861C86;
 }
-div.us-toggle div.property-crime-rate{
+div.us-toggle div.peace-and-security-perceptions{
     background-color:#921E92;
 }
-div.us-toggle div.perceived-local-safety{
+/*div.us-toggle div.perceived-local-safety{
     background-color:#9F219F;
 }
 div.us-toggle div.trust{
     background-color:#AB23AB;
-}
+}*/
 
 /**
  *world toggle
  */
-div.world-toggle div.opportunity-header{
+
+/*
+Community and Relationships
+ */
+div.world-toggle div.community-and-relationships-header{
+    background-color:#fff;
+    color:#DA2834;
+    padding: 3px 0px 3px 0px;
+}
+div.world-toggle div.community-life{
+    background-color:#F02C39;
+}
+div.world-toggle div.family-life{
+    background-color:#FF303E;
+}
+
+/*
+Freedom and Opportunity
+ */
+div.world-toggle div.freedom-and-opportunity-header{
     background-color: #fff;
     color:#4E5AA2;
+    padding: 3px 0px 3px 0px;
 }
-div.world-toggle div.poverty{
+div.world-toggle div.political-freedom{
     background-color:#5663B2;
 }
-div.world-toggle div.employment{
+div.world-toggle div.civil-liberties{
     background-color:#5E6CC2;
 }
-div.world-toggle div.community-basics{
+div.world-toggle div.religious-freedom{
     background-color:#6575D3;
 }
-div.world-toggle div.entrepreneurship{
+div.world-toggle div.economic-freedom{
     background-color:#6D7EE3;
 }
+div.world-toggle div.perceived-opportunities{
+    background-color:#6d7eed;
+}
+div.world-toggle div.entrepreneurship{
+    background-color:#6d7ef1;
+}
+div.world-toggle div.employment{
+    background-color:#6d7ef6;
+}
+
+
+/*
+Health and Environment
+ */
 div.world-toggle div.health-and-environment-header{
     background-color:#fff;
     color:#F60;
+    padding: 3px 0px 3px 0px;
 }
 div.world-toggle div.physical-health{
     background-color:#FF7000;
@@ -234,48 +290,32 @@ div.world-toggle div.mental-health{
 div.world-toggle div.environmental-health{
     background-color:#FF8500;
 }
-div.world-toggle div.freedom-header{
-    background-color:#fff;
-    color:#00ACFF;
-}
-div.world-toggle div.political-freedom{
-    background-color:#00BDFF;
-}
-div.world-toggle div.civil-liberties{
-    background-color:#00CEFF;
-}
-div.world-toggle div.religious-freedom{
-    background-color:#00E0FF;
-}
-div.world-toggle div.economic-freedom{
-    background-color:#00F1FF;
-}
-div.world-toggle div.perceived-freedom{
-    background-color:#0FF;
-}
-div.world-toggle div.community-and-relationships-header{
-    background-color:#fff;
-    color:#DA2834;
-}
-div.world-toggle div.community-life{
-    background-color:#F02C39;
-}
-div.world-toggle div.family-life{
-    background-color:#FF303E;
-}
+
+/*
+Living Standard
+ */
 div.world-toggle div.living-standard-header{
     background-color:#fff;
     color:#009855;
+    padding: 3px 0px 3px 0px;
 }
-div.world-toggle div.current-living-standard{
+div.world-toggle div.income{
     background-color:#00A75E;
 }
-div.world-toggle div.improvement-in-living-standard{
+div.world-toggle div.poverty{
     background-color:#00B666;
 }
+div.world-toggle div.resources{
+    background-color:#00B666;
+}
+
+/*
+Peace and Security
+ */
 div.world-toggle div.peace-and-security-header{
     background-color:#fff;
     color:#861C86;
+    padding: 3px 0px 3px 0px;
 }
 div.world-toggle div.violence-and-ethnic-warfare{
     background-color:#861C86;
