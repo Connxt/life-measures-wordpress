@@ -859,9 +859,7 @@ var InteractiveMap = (function () {
 					selectedComponents = [];
 
 					for(var dimension in dimensions) {
-						console.log("#" + componentContainerIdPrefix + dimension);
 						if($("#" + componentContainerIdPrefix + dimension).hasClass("opened")) {
-							console.log("opened");
 							for(var i = 0; i < dimensions[dimension].length; i++) {
 								if($("#" + componentIdPrefix + dimensions[dimension][i]).hasClass("active")) {
 									selectedComponents.push(dimensions[dimension][i]);
