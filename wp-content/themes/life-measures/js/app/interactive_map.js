@@ -45,24 +45,24 @@ var InteractiveMap = (function () {
 			};
 			tooltipMessages = {
 				community_and_relationships: {
-					US: "The Community & Relationships dimension measures the quality of the community and family lives of a state’s residents. It is concerned with people’s charitable, civic, and religious engagement and their relationships with friends and loved ones.",
-					WORLD: "The Community & Relationships dimension measures the quality of the community and family lives of people in a society. It is concerned with people’s charitable, civic, and religious engagement and their relationships with friends and loved ones."
+					US: "The Community & Relationships foundation measures the quality of the community and family lives of a state’s residents. It is concerned with people’s charitable, civic, and religious engagement and their relationships with friends and loved ones.",
+					WORLD: "The Community & Relationships foundation measures the quality of the community and family lives of people in a society. It is concerned with people’s charitable, civic, and religious engagement and their relationships with friends and loved ones."
 				},
 				freedom_and_opportunity: {
-					US: "The Opportunity dimension is concerned with people’s possibilities for employment and entrepreneurship and education quality and choice. It pays particular attention to the underprivileged, assessing the levels of poverty and inequality in a state.",
-					WORLD: "The Opportunity dimension is concerned with people’s access to community basics, education, and possibilities for employment and entrepreneurship. It pays particular attention to the underprivileged, assessing the levels of poverty and inequality in a society."
+					US: "The Opportunity foundation is concerned with people’s possibilities for employment and entrepreneurship and education quality and choice. It pays particular attention to the underprivileged, assessing the levels of poverty and inequality in a state.",
+					WORLD: "The Opportunity foundation is concerned with people’s access to community basics, education, and possibilities for employment and entrepreneurship. It pays particular attention to the underprivileged, assessing the levels of poverty and inequality in a society."
 				},
 				health_and_environment: {
-					US: "The Health & Environment dimension deals with the prevailing physical, mental, and environmental conditions in a state. It looks at such factors as life expectancy, obesity, suicide rates, and access to safe water, fruit and vegetables, medicine, and a safe place to exercise.",
-					WORLD: "The Health & Environment dimension deals with the prevailing physical, mental, and environmental conditions in a society. It looks at such factors as life expectancy, undernourishment, suicide rates, positive experiences, suffering, and air, water, and sanitation quality."
+					US: "The Health & Environment foundation deals with the prevailing physical, mental, and environmental conditions in a state. It looks at such factors as life expectancy, obesity, suicide rates, and access to safe water, fruit and vegetables, medicine, and a safe place to exercise.",
+					WORLD: "The Health & Environment foundation deals with the prevailing physical, mental, and environmental conditions in a society. It looks at such factors as life expectancy, undernourishment, suicide rates, positive experiences, suffering, and air, water, and sanitation quality."
 				},
 				living_standard: {
-					US: "The Living Standard dimension looks at the average level of economic and financial resources available to a state’s residents. It concerns itself with current standard of living, improvements in standard of living, and people’s perceptions of their standard of living.",
-					WORLD: "The Living Standard dimension looks at the average level of economic and financial resources available to people in a society. It concerns itself with current standard of living, improvements in standard of living, and people’s perceptions of their own and their society’s standard of living."
+					US: "The Living Standard foundation looks at the average level of economic and financial resources available to a state’s residents. It concerns itself with current standard of living, improvements in standard of living, and people’s perceptions of their standard of living.",
+					WORLD: "The Living Standard foundation looks at the average level of economic and financial resources available to people in a society. It concerns itself with current standard of living, improvements in standard of living, and people’s perceptions of their own and their society’s standard of living."
 				},
 				peace_and_security: {
-					US: "The Peace & Security Dimension measures the degree to which a state minimizes violence and crime. It also looks at how safe people feel where they live and whether they trust their neighbors.",
-					WORLD: "The Peace & Security Dimension measures the degree to which a society minimizes violence, crime, and other sources of instability while respecting human rights and upholding the rule of law. It also looks at trust, transparency, corruption, and bureaucratic quality."
+					US: "The Peace & Security foundation measures the degree to which a state minimizes violence and crime. It also looks at how safe people feel where they live and whether they trust their neighbors.",
+					WORLD: "The Peace & Security foundation measures the degree to which a society minimizes violence, crime, and other sources of instability while respecting human rights and upholding the rule of law. It also looks at trust, transparency, corruption, and bureaucratic quality."
 				}
 			}
 		return {
@@ -441,7 +441,7 @@ var InteractiveMap = (function () {
 									"<div class='card flipped' style='height: 0px; width:250px; display: inline-block;'>" +
 										"<div class='face back'>" +
 											"<h2>" + resultData[rank].name + "</h2>" +
-											"<h3>Average " + ((updateType == defaults.updateTypes.BY_DIMENSION) ? "dimension" : "component") + " Scores</h3>" +
+											"<h3>Average " + ((updateType == defaults.updateTypes.BY_DIMENSION) ? "Dimension" : "Component") + " Scores</h3>" +
 											"<div class='dimension-container clearfix' style='width: 241px;'>";
 
 						tip += "<div class='dimension average_score'>" +

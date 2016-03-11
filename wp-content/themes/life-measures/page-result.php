@@ -19,7 +19,7 @@
 
 			if(substr($wp_query->query_vars['search_type'], 0, 6) == "dimens") {
 				$search = urldecode($wp_query->query_vars['search_type']);
-				$search_type = "dimensions";
+				$search_type = "foundations";
 			}
 			else {
 				$search = urldecode($wp_query->query_vars['search_type']);
@@ -28,20 +28,21 @@
 
 			$years = (isset($years)) ? (explode("|", substr($years, 6))) : json_encode(array());
 			$locations = (isset($locations)) ? (explode("|", substr($locations, 10))) : json_encode(array());
-			$search = ($search_type == "dimensions") ? explode("|", substr($search, 7)) : explode("|", substr($search, 11));
+			$search = ($search_type == "foundations") ? explode("|", substr($search, 7)) : explode("|", substr($search, 11));
 
 			// = to mapType sa code ni ryan.
 			$map_category = ($map_type == "us") ? "state" : "int";
 			$location_type = ($map_type == "us") ? "state" : "country";
+			$search_category = ($search_type == "foundations") ? "dimensions" : "components";
 
 			$sql = "SELECT
 					   api_" . $map_category . "_summary_score.*,
 					   api_" . (($map_category == "int") ? "countries" : "state") . ".*,
-					   api_" . $search_type . "_" . $map_category . ".*
+					   api_" . $search_category . "_" . $map_category . ".*
 					FROM api_" . $map_category . "_summary_score
 					LEFT JOIN api_" . (($map_category == "int") ? "countries" : "state") . " ON api_" . $map_category . "_summary_score." . $location_type. "=api_" . (($map_category == "int") ? "countries" : "state") . ".abbr
-					LEFT JOIN api_" . $search_type . "_" . $map_category . " ON (api_" . $map_category . "_summary_score." . $location_type. "=api_" . $search_type . "_" . $map_category . "." . $location_type. "
-					AND api_" . $map_category . "_summary_score.year=api_" . $search_type . "_" . $map_category . ".year)WHERE (";
+					LEFT JOIN api_" . $search_category . "_" . $map_category . " ON (api_" . $map_category . "_summary_score." . $location_type. "=api_" . $search_category . "_" . $map_category . "." . $location_type. "
+					AND api_" . $map_category . "_summary_score.year=api_" . $search_category . "_" . $map_category . ".year)WHERE (";
 
 
 			foreach($years as $year) {
@@ -100,7 +101,7 @@
 			}
 
 			function get_search_type($search_type) {
-				return ($search_type == "dimensions") ? "dimension" : "component";
+				return ($search_type == "foundations") ? "foundation" : "component";
 			}
 
 			function get_search_criteria($search_criteria) {
@@ -148,7 +149,7 @@
 						<div class="face front">
 							<a class="information circle" href="#"><i class="entypo info"></i></a>
 							<div class="info-tooltip">
-								This card displays the average score for each location based upon the dimensions/components and years selected.
+								This card displays the average score for each location based upon the foundations/components and years selected.
 							</div>
 							<h3>
 								Average Ranking<br>
@@ -171,16 +172,16 @@
 								unset($rank_container);
 								?>
 							</div>
-							<div class="dimension-container">
+							<div class="foundation-container">
 								<?php foreach($search as $s) { ?>
-									<div class="dimension <?php echo $s; ?>"></div>
+									<div class="foundation <?php echo $s; ?>"></div>
 								<?php } ?>
 							</div>
 						</div>
 						<div class="face back">
 							<h2><?php echo $d['name']; ?></h2>
 							<h3>Average <?php echo get_search_type($search_type); ?> Scores<br></h3>
-							<div class="dimension-container clearfix">
+							<div class="foundation-container clearfix">
 								<?php
 								$search_container = array();
 								foreach($d[$search_type] as $search_data) {
@@ -196,7 +197,7 @@
 								foreach($search as $s) {
 									$search_container[$s] = $search_container[$s] / count($years);
 								?>
-								<div class="dimension <?php echo $s; ?>">
+								<div class="foundation <?php echo $s; ?>">
 									<div class="name"><?php echo get_search_criteria($s); ?></div>
 									<div class="score"><?php echo number_format(round($search_container[$s], 1), 1); ?></div>
 								</div>
@@ -415,7 +416,7 @@
 				</script>
 			</div>
 		</section>
-		<section class="<?php echo ($search_type == 'dimensions') ? 'dimensions-by-year' : 'components' ?>" role="main-content">
+		<section class="<?php echo ($search_type == 'foundations') ? 'foundations-by-year' : 'components' ?>" role="main-content">
 			<div class="row">
 				<h2><?php echo $search_type; ?></h2>
 				<hr>
