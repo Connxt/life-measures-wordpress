@@ -441,7 +441,7 @@ var InteractiveMap = (function () {
 									"<div class='card flipped' style='height: 0px; width:250px; display: inline-block;'>" +
 										"<div class='face back'>" +
 											"<h2>" + resultData[rank].name + "</h2>" +
-											"<h3>Average " + ((updateType == defaults.updateTypes.BY_DIMENSION) ? "Dimension" : "Component") + " Scores</h3>" +
+											"<h3>Average " + ((updateType == defaults.updateTypes.BY_DIMENSION) ? "Foundation" : "Component") + " Scores</h3>" +
 											"<div class='dimension-container clearfix' style='width: 241px;'>";
 
 						tip += "<div class='dimension average_score'>" +
