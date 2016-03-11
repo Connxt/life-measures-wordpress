@@ -511,11 +511,11 @@ iframe{display:block}.advisory-board-members{clear:both;line-height:22px;line-he
 10px}}.filter-container .filter-box
 span{padding:0
 4px}.filter-container .filter-box a.filter-link{color:#999;font-size:24px;font-size:1.5rem;line-height:24px;line-height:1.5rem;padding:0
-4px;-webkit-transition-property:all;transition-property:all;-webkit-transition-duration: .1s;transition-duration: .1s;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out}@media only screen and (max-width:640px){.filter-container .filter-box a.filter-link{font-size:18px;font-size:1.125rem;line-height:18px;line-height:1.125rem}}.filter-container .filter-box a.filter-link.selected,.filter-container .filter-box a.filter-link:hover{color:#04366f;text-decoration:underline;-webkit-transition-property:all;transition-property:all;-webkit-transition-duration: .1s;transition-duration: .1s;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out}body#indices section.dimensions .owl-wrapper-outer{padding-bottom:20px}body#indices section.dimensions .owl-wrapper-outer
-.dimension{}body#indices section.dimensions .owl-wrapper-outer .dimension
-h3{}body#indices section.dimensions .owl-wrapper-outer .dimension
+4px;-webkit-transition-property:all;transition-property:all;-webkit-transition-duration: .1s;transition-duration: .1s;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out}@media only screen and (max-width:640px){.filter-container .filter-box a.filter-link{font-size:18px;font-size:1.125rem;line-height:18px;line-height:1.125rem}}.filter-container .filter-box a.filter-link.selected,.filter-container .filter-box a.filter-link:hover{color:#04366f;text-decoration:underline;-webkit-transition-property:all;transition-property:all;-webkit-transition-duration: .1s;transition-duration: .1s;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out}body#constructing-the-measures section.dimensions .owl-wrapper-outer{padding-bottom:20px}body#constructing-the-measures section.dimensions .owl-wrapper-outer
+.dimension{}body#constructing-the-measures section.dimensions .owl-wrapper-outer .dimension
+h3{}body#constructing-the-measures section.dimensions .owl-wrapper-outer .dimension
 hr{background-color:#fff;margin:20px
-auto;opacity: .25}body#indices section.dimensions .owl-wrapper-outer .dimension
+auto;opacity: .25}body#constructing-the-measures section.dimensions .owl-wrapper-outer .dimension
 p{color:#fff}section.glossary{padding:50px
 20px}.csscolumns .glossary-item-container{-webkit-column-count:3;-moz-column-count:3;column-count:3;-webkit-column-gap:40px;-moz-column-gap:40px;column-gap:40px}.csscolumns .glossary-item-container
 header{margin-bottom:40px}.csscolumns .glossary-item-container .glossary-item{display:inline-block}@media only screen and (max-width:1024px){.csscolumns .glossary-item-container{-webkit-column-count:2;-moz-column-count:2;column-count:2}}@media only screen and (max-width:640px){.csscolumns .glossary-item-container{-webkit-column-count:1;-moz-column-count:1;column-count:1}}.no-csscolumns .glossary-item{margin-bottom:20px}body.blog
@@ -574,8 +574,8 @@ footer.footer{display:none}body#interactive-map
 div#container{height:100%;overflow:hidden;margin-bottom:-4px;background:#f0f0f0}body#interactive-app{overflow:hidden}body#interactive-app header
 .row{min-width:100%}body#interactive-app
 footer.footer{display:none}body#interactive-app
-div#container{height:100%;overflow:hidden;margin-bottom:-4px;background:#f0f0f0}body#interactive-survey-graph
-div#container{height:100%;background:#f0f0f0}body.interactive-survey-graph
+div#container{height:100%;overflow:hidden;margin-bottom:-4px;background:#f0f0f0}body#in-depth-statistics
+div#container{height:100%;background:#f0f0f0}body.in-depth-statistics
 footer.footer{display:none}div.coach-block{height:100%;left:0;position:absolute;top:0;width:100%;z-index:9999999999999}div.coach-overlay{bottom:0;left:0;overflow:auto;position:absolute;right:0;top:0;z-index:998}div.coach-overlay
 .coached{position:absolute;z-index:1}div.coach-overlay .coached
 p{font-size:14px;font-size: .875rem;line-height:18px;line-height:1.125rem;color:#999;width:250px}div.coach-overlay .coached

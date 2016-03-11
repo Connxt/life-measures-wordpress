@@ -1182,6 +1182,11 @@ select {
         width: 16.63333%;
     }
 
+    .large-4-half {
+        position: relative;
+        width: 20%;
+    }
+
     .large-5 {
         position: relative;
         width: 41.66667%;
@@ -7914,6 +7919,9 @@ table tr td p {
 table tr:first-of-type td {
     border-bottom: 1px #ccc solid;
 }
+.dimension.freedom_and_opportunity{
+    background-color: #4e5aa2;
+}
 
 .dim.opportunity,.dimension.opportunity {
     background-color: #4e5aa2;
@@ -8589,7 +8597,7 @@ section.dimensions ul.owl-carousel {
 section.dimensions a.dimension,section.dimensions li.slide div.dimension {
     border: 5px solid #f1f1f1;
     display: block;
-    height: 300px;
+    height: 340px;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -9038,15 +9046,15 @@ footer .copyright {
     transition-timing-function: ease-in-out;
 }
 
-body#indices section.dimensions .owl-wrapper-outer {
+body#constructing-the-measures section.dimensions .owl-wrapper-outer {
     padding-bottom: 20px;
 }
 
-body#indices section.dimensions .owl-wrapper-outer .dimension {
+body#constructing-the-measures section.dimensions .owl-wrapper-outer .dimension {
     /*padding-top: 44px;*/
 }
 
-body#indices section.dimensions .owl-wrapper-outer .dimension h3 {
+body#constructing-the-measures section.dimensions .owl-wrapper-outer .dimension h3 {
     /*background: 0 0;
     font-size: 30px;
     font-size: 1.875rem;
@@ -9057,13 +9065,13 @@ body#indices section.dimensions .owl-wrapper-outer .dimension h3 {
     /*i remove this because its messing with the design in the constructing the measures page components icons*/
 }
 
-body#indices section.dimensions .owl-wrapper-outer .dimension hr {
+body#constructing-the-measures section.dimensions .owl-wrapper-outer .dimension hr {
     background-color: #fff;
     margin: 20px auto;
     opacity: .25;
 }
 
-body#indices section.dimensions .owl-wrapper-outer .dimension p {
+body#constructing-the-measures section.dimensions .owl-wrapper-outer .dimension p {
     color: #fff;
 }
 
@@ -9457,16 +9465,16 @@ body#interactive-map div#container {
 /*end interactive-map settings*/
 
 /*interactive-app settings*/
-body#interactive-app{
+body#your-perfect-place{
     overflow: hidden;
 }
-body#interactive-app header .row {
+body#your-perfect-place header .row {
     min-width: 100%;
 }
-body#interactive-app footer.footer {
+body#your-perfect-place footer.footer {
     display: none;
 }
-body#interactive-app div#container {
+body#your-perfect-place div#container {
     height: 100%;
     overflow: hidden;
     margin-bottom: -4px;
@@ -9474,11 +9482,11 @@ body#interactive-app div#container {
 }
 /*end interactive-app settings*/
 /*gragh settings*/
-body#interactive-survey-graph div#container{
+body#in-depth-statistics div#container{
     height: 100%;
     background: #f0f0f0;
 }
-body.interactive-survey-graph footer.footer{
+body.in-depth-statistics footer.footer{
     display: none;
 }
 /*end graph*/
@@ -11102,11 +11110,11 @@ body#results #content section .chart {
     width: 820px;
 }
 
-body#research header.title-group {
+body#learn-about-the-research header.title-group {
     margin: 60px auto;
 }
 
-body#research header.title-group h2 {
+body#learn-about-the-research header.title-group h2 {
     width: auto;
 }
 
@@ -11597,12 +11605,12 @@ div.image-container{
 }
 div.dimension-components h4{
     font-size: 12px;
-    line-height: 8px;
+    line-height: 12px;
     font-family: "Source Sans Pro",sans-serif;
     color:#fff;
 }
 div.dimension-components{
-    margin-top: 20px;
+    padding:10px;
 }
 
 /*faqs page*/
@@ -11795,40 +11803,40 @@ body#interactive-map #content section.cards .card.flipped .back {
  /**
   * Resuts Page Quiz
   */
- body#quiz_results{
+ body#quiz-results{
     /*overflow: hidden;*/
  }
- body#quiz_results div#container{
+ body#quiz-results div#container{
     /*background: #F0F0F0 none repeat scroll 0% 0%;*/
     height: 100%;
     /*overflow: hidden;*/
  }
- body#quiz_results footer{
+ body#quiz-results footer{
     display: none;
  }
- body#quiz_results .site-content > #content > table{
+ body#quiz-results .site-content > #content > table{
     width:100%;
     margin: 0 auto;
  }
- body#quiz_results .site-content > #content > table th{
+ body#quiz-results .site-content > #content > table th{
     padding: 10px;
  }
- body#quiz_results .site-content > #content > table th > h2,h5 {
+ body#quiz-results .site-content > #content > table th > h2,h5 {
     text-align: center;
  }
- body#quiz_results .site-content > #content > table th > h5{
+ body#quiz-results .site-content > #content > table th > h5{
     text-transform: none;
  }
- body#quiz_results .site-content > #content > table tr > td{
+ body#quiz-results .site-content > #content > table tr > td{
     padding: 10px;
  }
- body#quiz_results .site-content > #content > table tr > td > h3 span{
+ body#quiz-results .site-content > #content > table tr > td > h3 span{
     color:#04366F;
  }
- body#quiz_results .site-content > #content > table tr > td:first-child > h4{
+ body#quiz-results .site-content > #content > table tr > td:first-child > h4{
     font-weight: normal;
  }
- body#quiz_results .site-content > #content > table tr > td:last-child > h4{
+ body#quiz-results .site-content > #content > table tr > td:last-child > h4{
     text-transform: uppercase;
     font-weight: normal;
     width: 75%;

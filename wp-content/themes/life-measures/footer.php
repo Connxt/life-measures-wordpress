@@ -102,8 +102,7 @@
 			                        </li>
 			                        <li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-122 has-dropdown">
 			                            <a href="<?php echo home_url(); ?>/your-quality-of-life-measures">Your Quality Of Life Measures</a>
-			                        </ul>
-
+			                        </li>
 			                    </ul>
 			                </div> 
 			            </nav>

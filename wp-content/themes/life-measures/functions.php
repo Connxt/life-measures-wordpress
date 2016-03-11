@@ -98,8 +98,8 @@ function qol_header_styles() {
 }
 
 // Load QOL survey page scripts
-function qol_page_survey_scripts() {
-    if (is_page('survey')) {
+function qol_page_in_depth_statistics_scripts() {
+    if (is_page('in-depth-statistics')) {
         wp_register_script('canvasjs', get_template_directory_uri() . '/js/canvasjs/jquery.canvasjs.min.js', array(), '1.0.0');
         wp_enqueue_script('canvasjs'); // Enqueue it!
 
@@ -112,14 +112,14 @@ function qol_page_survey_scripts() {
         wp_register_script('as_pie_progress', get_template_directory_uri() . '/js/as_pie_progress/jquery-asPieProgress.js', array(), '1.0.0');
         wp_enqueue_script('as_pie_progress'); // Enqueue it!
 
-        wp_register_script('graph', get_template_directory_uri() . '/js/app/graph.js', array(), '1.0.0');
+        wp_register_script('graph', get_template_directory_uri() . '/js/app/in-depth-statistics.js', array(), '1.0.0');
         wp_enqueue_script('graph'); // Enqueue it!
     }
 }
 
 // Load QOL survey page styles
-function qol_page_survey_styles(){
-    if (is_page('survey')) {
+function qol_page_in_depth_statistics_styles(){
+    if (is_page('in-depth-statistics')) {
         wp_register_style('ass_pie_progress', get_template_directory_uri() . '/css/as_pie_progress/progress.css', array(), '1.0');
         wp_enqueue_style('ass_pie_progress'); // Enqueue it!
 
@@ -129,7 +129,7 @@ function qol_page_survey_styles(){
         wp_register_style('jquery_selectric', get_template_directory_uri() . '/css/jquery_selectric/selectric.css', array(), '1.0');
         wp_enqueue_style('jquery_selectric'); // Enqueue it!
 
-        wp_register_style('graph', get_template_directory_uri() . '/css/app/graph.css', array(), '1.0');
+        wp_register_style('graph', get_template_directory_uri() . '/css/app/in-depth-statistics.css', array(), '1.0');
         wp_enqueue_style('graph'); // Enqueue it!
 
     }
@@ -471,7 +471,7 @@ add_action('get_header', 'qol_header_styles'); // Add Theme Stylesheet
 add_action('get_footer', 'qol_footer_scripts'); // Add Theme Stylesheet
 
 // QOL ADD ACTIONS FOR PAGES
-add_action('get_header', 'qol_page_survey_styles'); // Add Conditional Page Styles 
+add_action('get_header', 'qol_page_in_depth_statistics_styles'); // Add Conditional Page Styles 
 add_action('get_header', 'qol_page_your_perfect_place_styles');// Add Conditional Page Styles
 add_action('get_header', 'qol_page_interactive_map_styles');// Add Conditional Page Styles
 add_action('get_header', 'qol_page_your_quality_of_life_measures_styles');// Add Conditional Page Styles
@@ -480,7 +480,7 @@ add_action('get_header', 'qol_results_page_styles');// Add Conditional Page Styl
 //
 
 add_action('get_footer', 'qol_page_your_quality_of_life_measures_scripts', 1);// Add Conditional Page Styles  
-add_action('get_footer', 'qol_page_survey_scripts'); // Add Conditional Page Scripts
+add_action('get_footer', 'qol_page_in_depth_statistics_scripts'); // Add Conditional Page Scripts
 add_action('get_footer', 'qol_page_your_perfect_place_scripts'); // Add Conditional Page Scripts
 add_action('get_footer', 'qol_page_interactive_map_scripts'); // Add Conditional Page Scripts
 

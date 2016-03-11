@@ -106,7 +106,7 @@ function(a) {
 }(jQuery),
 function(a) {
 	try {
-		var b = "blog";
+		var b = "updates";
 		a.fn[b] = function(c) {
 			function d() {
 				g = f.view.find("#main"), g.isotope({
@@ -121,7 +121,7 @@ function(a) {
 			}
 
 			function e() {
-				a(".filter-box a.filter-link, body.blog #menu-footer a[href*='/updates/#']").on("click", function(b) {
+				a(".filter-box a.filter-link, body.updates #menu-footer a[href*='/updates/#']").on("click", function(b) {
 					var c = a(this),
 						d = a(this).attr("href");
 					if (d = d.slice(d.indexOf("#") + 1), window.location.hash = d, c.parents("#menu-footer") && a("html,body").animate({
@@ -334,7 +334,11 @@ function(a) {
 					b && a("html, body").animate({
 						scrollTop: a("a[name='" + b + "']").offset().top
 					}, 500, "swing")
-				})
+				}), 
+				// added this for the api documentation page to toggle parameters section
+				a(".parameter-link a").on("click", function(b) {
+                    b.preventDefault(), a(this).find("i").fadeToggle(), a(this).parent().siblings(".parameter-list").slideToggle()
+                })
 			}
 			var f = this;
 			f.view = a(this), f.view.data(b, f), f.defaults = {}, f.initialize = function() {

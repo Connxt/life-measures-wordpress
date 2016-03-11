@@ -3,8 +3,6 @@
 	template name: interactive-map-connext
 */
 get_header(); ?>
-
-<body id="interactive-map" class="page page-id-41 page-child parent-pageid-23 page-template-default win8 chrome chrome-0">
 	<div class="interactive-map-container clearfix">
 		<div class="interactive-map-sidebar-container">
 			<section class="interactive-map-sidebar">
@@ -18,13 +16,26 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="sidebar-body">
+					<!-- US DIMENSIONS -->
 					<div id="us_dimensions" class="dimension-toggle-us">
 						<ul>
 							<li>
-								<div id="us_dimension_opportunity" class="dimension opportunity active">
-									<div class="dimension-title-container opportunity">
+								<div id="us_dimension_community_and_relationships" class="dimension community_and_relationships active">
+									<div class="dimension-title-container community_and_relationships">
+										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-CommunityRelationships.png" id="image-container">
+										<p>Community & Relationships</p>
+										<i class="entypo circled-info" name="tooltip_us_dimension_community_and_relationships"></i>
+									</div>
+									<div class="selectedbox">
+										<span class="check"></span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div id="us_dimension_freedom_and_opportunity" class="dimension freedom_and_opportunity active">
+									<div class="dimension-title-container freedom_and_opportunity">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Opportunity.png" id="image-container">
-										<p>Opportunity</p>
+										<p>Freedom & Opportunity</p>
 										<i class="entypo circled-info" name="tooltip_us_dimension_opportunity"></i>
 									</div>
 									<div class="selectedbox">
@@ -38,30 +49,6 @@ get_header(); ?>
 										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-HealthEnvironment.png" id="image-container">
 										<p>Health & Environment</p>
 										<i class="entypo circled-info" name="tooltip_us_dimension_health_and_environment"></i>
-									</div>
-									<div class="selectedbox">
-										<span class="check"></span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div id="us_dimension_freedom" class="dimension freedom active">
-									<div class="dimension-title-container freedom">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Freedom.png" id="image-container">
-										<p>Freedom</p>
-										<i class="entypo circled-info" name="tooltip_us_dimension_freedom"></i>
-									</div>
-									<div class="selectedbox">
-										<span class="check"></span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div id="us_dimension_community_and_relationships" class="dimension community_and_relationships active">
-									<div class="dimension-title-container community_and_relationships">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-CommunityRelationships.png" id="image-container">
-										<p>Community & Relationships</p>
-										<i class="entypo circled-info" name="tooltip_us_dimension_community_and_relationships"></i>
 									</div>
 									<div class="selectedbox">
 										<span class="check"></span>
@@ -94,13 +81,26 @@ get_header(); ?>
 							</li>
 						</ul>
 					</div>
+					<!-- WORLD DIMENSIONS -->
 					<div id="world_dimensions" class="dimension-toggle-world" style="display: none;">
 						<ul>
 							<li>
-								<div id="world_dimension_opportunity" class="dimension opportunity active">
-									<div class="dimension-title-container opportunity">
+								<div id="world_dimension_community_and_relationships" class="dimension community_and_relationships active">
+									<div class="dimension-title-container community_and_relationships">
+										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-CommunityRelationships.png" id="image-container">
+										<p>Community & Relationships</p>
+										<i class="entypo circled-info" name="tooltip_world_dimension_community_and_relationships"></i>
+									</div>
+									<div class="selectedbox">
+										<span class="check"></span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div id="world_dimension_freedom_and_opportunity" class="dimension freedom_and_opportunity active">
+									<div class="dimension-title-container freedom_and_opportunity">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Opportunity.png" id="image-container">
-										<p>Opportunity</p>
+										<p>Freedom & Opportunity</p>
 										<i class="entypo circled-info" name="tooltip_world_dimension_opportunity"></i>
 									</div>
 									<div class="selectedbox">
@@ -114,30 +114,6 @@ get_header(); ?>
 										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-HealthEnvironment.png" id="image-container">
 										<p>Health & Environment</p>
 										<i class="entypo circled-info" name="tooltip_world_dimension_health_and_environment"></i>
-									</div>
-									<div class="selectedbox">
-										<span class="check"></span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div id="world_dimension_freedom" class="dimension freedom active">
-									<div class="dimension-title-container freedom">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Freedom.png" id="image-container">
-										<p>Freedom</p>
-										<i class="entypo circled-info" name="tooltip_world_dimension_freedom"></i>
-									</div>
-									<div class="selectedbox">
-										<span class="check"></span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div id="world_dimension_community_and_relationships" class="dimension community_and_relationships active">
-									<div class="dimension-title-container community_and_relationships">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-CommunityRelationships.png" id="image-container">
-										<p>Community & Relationships</p>
-										<i class="entypo circled-info" name="tooltip_world_dimension_community_and_relationships"></i>
 									</div>
 									<div class="selectedbox">
 										<span class="check"></span>
@@ -170,24 +146,59 @@ get_header(); ?>
 							</li>
 						</ul>
 					</div>
+					<!-- US COMPONENTS -->
 					<div id="us_components" class="components-toggle-us" style="display: none;">
 						<ul>
-							<li id="us_component_container_opportunity" class="us_opportunity">
-								<div class="dimension opportunity active" id="us_opportunity">
-									<div class="dimension-title-container opportunity">
+							<li id="us_component_container_community_and_relationships" class="us_community_and_relationships">
+								<div class="dimension community_and_relationships active">
+									<div class="dimension-title-container community_and_relationships">
+										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-CommunityRelationships.png" id="image-container">
+										<p>Community & Relationships</p>
+										<i class="entypo circled-info" name="tooltip_us_dimension_community_and_relationships"></i>
+									</div>
+									<div class="selectedbox">
+										<span class="check"></span>
+									</div>
+								</div>
+								<ul>
+									<li>
+										<div id="us_component_community_life" class="components-us us_community_life active">
+											<div class="components-title-container">
+												<p>Community Life</p>
+											</div>
+											<div class="selectedbox">
+												<span class="check"></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div id="us_component_family_life" class="components-us us_family_life active">
+											<div class="components-title-container">
+												<p>Family Life</p>
+											</div>
+											<div class="selectedbox">
+												<span class="check"></span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li id="us_component_container_freedom_and_opportunity" class="us_opportunity">
+								<div class="dimension freedom_and_opportunity active">
+									<div class="dimension-title-container freedom_and_opportunity">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Opportunity.png" id="image-container">
-										<p>Opportunity</p>
+										<p>Freedom & Opportunity</p>
 										<i class="entypo circled-info" name="tooltip_us_dimension_opportunity"></i>
 									</div>
 									<div class="selectedbox">
 										<span class="check"></span>
 									</div>
 								</div>
-								<ul id="us_opportunity_components">
+								<ul id="us_freedom_and_opportunity_components">
 									<li>
-										<div id="us_component_poverty" class="components-us us_poverty active">
+										<div id="us_component_personal_freedom" class="components-us us_personal_freedom active">
 											<div class="components-title-container">
-												<p>Poverty</p>
+												<p>Personal Freedom</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -195,9 +206,9 @@ get_header(); ?>
 										</div>
 									</li>
 									<li>
-										<div id="us_component_employment" class="components-us us_employment active">
+										<div id="us_component_economic_freedom" class="components-us us_economic_freedom active">
 											<div class="components-title-container">
-												<p>Employment</p>
+												<p>Economic Freedom</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -205,9 +216,19 @@ get_header(); ?>
 										</div>
 									</li>
 									<li>
-										<div id="us_component_community_vitality" class="components-us us_community_vitality active">
+										<div id="us_component_work" class="components-us us_work active">
 											<div class="components-title-container">
-												<p>Community Vitality</p>
+												<p>Work</p>
+											</div>
+											<div class="selectedbox">
+												<span class="check"></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div id="us_component_local_opportunity" class="components-us us_local_opportunity active">
+											<div class="components-title-container">
+												<p>Local Opportunity</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -270,74 +291,6 @@ get_header(); ?>
 									</li>
 								</ul>
 							</li>
-							<li id="us_component_container_freedom" class="us_freedom">
-								<div class="dimension freedom active">
-									<div class="dimension-title-container freedom">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Freedom.png" id="image-container">
-										<p>Freedom</p>
-										<i class="entypo circled-info" name="tooltip_us_dimension_freedom"></i>
-									</div>
-									<div class="selectedbox">
-										<span class="check"></span>
-									</div>
-								</div>
-								<ul>
-									<li>
-									<div id="us_component_personal_freedom" class="components-us us_personal_freedom active">
-											<div class="components-title-container">
-												<p>Personal Freedom</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="us_component_economic_freedom" class="components-us us_economic_freedom active">
-											<div class="components-title-container">
-												<p>Economic Freedom</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li id="us_component_container_community_and_relationships" class="us_community_and_relationships">
-								<div class="dimension community_and_relationships active">
-									<div class="dimension-title-container community_and_relationships">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-CommunityRelationships.png" id="image-container">
-										<p>Community & Relationships</p>
-										<i class="entypo circled-info" name="tooltip_us_dimension_community_and_relationships"></i>
-									</div>
-									<div class="selectedbox">
-										<span class="check"></span>
-									</div>
-								</div>
-								<ul>
-									<li>
-										<div id="us_component_community_life" class="components-us us_community_life active">
-											<div class="components-title-container">
-												<p>Community Life</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="us_component_family_life" class="components-us us_family_life active">
-											<div class="components-title-container">
-												<p>Family Life</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</li>
 							<li id="us_component_container_living_standard" class="us_living_standard">
 								<div class="dimension living_standard active">
 									<div class="dimension-title-container living_standard">
@@ -351,9 +304,9 @@ get_header(); ?>
 								</div>
 								<ul>
 									<li>
-										<div id="us_component_current_living_standard" class="components-us us_current_living_standard active">
+										<div id="us_component_income" class="components-us us_income active">
 											<div class="components-title-container">
-												<p>Current Living Standard</p>
+												<p>Income</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -361,9 +314,19 @@ get_header(); ?>
 										</div>
 									</li>
 									<li>
-										<div id="us_component_improvement_in_living_standard" class="components-us us_improvement_in_living_standard active">
+										<div id="us_component_poverty" class="components-us us_poverty active">
 											<div class="components-title-container">
-												<p>Improvement in Living Standard</p>
+												<p>Poverty</p>
+											</div>
+											<div class="selectedbox">
+												<span class="check"></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div id="us_component_living_standard_perceptions" class="components-us us_living_standard_perceptions active">
+											<div class="components-title-container">
+												<p>Living Standard Perceptions</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -385,9 +348,9 @@ get_header(); ?>
 								</div>
 								<ul>
 									<li>
-										<div id="us_component_violent_crime_rate" class="components-us us_violent_crime_rate active">
+										<div id="us_component_crime" class="components-us us_crime active">
 											<div class="components-title-container">
-												<p>Violent Crime Rate</p>
+												<p>Crime</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -395,29 +358,9 @@ get_header(); ?>
 										</div>
 									</li>
 									<li>
-										<div id="us_component_property_crime_rate" class="components-us us_property_crime_rate active">
+										<div id="us_component_peace_and_security_perceptions" class="components-us us_peace_and_security_perceptions active">
 											<div class="components-title-container">
-												<p>Property Crime Rate</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="us_component_perceived_local_safety" class="components-us us_perceived_local_safety active">
-											<div class="components-title-container">
-												<p>Perceived Local Safety</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="us_component_trust" class="components-us us_trust active">
-											<div class="components-title-container">
-												<p>Trust</p>
+												<p>Peace and Security Perceptions</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -428,13 +371,48 @@ get_header(); ?>
 							</li>
 						</ul>
 					</div>
+					<!-- WORLD COMPONENTS -->
 					<div id="world_components" class="components-toggle-world" style="display: none;">
 						<ul>
+							<li id="world_component_container_community_and_relationships" class="world_community_and_relationships">
+								<div class="dimension community_and_relationships active" id="world_community_and_relationships">
+									<div class="dimension-title-container community_and_relationships">
+										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-CommunityRelationships.png" id="image-container">
+										<p>Community & Relationships</p>
+										<i class="entypo circled-info" name="tooltip_world_dimension_community_and_relationships"></i>
+									</div>
+									<div class="selectedbox">
+										<span class="check"></span>
+									</div>
+								</div>
+								<ul>
+									<li>
+										<div id="world_component_community_life" class="components-world world_community_life active">
+											<div class="components-title-container">
+												<p>Community Life</p>
+											</div>
+											<div class="selectedbox">
+												<span class="check"></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div id="world_component_family_life" class="components-world world_family_life active">
+											<div class="components-title-container">
+												<p>Family Life</p>
+											</div>
+											<div class="selectedbox">
+												<span class="check"></span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
 							<li id="world_component_container_opportunity" class="world_opportunity">
-								<div class="dimension opportunity active" id="world_opportunity">
-									<div class="dimension-title-container opportunity">
+								<div class="dimension freedom_and_opportunity active" id="world_opportunity">
+									<div class="dimension-title-container freedom_and_opportunity">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Opportunity.png" id="image-container">
-										<p>Opportunity</p>
+										<p>Freedom & Opportunity</p>
 										<i class="entypo circled-info" name="tooltip_world_dimension_opportunity"></i>
 									</div>
 									<div class="selectedbox">
@@ -443,9 +421,9 @@ get_header(); ?>
 								</div>
 								<ul>
 									<li>
-										<div id="world_component_poverty" class="components-world world_poverty active">
+										<div id="world_component_political_freedom" class="components-world world_political_freedom active">
 											<div class="components-title-container">
-												<p>Poverty</p>
+												<p>Political Freedom</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -453,9 +431,9 @@ get_header(); ?>
 										</div>
 									</li>
 									<li>
-										<div id="world_component_employment" class="components-world world_employment active">
+										<div id="world_component_civil_liberties" class="components-world world_civil_liberties active">
 											<div class="components-title-container">
-												<p>Employment</p>
+												<p>Civil Liberties</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -463,9 +441,29 @@ get_header(); ?>
 										</div>
 									</li>
 									<li>
-										<div id="world_component_community_basics" class="components-world world_community_basics active">
+										<div id="world_component_religious_freedom" class="components-world world_religious_freedom active">
 											<div class="components-title-container">
-												<p>Community Basics</p>
+												<p>Religious Freedom</p>
+											</div>
+											<div class="selectedbox">
+												<span class="check"></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div id="world_component_economic_freedom" class="components-world world_economic_freedom active">
+											<div class="components-title-container">
+												<p>Economic Freedom</p>
+											</div>
+											<div class="selectedbox">
+												<span class="check"></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div id="world_component_perceived_opportunities" class="components-world world_perceived_opportunities active">
+											<div class="components-title-container">
+												<p>Perceived Opportunities</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -476,6 +474,16 @@ get_header(); ?>
 										<div id="world_component_entrepreneurship" class="components-world world_entrepreneurship active">
 											<div class="components-title-container">
 												<p>Entrepreneurship</p>
+											</div>
+											<div class="selectedbox">
+												<span class="check"></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div id="world_component_employment" class="components-world world_employment active">
+											<div class="components-title-container">
+												<p>Employment</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -528,104 +536,6 @@ get_header(); ?>
 									</li>
 								</ul>
 							</li>
-							<li id="world_component_container_freedom" class="world_freedom">
-								<div class="dimension freedom active" id="world_freedom">
-									<div class="dimension-title-container freedom">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Freedom.png" id="image-container">
-										<p>Freedom</p>
-										<i class="entypo circled-info" name="tooltip_world_dimension_freedom"></i>
-									</div>
-									<div class="selectedbox">
-										<span class="check"></span>
-									</div>
-								</div>
-								<ul>
-									<li>
-										<div id="world_component_political_freedom" class="components-world world_political_freedom active">
-											<div class="components-title-container">
-												<p>Political Freedom</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="world_component_civil_liberties" class="components-world world_civil_liberties active">
-											<div class="components-title-container">
-												<p>Civil Liberties</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="world_component_religious_freedom" class="components-world world_religious_freedom active">
-											<div class="components-title-container">
-												<p>Religious Freedom</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="world_component_economic_freedom" class="components-world world_economic_freedom active">
-											<div class="components-title-container">
-												<p>Economic Freedom</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="world_component_perceived_freedom" class="components-world world_perceived_freedom active">
-											<div class="components-title-container">
-												<p>Perceived Freedom</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li id="world_component_container_community_and_relationships" class="world_community_and_relationships">
-								<div class="dimension community_and_relationships active" id="world_community_and_relationships">
-									<div class="dimension-title-container community_and_relationships">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-CommunityRelationships.png" id="image-container">
-										<p>Community & Relationships</p>
-										<i class="entypo circled-info" name="tooltip_world_dimension_community_and_relationships"></i>
-									</div>
-									<div class="selectedbox">
-										<span class="check"></span>
-									</div>
-								</div>
-								<ul>
-									<li>
-										<div id="world_component_community_life" class="components-world world_community_life active">
-											<div class="components-title-container">
-												<p>Community Life</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="world_component_family_life" class="components-world world_family_life active">
-											<div class="components-title-container">
-												<p>Family Life</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</li>
 							<li id="world_component_container_living_standard" class="living_standard">
 								<div class="dimension living_standard active" id="world_living_standard">
 									<div class="dimension-title-container living_standard">
@@ -639,9 +549,9 @@ get_header(); ?>
 								</div>
 								<ul>
 									<li>
-										<div id="world_component_current_living_standard" class="components-world world_current_living_standard active">
+										<div id="world_component_income" class="components-world world_income active">
 											<div class="components-title-container">
-												<p>Current Living Standard</p>
+												<p>Income</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -649,9 +559,19 @@ get_header(); ?>
 										</div>
 									</li>
 									<li>
-										<div id="world_component_improvement_in_living_standard" class="components-world world_improvement_in_living_standard active">
+										<div id="world_component_poverty" class="components-world world_poverty active">
 											<div class="components-title-container">
-												<p>Improvement in Living standard</p>
+												<p>Poverty</p>
+											</div>
+											<div class="selectedbox">
+												<span class="check"></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div id="world_component_resources" class="components-world world_resources active">
+											<div class="components-title-container">
+												<p>Resources</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>

@@ -12,6 +12,7 @@
    	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery/jquery.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_ui/jquery-ui-1.11.4.min.js"></script>
 	</head>
+	<body id="<?php global $post; echo $post->post_name; ?>" <?php body_class( $class ); ?> >
 		<div id="nav__mobile" style="display:none;">
     		<div class="menu-main-container">
 		        <ul id="menu-main" class="menu">
@@ -38,7 +39,7 @@
 		                        <a href="<?php echo home_url(); ?>/interactive-map">Interactive Map</a>
 		                    </li>
 		                    <li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149">
-		                        <a href="<?php echo home_url(); ?>/survey">Survey</a>
+		                        <a href="<?php echo home_url(); ?>/in-depth-statistics">In-Depth Statistics</a>
 		                    </li>
 		                    <li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149">
 		                        <a href="<?php echo home_url(); ?>/your-perfect-place">Your Perfect Place</a>
@@ -107,7 +108,7 @@
 			                                <a href="<?php echo home_url(); ?>/interactive-map">Interactive Map</a>
 			                            </li>
 			                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149">
-			                                <a href="<?php echo home_url(); ?>/survey">Survey</a>
+			                                <a href="<?php echo home_url(); ?>/in-depth-statistics">In-Depth Statistics</a>
 			                            </li>
 			                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149">
 			                                <a href="<?php echo home_url(); ?>/your-perfect-place">Your Perfect Place</a>

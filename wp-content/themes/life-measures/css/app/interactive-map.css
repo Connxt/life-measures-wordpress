@@ -239,8 +239,8 @@ div.dimension.active div.dimension-title-container > p,
 div.dimension.active div.dimension-title-container > p{
     color:#fff;
 }
-div.dimension.active > div.dimension-title-container.opportunity,
-div.dimension.active > div.dimension-title-container.opportunity{
+div.dimension.active > div.dimension-title-container.freedom_and_opportunity,
+div.dimension.active > div.dimension-title-container.freedom_and_opportunity{
     background-color: #4E5AA2;
 }
 div.dimension.active > div.dimension-title-container.health_and_environment,
@@ -452,7 +452,7 @@ div.sidebar-body > div.components-toggle-world > ul > li > div.dimension > div.s
     color: #fff;
     font-family: EntypoRegular;
     font-size: 32px;
-    line-height: 8px;
+    line-height: 5px;
     position: absolute;
     right: 0px;
     left: 0px;
@@ -566,24 +566,48 @@ div.components-world > div.components-title-container{
 /*--------------------------------------------------------------------*/
 
 /**
- *poverty_components_world
+ *community_and_relationships_world
  */
-div.components-world.world_poverty.active > div.components-title-container{
+div.components-world.world_community_life.active > div.components-title-container{
+    background-color: #F02C39;
+    color:#fff;
+}
+div.components-world.world_family_life.active > div.components-title-container{
+    background-color: #FF303E;
+    color:#fff;
+}
+/**
+ *freedom_and_opportunity_components_world
+ */
+div.components-world.world_political_freedom.active > div.components-title-container{
     background-color: #5663B2;
     color:#fff;
 }
-div.components-world.world_employment.active > div.components-title-container{
+div.components-world.world_civil_liberties.active > div.components-title-container{
     background-color: #5E6CC2;
     color:#fff;
 }
-div.components-world.world_community_basics.active > div.components-title-container{
+div.components-world.world_religious_freedom.active > div.components-title-container{
     background-color: #6575D3;
     color:#fff;
 }
-div.components-world.world_entrepreneurship.active > div.components-title-container{
+div.components-world.world_economic_freedom.active > div.components-title-container{
     background-color: #6D7EE3;
     color:#fff;
 }
+div.components-world.world_perceived_opportunities.active > div.components-title-container{
+    background-color: #6d7eed;
+    color:#fff;
+}
+div.components-world.world_entrepreneurship.active > div.components-title-container{
+    background-color: #6d7ef1;
+    color:#fff;
+}
+div.components-world.world_employment.active > div.components-title-container{
+    background-color: #6d7ef6;
+    color:#fff;
+}
+
 /**
  *health_and_environment_world
  */
@@ -599,50 +623,19 @@ div.components-world.world_environmental_health.active > div.components-title-co
     background-color: #FF8500;
     color:#fff;
 }
-
-/**
- *freedom_World
- */
-div.components-world.world_political_freedom.active > div.components-title-container{
-    background-color: #00BDFF;
-    color:#fff;
-}
-div.components-world.world_civil_liberties.active > div.components-title-container{
-    background-color: #00CEFF;
-    color:#fff;
-}
-div.components-world.world_religious_freedom.active > div.components-title-container{
-    background-color: #00E0FF;
-    color:#fff;
-}
-div.components-world.world_economic_freedom.active > div.components-title-container{
-    background-color: #00F1FF;
-    color:#fff;
-}
-div.components-world.world_perceived_freedom.active > div.components-title-container{
-    background-color: #0FF;
-    color:#fff;
-}
-/**
- *community_and_relationships_world
- */
-div.components-world.world_community_life.active > div.components-title-container{
-    background-color: #F02C39;
-    color:#fff;
-}
-div.components-world.world_family_life.active > div.components-title-container{
-    background-color: #FF303E;
-    color:#fff;
-}
 /**
  *living_standard_world
  */
-div.components-world.world_current_living_standard.active > div.components-title-container{
+div.components-world.world_income.active > div.components-title-container{
     background-color: #00A75E;
     color:#fff;
 }
-div.components-world.world_improvement_in_living_standard.active > div.components-title-container{
+div.components-world.world_poverty.active > div.components-title-container{
     background-color: #00B666;
+    color:#fff;
+}
+div.components-world.world_resources.active > div.components-title-container{
+    background-color: #00b66c;
     color:#fff;
 }
 /**
@@ -678,24 +671,38 @@ div.components-world.world_bureaucracy_quality.active > div.components-title-con
  */
 
 /*--------------------------------------------------------------------*/
-
 /**
- *poverty_components_us
+ *community_and_relationships
  */
-div.components-us.us_poverty.active > div.components-title-container{
+div.components-us.us_community_life.active > div.components-title-container{
+    background-color: #F02C39;
+    color:#fff;
+}
+div.components-us.us_family_life.active > div.components-title-container{
+    background-color: #FF303E;
+    color:#fff;
+}
+/**
+ *freedom_and_opportunity_components_us
+ */
+div.components-us.us_personal_freedom.active > div.components-title-container{
     background-color: #5663B2;
     color:#fff;
 }
-div.components-us.us_employment.active > div.components-title-container{
+div.components-us.us_economic_freedom.active > div.components-title-container{
     background-color: #5E6CC2;
     color:#fff;
 }
-div.components-us.us_community_vitality.active > div.components-title-container{
+div.components-us.us_work.active > div.components-title-container{
     background-color: #6575D3;
     color:#fff;
 }
-div.components-us.us_education.active > div.components-title-container{
+div.components-us.us_local_opportunity.active > div.components-title-container{
     background-color: #6D7EE3;
+    color:#fff;
+}
+div.components-us.us_education.active > div.components-title-container{
+    background-color: #6d7eed;
     color:#fff;
 }
 
@@ -715,58 +722,31 @@ div.components-us.us_environmental_health.active > div.components-title-containe
     color:#fff;
 }
 /**
- *freedom
- */
-div.components-us.us_personal_freedom.active > div.components-title-container{
-    background-color: #00BDFF;
-    color:#fff;
-}
-div.components-us.us_economic_freedom.active > div.components-title-container{
-    background-color: #00CEFF;
-    color:#fff;
-}
-/**
- *community_and_relationships
- */
-div.components-us.us_community_life.active > div.components-title-container{
-    background-color: #F02C39;
-    color:#fff;
-}
-div.components-us.us_family_life.active > div.components-title-container{
-    background-color: #FF303E;
-    color:#fff;
-}
-/**
  *living standard
  */
-div.components-us.us_current_living_standard.active > div.components-title-container{
+div.components-us.us_income.active > div.components-title-container{
     background-color: #00A75E;
     color:#fff;
 }
-div.components-us.us_improvement_in_living_standard.active > div.components-title-container{
+div.components-us.us_poverty.active > div.components-title-container{
     background-color: #00B666;
+    color:#fff;
+}
+div.components-us.us_living_standard_perceptions.active > div.components-title-container{
+    background-color: #00b66c;
     color:#fff;
 }
 /**
  *peace_and_security
  */
-div.components-us.us_violent_crime_rate.active > div.components-title-container{
+div.components-us.us_crime.active > div.components-title-container{
     background-color: #861C86;
     color:#fff;
 }
-div.components-us.us_property_crime_rate.active > div.components-title-container{
+div.components-us.us_peace_and_security_perceptions.active > div.components-title-container{
     background-color: #921E92;
     color:#fff;
 }
-div.components-us.us_perceived_local_safety.active > div.components-title-container{
-    background-color: #9F219F;
-    color:#fff;
-}
-div.components-us.us_trust.active > div.components-title-container{
-    background-color: #AB23AB;
-    color:#fff;
-}
-
 /** 
  *Maps section
  */
