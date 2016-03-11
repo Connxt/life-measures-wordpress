@@ -4,31 +4,62 @@
  * Results Page
  */
 
-/** 
- *Opportunity 
+/**
+ *Community and Relationships 
  */
-body#results .dim.poverty,.dimension.poverty {
-    background-color: rgb(86, 99, 178);;
+body#results .dim.community_life,.dimension.community_life {
+    background-color: rgb(240, 44, 57);
 }
 
-body#results .dim.employment,.dimension.employment {
-    background-color: rgb(94, 108, 194);
+body#results .dim.family_life,.dimension.family_life {
+    background-color: rgb(255, 48, 62);
 }
 
-body#results .dim.community_vitality,.dimension.community_vitality {
-    background-color: rgb(101, 117, 211);
+/** 
+ *Freedom and Opportunity 
+ */
+body#results .dim.personal_freedom,.dimension.personal_freedom, .dimension.political_freedom {
+    background-color: #5663B2;
 }
 
-body#results .dim.education,.dimension.education {
-    background-color: rgb(109, 126, 227);
+body#results .dim.civil_liberties,.dimension.civil_liberties {
+    background-color: #5E6CC2;
 }
 
-body#results .dim.community_basics,.dimension.community_basics {
-    background-color: rgb(101, 117, 211);
+body#results .dim.religious_freedom,.dimension.religious_freedom {
+    background-color: #6575D3;
+}
+
+body#results .dim.economic_freedom,.dimension.economic_freedom {
+    background-color: #6D7EE3;
+}
+
+body#results .dim.perceived_opportunities,.dimension.perceived_opportunities {
+    background-color: #6d7eed;
 }
 
 body#results .dim.entrepreneurship,.dimension.entrepreneurship {
-    background-color: rgb(109, 126, 227);
+    background-color: #6d7ef1;
+}
+
+body#results .dim.employment,.dimension.employment {
+    background-color: #6d7ef6;
+}
+
+body#results .dim.personal_freedom,.dimension.personal_freedom {
+    background-color: #5663B2;
+}
+
+body#results .dim.work,.dimension.work {
+    background-color: #6575D3;
+}
+
+body#results .dim.local_opportunity,.dimension.local_opportunity {
+    background-color: #6D7EE3;
+}
+
+body#results .dim.education,.dimension.education {
+    background-color: #6d7eed;
 }
 
 /** 
@@ -47,75 +78,29 @@ body#results .dim.environmental_health,.dimension.environmental_health {
 }
 
 /** 
- *Freedom 
- */
-body#results .dim.personal_freedom,.dimension.personal_freedom {
-    background-color: rgb(0, 189, 255);
-}
-
-body#results .dim.economic_freedom,.dimension.economic_freedom {
-    background-color: rgb(0, 189, 255);
-}
-
-body#results .dim.political_freedom,.dimension.political_freedom {
-    background-color: rgb(0, 189, 255);;
-}
-
-body#results .dim.civil_liberties,.dimension.civil_liberties {
-    background-color: rgb(0, 206, 255);
-}
-
-body#results .dim.religious_freedom,.dimension.religious_freedom {
-    background-color: rgb(0, 224, 255);
-}
-
-body#results .dim.economic_freedom,.dimension.economic_freedom {
-    background-color: rgb(0, 241, 255);
-}
-
-body#results .dim.perceived_freedom,.dimension.perceived_freedom {
-    background-color: rgb(0, 255, 255);
-}
-
-/**
- *Community and Relationships 
- */
-body#results .dim.community_life,.dimension.community_life {
-    background-color: rgb(240, 44, 57);
-}
-
-body#results .dim.family_life,.dimension.family_life {
-    background-color: rgb(255, 48, 62);
-}
-
-/** 
  *Living Standard 
  */
-body#results .dim.current_living_standard,.dimension.current_living_standard {
-    background-color: rgb(0, 167, 94);
+body#results .dim.income,.dimension.income {
+    background-color: #00A75E;
 }
 
-body#results .dim.improvement_in_living_standard,.dimension.improvement_in_living_standard {
-    background-color: rgb(0, 182, 102);
+body#results .dim.poverty,.dimension.poverty {
+    background-color: #00B666;
+}
+
+body#results .dim.resources,.dimension.resources, .dimension.living_standard_perceptions{
+    background-color: #00b66c;
 }
 
 /** 
  *Peace and Security 
  */
-body#results .dim.violent_crime_rate,.dimension.violent_crime_rate {
-    background-color: rgb(134, 28, 134);
+body#results .dim.crime,.dimension.crime {
+    background-color: #861C86;
 }
 
-body#results .dim.property_crime_rate,.dimension.property_crime_rate {
-    background-color: rgb(146, 30, 146);
-}
-
-body#results .dim.perceived_local_safety,.dimension.perceived_local_safety {
-    background-color: rgb(159, 33, 159);
-}
-
-body#results .dim.trust,.dimension.trust {
-    background-color: rgb(171, 35, 171);
+body#results .dim.peace_and_security_perceptions,.dimension.peace_and_security_perceptions {
+    background-color: #921E92;
 }
 
 body#results .dim.violence_and_ethnic_warfare,.dimension.violence_and_ethnic_warfare {
