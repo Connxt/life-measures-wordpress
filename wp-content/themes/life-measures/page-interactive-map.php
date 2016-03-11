@@ -408,7 +408,7 @@ get_header(); ?>
 									</li>
 								</ul>
 							</li>
-							<li id="world_component_container_opportunity" class="world_opportunity">
+							<li id="world_component_container_freedom_and_opportunity" class="world_opportunity">
 								<div class="dimension freedom_and_opportunity active" id="world_opportunity">
 									<div class="dimension-title-container freedom_and_opportunity">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Opportunity.png" id="image-container">
