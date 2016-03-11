@@ -400,7 +400,7 @@ h4{font-size:13px!important;font-size: .8125rem!important;margin:20px
 0 0}table tr td h4:first-of-type{margin:0}table tr td
 a{font-size:14px;font-size: .875rem}table tr td
 p{font-size:14px;font-size: .875rem;margin-bottom:15px!important}table tr:first-of-type
-td{border-bottom:1px #ccc solid}.dim.opportunity,.dimension.opportunity{background-color:#4e5aa2}.dim.opportunity .btn.flat,.dimension.opportunity
+td{border-bottom:1px #ccc solid}.dimension.freedom_and_opportunity{background-color:#4e5aa2}.dim.opportunity,.dimension.opportunity{background-color:#4e5aa2}.dim.opportunity .btn.flat,.dimension.opportunity
 .btn.flat{background-color:#444f8d}.dim.health_and_environment,.dimension.health_and_environment{background-color:#f60}.dim.health_and_environment .btn.flat,.dimension.health_and_environment
 .btn.flat{background-color:#e05600}.dim.freedom,.dimension.freedom{background-color:#00acff}.dim.freedom .btn.flat,.dimension.freedom
 .btn.flat{background-color:#0099e0}.dim.community_and_relationships,.dimension.community_and_relationships{background-color:#da2834}.dim.community_and_relationships .btn.flat,.dimension.community_and_relationships

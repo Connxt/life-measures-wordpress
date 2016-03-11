@@ -7,11 +7,11 @@ get_header(); ?>
 		<div class="interactive-map-sidebar-container">
 			<section class="interactive-map-sidebar">
 				<div class="sidebar-header">
-					<p>Select Dimensions or the Components of each Dimension</p>
+					<p>Select Foundations or the Components of each Foundation</p>
 				</div>
 				<div class="sidebar-toggle">
-					<div class="toggle-dark coach-idle" data-intro="Here, you select dimensions or components from the same dimension to compare." data-position="top">
-						<a class="btn-toggle left-side active" id="toggle_dimensions">DIMENSIONS</a>
+					<div class="toggle-dark coach-idle" data-intro="Here, you select foundations or components from the same foundation to compare." data-position="top">
+						<a class="btn-toggle left-side active" id="toggle_dimensions">FOUNDATIONS</a>
 						<a class="btn-toggle right-side" id="toggle_components">COMPONENTS</a>
 					</div>
 				</div>
@@ -36,7 +36,7 @@ get_header(); ?>
 									<div class="dimension-title-container freedom_and_opportunity">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Opportunity.png" id="image-container">
 										<p>Freedom & Opportunity</p>
-										<i class="entypo circled-info" name="tooltip_us_dimension_opportunity"></i>
+										<i class="entypo circled-info" name="tooltip_us_dimension_freedom_and_opportunity"></i>
 									</div>
 									<div class="selectedbox">
 										<span class="check"></span>
@@ -101,7 +101,7 @@ get_header(); ?>
 									<div class="dimension-title-container freedom_and_opportunity">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Opportunity.png" id="image-container">
 										<p>Freedom & Opportunity</p>
-										<i class="entypo circled-info" name="tooltip_world_dimension_opportunity"></i>
+										<i class="entypo circled-info" name="tooltip_world_dimension_freedom_and_opportunity"></i>
 									</div>
 									<div class="selectedbox">
 										<span class="check"></span>
@@ -188,7 +188,7 @@ get_header(); ?>
 									<div class="dimension-title-container freedom_and_opportunity">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Opportunity.png" id="image-container">
 										<p>Freedom & Opportunity</p>
-										<i class="entypo circled-info" name="tooltip_us_dimension_opportunity"></i>
+										<i class="entypo circled-info" name="tooltip_us_dimension_freedom_and_opportunity"></i>
 									</div>
 									<div class="selectedbox">
 										<span class="check"></span>
@@ -413,7 +413,7 @@ get_header(); ?>
 									<div class="dimension-title-container freedom_and_opportunity">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/white/Symbol-Opportunity.png" id="image-container">
 										<p>Freedom & Opportunity</p>
-										<i class="entypo circled-info" name="tooltip_world_dimension_opportunity"></i>
+										<i class="entypo circled-info" name="tooltip_world_dimension_freedom_and_opportunity"></i>
 									</div>
 									<div class="selectedbox">
 										<span class="check"></span>
@@ -709,7 +709,7 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="sidebar-footer" id="side_bar_footer_us">
-					<div class="sidebar-footer-container" data-intro="Once you've selected all of the places and dimensions you'd like to compare, click this button. The map will update to display the data you selected" data-position="right">
+					<div class="sidebar-footer-container" data-intro="Once you've selected all of the places and foundations you'd like to compare, click this button. The map will update to display the data you selected" data-position="right">
 						<a id="btn_update_map" class="btn btn-rank blue coach-idle">Update Map</a>
 						<a id="btn_reset" class="btn-reset">Reset</a>
 					</div>
