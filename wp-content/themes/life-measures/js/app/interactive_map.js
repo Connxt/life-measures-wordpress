@@ -44,21 +44,17 @@ var InteractiveMap = (function () {
 				BY_COMPONENT: "by_component"
 			};
 			tooltipMessages = {
-				opportunity: {
+				community_and_relationships: {
+					US: "The Community & Relationships dimension measures the quality of the community and family lives of a state’s residents. It is concerned with people’s charitable, civic, and religious engagement and their relationships with friends and loved ones.",
+					WORLD: "The Community & Relationships dimension measures the quality of the community and family lives of people in a society. It is concerned with people’s charitable, civic, and religious engagement and their relationships with friends and loved ones."
+				},
+				freedom_and_opportunity: {
 					US: "The Opportunity dimension is concerned with people’s possibilities for employment and entrepreneurship and education quality and choice. It pays particular attention to the underprivileged, assessing the levels of poverty and inequality in a state.",
 					WORLD: "The Opportunity dimension is concerned with people’s access to community basics, education, and possibilities for employment and entrepreneurship. It pays particular attention to the underprivileged, assessing the levels of poverty and inequality in a society."
 				},
 				health_and_environment: {
 					US: "The Health & Environment dimension deals with the prevailing physical, mental, and environmental conditions in a state. It looks at such factors as life expectancy, obesity, suicide rates, and access to safe water, fruit and vegetables, medicine, and a safe place to exercise.",
 					WORLD: "The Health & Environment dimension deals with the prevailing physical, mental, and environmental conditions in a society. It looks at such factors as life expectancy, undernourishment, suicide rates, positive experiences, suffering, and air, water, and sanitation quality."
-				},
-				freedom: {
-					US: "The Freedom dimension concerns itself with the extent to which individuals in a state are able to take control of their own lives. It measures the degree to which a state respects the personal and economic freedoms of its residents.",
-					WORLD: "The Freedom dimension concerns itself with the extent to which individuals in a society are able to take control of their own lives. It measures the degree to which a society respects the political, civil, religious, and economic freedoms of its people as well as people’s perceptions of their freedom."
-				},
-				community_and_relationships: {
-					US: "The Community & Relationships dimension measures the quality of the community and family lives of a state’s residents. It is concerned with people’s charitable, civic, and religious engagement and their relationships with friends and loved ones.",
-					WORLD: "The Community & Relationships dimension measures the quality of the community and family lives of people in a society. It is concerned with people’s charitable, civic, and religious engagement and their relationships with friends and loved ones."
 				},
 				living_standard: {
 					US: "The Living Standard dimension looks at the average level of economic and financial resources available to a state’s residents. It concerns itself with current standard of living, improvements in standard of living, and people’s perceptions of their standard of living.",
