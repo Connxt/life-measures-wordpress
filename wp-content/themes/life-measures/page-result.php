@@ -172,16 +172,16 @@
 								unset($rank_container);
 								?>
 							</div>
-							<div class="foundation-container">
+							<div class="dimension-container">
 								<?php foreach($search as $s) { ?>
-									<div class="foundation <?php echo $s; ?>"></div>
+									<div class="dimension <?php echo $s; ?>"></div>
 								<?php } ?>
 							</div>
 						</div>
 						<div class="face back">
 							<h2><?php echo $d['name']; ?></h2>
 							<h3>Average <?php echo get_search_type($search_type); ?> Scores<br></h3>
-							<div class="foundation-container clearfix">
+							<div class="dimension-container clearfix">
 								<?php
 								$search_container = array();
 								foreach($d[$search_type] as $search_data) {
@@ -197,7 +197,7 @@
 								foreach($search as $s) {
 									$search_container[$s] = $search_container[$s] / count($years);
 								?>
-								<div class="foundation <?php echo $s; ?>">
+								<div class="dimension <?php echo $s; ?>">
 									<div class="name"><?php echo get_search_criteria($s); ?></div>
 									<div class="score"><?php echo number_format(round($search_container[$s], 1), 1); ?></div>
 								</div>
