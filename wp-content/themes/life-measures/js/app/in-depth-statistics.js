@@ -221,7 +221,7 @@
 		},
 		render: function () {
 			var componentsLength = this.components.length;
-			
+
 			this.view.empty();
 			for(var i = 0; i < componentsLength; i++) {
 				this.view.append("<option value=" + this.components[i].value + ">" + this.components[i].displayName + "</option>");
@@ -233,7 +233,23 @@
 			this.view.chosen({}).trigger("chosen:updated");
 
 			return this;
+		},
+		onChange: function (event, params) {
+			var component = (params === undefined) ? event.target[0].value : params.selected;
+
+			console.log(component);
 		}
+	}
+
+	var componentsView = {
+		init: function (component) {
+
+			return this;
+		},
+		render: function () {
+			return this;
+		}
+
 	}
 
 	controller.init();

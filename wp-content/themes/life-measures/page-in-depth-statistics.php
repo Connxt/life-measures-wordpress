@@ -102,7 +102,7 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="components-graph-container">
-					<div id="components" class="component-graph"></div>
+					<div id="components_chart" class="component-graph"></div>
 				</div>
 			</div>
 		</div>
