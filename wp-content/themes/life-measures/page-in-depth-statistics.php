@@ -1,104 +1,138 @@
 <?php
-/*
-	template name: In-Depth Statistics template
-*/
- get_header(); ?>
-<div class="interactive-survey-graph-container" id="interactive-graph-body-container">
- 	<div id="content" class="row-large">
- 		<section class="post standard">
-            <div class="graph-container">
-            	<div class="graph-container-left">
-            		<section class="qol-index">
-            			<div class="qol-index-title"><h2>QUALITY OF LIFE MEASURES</h2></div>
-        			    <div class="qol-index-content">
-            				<h3 class="subhead">SUBHEAD STYLE</h3>
-            				<div class="content-paragraph">
-            					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            				</div>
-            				<button class="btn flat blue index-modifier" id="btn_us_index">U.S INDEX</button>
-            				<button class="btn flat blue index-modifier" id="btn_world_index">WORLD INDEX</button>
-        			    </div>
-            		</section>
-            		<section class="qol-charts">
-            			<div class="qol-charts-title"><h2>CHARTS</h2></div>
-        			    <div class="qol-charts-content">
-                            <div class="qol-charts-container">
-                                <div class="qol-charts-dimensions">
-                                    <ul class="qol-circular-graph-content">
-                                        <li>
-                                            <div class="pie_progress" id="community_and_relationship_circular" role="progressbar">
-                                                <div class="pie_progress__number">0%</div>
-                                            </div>
-                                            <div class="description-circular"><h3>COMMUNITY & RELATIONSHIP</h3></div>
-                                        </li>
-                                        <li>
-                                            <div class="pie_progress" id="freedom_circular" role="progressbar">
-                                                <div class="pie_progress__number">0%</div>
-                                            </div>
-                                            <div class="description-circular"><h3>FREEDOM</h3></div>
-                                        </li>
-                                        <li>
-                                            <div class="pie_progress" id="health_and_environment_circular" role="progressbar">
-                                                <div class="pie_progress__number">0%</div>
-                                            </div>
-                                            <div class="description-circular"><h3>HEALTH & ENVIRONMENT</h3></div>
-                                        </li>
-                                        <li>
-                                            <div class="pie_progress" id="opportunity_circular" role="progressbar">
-                                                <div class="pie_progress__number">0%</div>
-                                            </div>
-                                            <div class="description-circular"><h3>OPPORTUNITY</h3></div>
-                                        </li>
-                                        <li>
-                                            <div class="pie_progress" id="living_standard_circular" role="progressbar">
-                                                <div class="pie_progress__number">0%</div>
-                                            </div>
-                                            <div class="description-circular"><h3>LIVING STANDARD</h3></div>
-                                        </li>
-                                        <li>
-                                            <div class="pie_progress" id="peace_and_security_circular" role="progressbar">
-                                                <div class="pie_progress__number">0%</div>
-                                            </div>
-                                            <div class="description-circular"><h3>PEACE & SECURITY</h3></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="qol-charts-dimensions-equevalent">
-                                    <div id="doughnut_chart" class="doughnut-chart"></div>
-                                    <div class="description-circular"><h3>OVERALL WELL-BEING</h3></div>
-                                </div>
-            			    </div>
+/* template name: In-Depth Statistics template */
+get_header(); ?>
+<div class="in-depth-statistics-container">
+    <div class="row">
+        <div class="content clearfix">
+            <div class="large-6 medium-6 small-12 margin-on-bottom columns-no-padding">
+                <div class="introduction-text-container">
+                    <div class="text-title">
+                        <h2>QUALITY OF LIFE MEASURES</h2>
+                    </div>
+                    <div class="content-container with-line">
+                        <div class="text-subhead">
+                            <h3>SUBHEAD STYLE</h3>
                         </div>
-            		</section>
-            	</div>
-            	<div class="graph-container-right">
-                    <div class="random-trivia">
-                        <div class="graph-right-content">
-                            <div class="select-country-container">
-                                <div class="select-country">
-                                    <h3 class="choose-location">Choose location:</h3>
-                                    <select id="populate_country"></select>
-                                </div>
-                            </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
-                        <div class="country-map">
-                            <div class="trivia-score">
-                                <h2 class="trivia-percentage">12%</h2>
-                                <h2>DECLINE IN OPPORTUNITY IN 2012</h2>
-                            </div>
-                            <img id="img_map" src="<?php echo get_template_directory_uri(); ?>/images/svg/int/PH.svg" class="svg">
+                        <div class="buttons-container clearfix">
+                            <button class="btn flat blue border index-modifier" id="btn_us_index">U.S MEASUREMENTS</button>
+                            <button class="btn flat blue index-modifier" id="btn_world_index">WORLD MEASUREMENTS</button>
                         </div>
                     </div>
-                    <div class="select-chart-container">
-                        <div class="select-chart">
-                            <h3 class="choose-component">Choose component:</h3>
-                            <select id="select_chart"></select>
-                        </div>
-                    </div>
-                    <div id="components" class="subcomponents-chart clearfix"></div>
                 </div>
             </div>
-        </section>
-	</div>
+            <div class="large-6 medium-6 small-12 margin-on-bottom columns-no-padding">
+                <div class="select-country-container clearfix">
+                    <div class="select-country">
+                        <h3 class="choose-location">Choose a location:</h3>
+                        <select data-placeholder="Choose a Country..." class="chosen-select" tabindex="2">
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Aland Islands">Aland Islands</option>
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Aland Islands">Aland Islands</option>
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Aland Islands">Aland Islands</option>
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Aland Islands">Aland Islands</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="country-map-container">
+                    <div class="country-map">
+                        <div class="trivia-score">
+                            <h2>12%</h2>
+                            <h4>DECLINE IN OPPORTUNITY IN 2012</h4>
+                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/svg_in_depth_map/int/PH.svg" class="svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content clearfix">
+            <div class="large-6 medium-6 small-12 margin-on-bottom columns-no-padding">
+                <div class="charts-container">
+                    <div class="text-title">
+                        <h2>CHARTS</h2>
+                    </div>
+                    <div class="content-container with-line">
+                        <!-- <div class="select-foundations">
+                            <h3 class="choose-foundation">Choose a Foundation:</h3>
+                        </div> -->
+                        <div class="circular-progressbar">
+                            <div class="large-6 medium-6 small-12 column"> 
+                                <div class="pie-progress-container">
+                                    <div class="pie_progress active" id="community_and_relationship_circular" role="progressbar">
+                                        <div class="pie_progress__number">0</div>
+                                    </div>
+                                    <div class="pie-progress-title"><h4>COMMUNITY & RELATIONSHIP</h4></div>
+                                </div>
+                                <div class="pie-progress-container">
+                                    <div class="pie_progress" id="freedom_and_opportunity_circular" role="progressbar">
+                                        <div class="pie_progress__number">0</div>
+                                    </div>
+                                    <div class="pie-progress-title"><h4>FREEDOM & OPPORTUNITY</h4></div>
+                                </div>
+                                <div class="pie-progress-container">
+                                    <div class="pie_progress" id="health_and_environment_circular" role="progressbar">
+                                        <div class="pie_progress__number">0</div>
+                                    </div>
+                                    <div class="pie-progress-title"><h4>HEALTH & ENVIRONMENT</h4></div>
+                                </div>
+                                <div class="pie-progress-container">
+                                    <div class="pie_progress" id="living_standard_circular" role="progressbar">
+                                        <div class="pie_progress__number">0</div>
+                                    </div>
+                                    <div class="pie-progress-title"><h4>LIVING STANDARD</h4></div>
+                                </div>
+                                <div class="pie-progress-container">
+                                    <div class="pie_progress" id="peace_and_security_circular" role="progressbar">
+                                        <div class="pie_progress__number">0</div>
+                                    </div>
+                                    <div class="pie-progress-title"><h4>PEACE & SECURITY</h4></div>
+                                </div>
+                            </div>
+                            <div class="large-6 medium-6 small-12 column">
+                                <div class="doughnut-chart-container">
+                                    <div id="over_all_value" class="doughnut-chart"></div>
+                                    <div class="doughnut-title">Overall Well-Being</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="large-6 medium-6 small-12 margin-on-bottom columns-no-padding">
+                <div class="select-components-container clearfix">
+                    <div class="select-components">
+                        <h3 class="choose-component">Choose a component:</h3>
+                        <select data-placeholder="Choose a Country..." class="chosen-select" tabindex="2">
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Aland Islands">Aland Islands</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="components-graph-container">
+                    <div id="components" class="component-graph"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content clearfix">
+            <div class="subcomponents-graph-container">
+                <div id="subcomponents" class="subcomponent-graph"></div>
+            </div>
+        </div>
+    </div>
 </div>
 <?php get_footer(); ?>

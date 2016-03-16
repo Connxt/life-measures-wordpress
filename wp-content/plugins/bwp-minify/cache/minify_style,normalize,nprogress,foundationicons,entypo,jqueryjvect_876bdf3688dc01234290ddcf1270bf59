@@ -414,7 +414,7 @@ a{padding:6px
 10px 6px 40px}header.nav{behavior:url(/life-measures-wordpress/wp-content/themes/poly/PIE.htc);background-color:#fff;*zoom:1;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.1);box-shadow:0 1px 3px rgba(0,0,0,.1);height:75px;width:100%}header.nav:after,header.nav:before{content:" ";display:table}header.nav:after{clear:both}header.nav
 .nav__logo{position:relative}header.nav .nav__logo
 a.logo{display:block;height:34px;left:10px;position:absolute;top:5px;width:212px}header.nav .nav__logo a.logo
-img{width:212px}header.nav a#nav__mobile--trigger{color:#666;display:none;float:right;font-size:24px;font-size:1.5rem;height:75px;line-height:50px;margin-right:20px;margin-top:20px}@media only screen and (max-width:910px){header.nav a#nav__mobile--trigger{display:block}}header.nav
+img{width:212px}header.nav a#nav__mobile--trigger{color:#666;display:none;float:right;font-size:24px;font-size:1.5rem;line-height:50px;margin-right:20px;margin-top:20px}@media only screen and (max-width:910px){header.nav a#nav__mobile--trigger{display:block}}header.nav
 .nav__menu{*zoom:1}header.nav .nav__menu:after,header.nav .nav__menu:before{content:" ";display:table}header.nav .nav__menu:after{clear:both}@media only screen and (max-width:910px){header.nav
 .nav__menu{display:none}}header.nav .nav__menu .menu-main-container{float:left;position:relative}header.nav .nav__menu .menu-main-container
 ul.menu{margin:0}header.nav .nav__menu .menu-main-container ul.menu>li.menu-item{float:left}header.nav .nav__menu .menu-main-container ul.menu>li.menu-item

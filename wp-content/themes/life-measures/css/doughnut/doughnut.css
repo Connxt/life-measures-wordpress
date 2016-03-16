@@ -1,8 +1,10 @@
+@import url("../app/fonts.css");
+
 .doughnut-chart {
+  margin: 0 auto;
   position: relative;
-  width: 185px;
-  height: 185px;
-  width: 100%;
+  width: 200px;
+  height: 200px;
 }
 
 .doughnutTip {
@@ -24,6 +26,7 @@
   z-index: -1;
   font-family: 'AlternateGothicW01-No3_691802',sans-serif; 
 }
+
 .doughnutTip::after {
   position: absolute;
   left: 50%;
@@ -38,9 +41,6 @@
 }
 
 .doughnutSummary {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   color: #202020;
   text-align: center;
   text-shadow: 0 -1px 0 #111;
@@ -57,12 +57,24 @@
 }
 
 .doughnutSummaryNumber {
-  position: relative;
+  position: absolute;
+  left:0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   top: 50%;
-  width: 100%;
-  margin-top: -100%;
-  margin-left: -25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 35px;
+}
+
+.doughnut-title{
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 17px;
 }
 
 .doughnut-chart path:hover {

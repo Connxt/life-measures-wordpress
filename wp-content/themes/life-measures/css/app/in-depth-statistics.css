@@ -1,247 +1,160 @@
 @import url("fonts.css");
 
-/**
- *GRAPH CSS
- */
-.graph-container-left{
-    width:47%;
-    margin-left: 5px;
-    float: left;
+body#in-depth-statistics .content{
+    margin-bottom: 20px;
+    min-height: 290px;
 }
-.qol-index{
-    margin-bottom: 70px;
+
+div.in-depth-statistics-container{
+    padding-top:10px;
 }
-.qol-index-content{
-    border-top: 1px solid #202020;
+
+.content-container.with-line{
+    border-top: 1px solid #d3d3d3;
 }
-.qol-index-content > h3{
+
+div.text-subhead > h3{
+    margin-top: 15px;
+}
+
+.content-container > h3{
     margin-top: 20px;
 }
-#btn_us_index,#btn_world_index{
+
+.btn.flat{
     padding: 15px 15px 10px;
-}
-
-
-/**
- *charts
- */
-div.random-trivia{
-    min-height: 361px;
-}
-.qol-charts-container{
-    margin-top:20px;
-}
-
-/** 
- *circular progressbar 
- */
-.qol-charts-dimensions{
-    display: inline-block;
-    margin-top: 30px;
+    width: 50%;
+    position: relative;
     float:left;
-    width: 58%;
-}
-.qol-charts-content{
-    border-top: 1px solid #202020;
-}
-.qol-circular-graph-content > li{
-    display: inline-table;
-    width: 25%;
-}
-.qol-charts-content > .qol-circular-graph-content,{
-    margin-top: 30px;
 }
 
-/**
- *pie progressbar 
- */
-.qol-circular-graph-content{
-    margin-left: 0px;
-}
-.pie_progress__number, .doughnutSummaryNumber{
-    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
-    cursor: pointer;
-    font-size: 32px;
-}
-.pie_progress svg {
-    width: 70px;
-    height: 70px;
-}
-.description-circular > h3{
-    text-align: center;
-    font-size: 14px;
-}
-.graph-right-content{
-    widows: 100%;
-}
-.qol-charts-dimensions-equevalent{
-    margin-top: 50px;
-    float:left;
-    width: 40%;
+.btn.flat.border{
+    border-right: 2px solid;
 }
 
-/**
- *right containter 
- */
-.graph-container-right{
-    margin-left: 5px;
+.buttons-container{
+    width: 100%;
+}
+.choose-component, .choose-location, .choose-foundation{
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.select-country-container, .select-components-container{
+    width: 100%;
+}
+.select-country, .select-components{
+    width:50%;
     float:right;
-    width:50%;
 }
 
-/**
- *select country
- */
-.select-chart-container{
-    width:100%;
-    float: right;
-}
-.select-chart{
-    width:50%;
-    float: right;
-}
-.choose-component, .choose-location{
-    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
-    font-size: 15px;
-}
-.select-country-container{
-    width:100%;
-    float: right;
-}
-.select-country{
-    width:50%;
-    float: right;
-}
-.subcomponents-chart{
-    margin-top: 10px;
-}
-.trivia-score > h2{
-    color:#202020;
-}
-.trivia-score{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top:50%;
-    bottom: 50%;
-}
-.trivia-score > .trivia-percentage{
-    font-size: 100px;
-    line-height: 50px;
-}
 .country-map{
+    margin: 30px 0px 0px 0px;
     text-align: center;
     position: relative;
-    z-index: 1;
 }
+
 .country-map svg{
-    width: 55%;
-    height: 280px;
+    /*width: 300px;
+    height: 200px;*/
+    /*fill: #fff;*/
+}
+
+.country-map > .trivia-score{
+    position: absolute;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    line-height: 1px;
+}
+
+.country-map > .trivia-score > h2{
+    font-size: 55px;
+}
+
+.country-map > .trivia-score > h4{
+    font-size: 20px;
+}
+
+.circular-progressbar{
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+.pie-progress-container{
+    position: relative;
+}
+
+.pie_progress{
+    width: 50px;
+    margin-bottom: 10px;
     margin-top: 10px;
-    fill:#fff;
 }
 
-/**
- *bar charts
- */
-.canvasjs-chart-credit{
-    display: none;
-}
-.subcomponents-bar-chart {
-    margin-top:15px;
-    float: left;
-    width: 48%;
-    margin-left: 5px;
-}
-.subcomponents-line-chart{
-    margin-top:15px;
-    float: left;
-    width: 48%;
-    margin-left: 5px;
-}
-.subcomponents-bar-chart, .subcomponents-line-chart{
-    height: 225px;
-}
-.select-subcomponents-bar-container{
-    width: 60%;
-}
-.select-subcomponents-line-container{
-    width: 60%;
+.pie_progress.active:before{
+    position: absolute;
+    content: "\f10b";
+    font-family: "foundation-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 20px;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute;
+    top: 50%;
+    left:-20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-/*chart*/
-/*.select-chart-container > .select-chart > .selectric-wrapper > .selectric > .label {
-    background: none repeat scroll 0% 0% #fff;
-    color:#202020;
+.pie-progress-title{
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-.select-chart-container > .select-chart > .selectric-wrapper > .selectric {
-    background: none repeat scroll 0% 0% #fff;
-    border: 0px solid #DDD;
+
+.pie-progress-title > h4{
+    font-size: 12px;
 }
-.select-chart-container > .select-chart > .selectric-wrapper > .selectric > .button {
-    background: none repeat scroll 0% 0% #fff;
-    color:#202020;
-}*/
+
+.pie_progress svg {
+    width: 50px;
+    height: 50px;
+}
+
+.doughnut-chart-container{
+    padding-top: 40px;
+}
+
+.subcomponents-graph-container{
+    padding-top:40px;
+}
+.component-graph {
+    padding: 10px 25px 10px 25px;
+    height: 320px;
+    width: 100%;
+}
+
+.subcomponent-graph{
+    padding: 10px 25px 10px 25px;
+    width: 100%;
+    height: 450px;
+}
 
 
-/**
- *for graph page responsive design
- */
-@media screen and (max-width: 1150px) {
-    .pie_progress svg {
-        width:100px;
-        height: 100px;
-    }
-    .subcomponents-bar-chart, .subcomponents-line-chart{
-        width: 100%;
-    }
-    .select-subcomponents-bar-container, .select-subcomponents-line-container{
-        width:170px;
-    }
-    .qol-charts-dimensions-equevalent {
-        margin-top: 25%;
-    }
-    .qol-circular-graph-content > li {
-        width: 32.5%;
-    }
-    .qol-charts-dimensions{
-        width: 100%;
-    }
-    .qol-charts-dimensions-equevalent {
-        margin-top:10px;
-        position:relative;
-        width: 100%;
-    }
-    .doughnut-chart {
-        text-align: center;
-        /*width: 100%;*/
-    }
-    .qol-charts-dimensions{
-        width: 100%;
-        text-align: center;
-    }
-}
-@media screen and (max-width: 796px) {
-    .graph-container-left{
-        width: 100%;
-    }
-    .graph-container-right{
-        width: 100%;
-    }
-    .select-country {
-        width: 100%;
-        margin-top: 30px;
-    }
-    .select-chart{
-        width: 100%;
-        margin-top: 30px;
-    }
-    .pie_progress svg {
-        width: 150px;
-        height: 150px;
-    }
-    .pie_progress__number {
-        font-size: 50px;
-    }
 
-}
+

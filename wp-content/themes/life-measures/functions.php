@@ -100,20 +100,26 @@ function qol_header_styles() {
 // Load QOL survey page scripts
 function qol_page_in_depth_statistics_scripts() {
     if (is_page('in-depth-statistics')) {
+        wp_register_script('globalize', get_template_directory_uri() . '/js/globalize/globalize.min.js', array(), '1.0.0');
+        wp_enqueue_script('globalize'); // Enqueue it!
+
+        wp_register_script('dxchart', get_template_directory_uri() . '/js/dx_chartjs/dx.chartjs.js', array(), '1.0.0');
+        wp_enqueue_script('dxchart'); // Enqueue it!
+
         wp_register_script('canvasjs', get_template_directory_uri() . '/js/canvasjs/jquery.canvasjs.min.js', array(), '1.0.0');
         wp_enqueue_script('canvasjs'); // Enqueue it!
 
         wp_register_script('doughnut', get_template_directory_uri() . '/js/doughnut/doughnut.js', array(), '1.0.0');
         wp_enqueue_script('doughnut'); // Enqueue it!
 
-        wp_register_script('jquery_selectric', get_template_directory_uri() . '/js/jquery_selectric/jquery.selectric.min.js', array(), '1.0.0');
-        wp_enqueue_script('jquery_selectric'); // Enqueue it!
-
         wp_register_script('as_pie_progress', get_template_directory_uri() . '/js/as_pie_progress/jquery-asPieProgress.js', array(), '1.0.0');
         wp_enqueue_script('as_pie_progress'); // Enqueue it!
 
-        wp_register_script('graph', get_template_directory_uri() . '/js/app/in-depth-statistics.js', array(), '1.0.0');
-        wp_enqueue_script('graph'); // Enqueue it!
+        wp_register_script('chosen', get_template_directory_uri() . '/js/choosen/chosen.jquery.js', array(), '1.0.0');
+        wp_enqueue_script('chosen'); // Enqueue it!
+        
+        wp_register_script('in-depth-statistics', get_template_directory_uri() . '/js/app/in-depth-statistics.js', array(), '1.0.0');
+        wp_enqueue_script('in-depth-statistics'); // Enqueue it!
     }
 }
 
@@ -126,11 +132,11 @@ function qol_page_in_depth_statistics_styles(){
         wp_register_style('doughnut', get_template_directory_uri() . '/css/doughnut/doughnut.css', array(), '1.0');
         wp_enqueue_style('doughnut'); // Enqueue it!
 
-        wp_register_style('jquery_selectric', get_template_directory_uri() . '/css/jquery_selectric/selectric.css', array(), '1.0');
-        wp_enqueue_style('jquery_selectric'); // Enqueue it!
+        wp_register_style('chosen', get_template_directory_uri() . '/css/choosen/chosen.css', array(), '1.0');
+        wp_enqueue_style('chosen'); // Enqueue it!
 
-        wp_register_style('graph', get_template_directory_uri() . '/css/app/in-depth-statistics.css', array(), '1.0');
-        wp_enqueue_style('graph'); // Enqueue it!
+        wp_register_style('in-depth-statistics', get_template_directory_uri() . '/css/app/in-depth-statistics.css', array(), '1.0');
+        wp_enqueue_style('in-depth-statistics'); // Enqueue it!
 
     }
 }

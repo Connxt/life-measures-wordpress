@@ -328,6 +328,14 @@ select {
     width: 100%;
     float: left;
 }
+
+@media only screen and (max-width: 1130px){
+    .columns-no-padding{
+        padding-left: .625rem;
+        padding-right: .625rem;
+    }
+}
+
 .column,.columns {
     position: relative;
     padding-left: .625rem;
@@ -2154,6 +2162,7 @@ select {
 }
 
 @media only screen and (min-width:40.063em) {
+
     .medium-block-grid-1>li {
         width: 100%;
         padding: 0 .625rem 1.25rem;
@@ -4218,6 +4227,9 @@ label.error {
 }
 
 @media only screen and (max-width:40em) {
+    .margin-on-bottom{
+        margin-bottom: 50px;
+    }
     .orbit-stack-on-small .orbit-slides-container {
         height: auto!important;
     }
@@ -8055,7 +8067,7 @@ header.nav a#nav__mobile--trigger {
     float: right;
     font-size: 24px;
     font-size: 1.5rem;
-    height: 75px;
+    /*height: 75px;*/
     line-height: 50px;
     margin-right: 20px;
     margin-top:20px;
@@ -11632,9 +11644,9 @@ section.constructing-the-measures > div.row > .slide-list > .owl-controls > .owl
     margin-top: 20px;
 }
 div.content{
-position: relative;
-top:20px;
-margin-bottom: 50px;
+    position: relative;
+    top:20px;
+    margin-bottom: 50px;
 }
 .using-the-api, .the-report{
     width: 45%;

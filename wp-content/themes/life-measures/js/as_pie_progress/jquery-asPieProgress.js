@@ -110,7 +110,7 @@
         speed: 15, // speed of 1/100
         barcolor: '#ef1e25',
         barsize: '4',
-        trackcolor: '#f2f2f2',
+        trackcolor: '#fff',
         fillcolor: 'none',
         easing: 'ease',
         numberCallback: function(n) {

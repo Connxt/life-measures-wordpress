@@ -11,7 +11,7 @@
 .pie_progress__number,
 .pie_progress__label,
 .pie_progress__icon {
-  width: 100%;
+  width: 50px;
   position: absolute;
   top: 50%;
   left: 0;
