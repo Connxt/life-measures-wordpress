@@ -87,9 +87,12 @@ div.text-subhead > h3{
 
 .pie-progress-container{
     position: relative;
+    min-height: 50px;
+    cursor: pointer;
 }
 
 .pie_progress{
+    min-height: 40px;
     width: 50px;
     margin-bottom: 10px;
     margin-top: 10px;
