@@ -279,7 +279,7 @@
 							}
 							?>
 						],
-						scrollBar: { visible: true },
+						scrollBar: { visible: false },
 						scrollingMode: "all", 
 						zoomingMode: "all",
 						legend: {
@@ -449,7 +449,7 @@
 									echo json_encode($chart_by_year_series) . ', ';
 								}
 							?>],
-							scrollBar: { visible: true },
+							scrollBar: { visible: false },
 							scrollingMode: "all", 
 							zoomingMode: "all",
 							legend: {
