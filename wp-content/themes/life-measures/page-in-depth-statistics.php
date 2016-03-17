@@ -108,7 +108,7 @@ get_header(); ?>
 		</div>
 		<div class="content clearfix">
 			<div class="subcomponents-graph-container">
-				<div id="subcomponents" class="subcomponent-graph"></div>
+				<div id="subcomponents_chart" class="subcomponent-graph"></div>
 			</div>
 		</div>
 	</div>

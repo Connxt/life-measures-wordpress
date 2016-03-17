@@ -39,7 +39,7 @@
 		init: function () {
 			var self = this;
 
-			self.currentIndex = self.getIndexes().US;
+			self.currentIndex = self.getIndexes().WORLD;
 
 			model.getInitialData().done(function (initialData) {
 				self.locations = initialData.locations;
@@ -187,7 +187,7 @@
 
 			return this;
 		},
-		onFoundationClick: function () {			
+		onFoundationClick: function () {
 			for(var foundation in foundationsView.dataStructure.dimensions) {
 				var id = foundation + "_chart";
 
@@ -205,10 +205,11 @@
 
 	var componentSelectionView = {
 		init: function (foundation) {
+			this.foundation = foundation;
 			this.dataStructure = (controller.currentIndex === controller.getIndexes().WORLD) ? controller.dataStructure.world : controller.dataStructure.us;
 			this.view = $("#component_selection").chosen({});
 			this.view.unbind("change");
-			
+
 			this.components = [];
 			for(var component in this.dataStructure.dimensions[foundation].components) {
 				this.components.push({
@@ -227,7 +228,7 @@
 				this.view.append("<option value=" + this.components[i].value + ">" + this.components[i].displayName + "</option>");
 			}
 
-			this.view.on("change", this.onChange);
+			this.view.on("change", this.onChange.bind(this));
 			this.view.trigger("change");
 
 			this.view.chosen({}).trigger("chosen:updated");
@@ -236,21 +237,126 @@
 		},
 		onChange: function (event, params) {
 			var component = (params === undefined) ? event.target[0].value : params.selected;
-
-			console.log(component);
+			componentsView.init(this.foundation, component).render();
+			subcomponentsView.init(this.foundation, component).render();
 		}
 	}
 
 	var componentsView = {
-		init: function (component) {
+		init: function (foundation, component) {
+			this.foundation = foundation;
+			this.component = component;
+			this.dataStructure = (controller.currentIndex === controller.getIndexes().WORLD) ? controller.dataStructure.world : controller.dataStructure.us;
+			this.colors = {
+				community_and_relationships: "#B11E2B",
+				freedom_and_opportunity: "#3D4780",
+				health_and_environment: "#CC4E00",
+				living_standard: "#006538",
+				peace_and_security: "#501050"
+			};
+			this.view = $("#components_chart");
+
+			var dataSourceLength = controller.locationScores.components.length;
+			this.dataSource = [];
+
+			for(var i = 0; i < dataSourceLength; i++) {
+				this.dataSource.push({
+					year: controller.locationScores.components[i].year,
+					value: Number(parseFloat(controller.locationScores.components[i][component]).toFixed(2)),
+				});
+			}
 
 			return this;
 		},
 		render: function () {
+			this.view.dxChart({
+				dataSource: this.dataSource,
+				series: {
+					argumentField: "year",
+					valueField: "value",
+					type: "bar",
+					color: this.colors[this.foundation]
+				},
+				legend: { visible: false },
+				valueAxis: {
+					valueMarginsEnabled: false,
+					min: 0,
+					max: 10
+				},
+				scrollBar: { visible: false },
+				scrollingMode: "all",
+				zoomingMode: "all"
+			});
+
 			return this;
 		}
+	};
 
-	}
+	var subcomponentsView = {
+		init: function (foundation, component) {
+			this.foundation = foundation;
+			this.component = component;
+			this.dataStructure = (controller.currentIndex === controller.getIndexes().WORLD) ? controller.dataStructure.world : controller.dataStructure.us;
+			this.view = $("#subcomponents_chart");
+
+			this.subcomponents = this.dataStructure.dimensions[this.foundation].components[this.component].subcomponents;
+			var subcomponentsLength = Object.keys(this.subcomponents).length;
+
+			var dataSourceLength = controller.locationScores.subcomponents.length;
+			this.dataSource = [];
+			this.series = [];
+
+			for(var i = 0; i < dataSourceLength; i++) {
+				var data = {};
+				for(var key in this.subcomponents) {
+					data["year"] = controller.locationScores.subcomponents[i].year; 
+					data[key] = Number(parseFloat(controller.locationScores.subcomponents[i][key]).toFixed(2));
+				}
+
+				this.dataSource.push(data);
+			}
+
+			for(var key in this.subcomponents) {
+				this.series.push({
+					valueField: key,
+					name: this.subcomponents[key].display_name
+				});
+			}
+
+			return this;
+		},
+		render: function () {
+			console.log(this.dataSource);
+			if(this.dataSource.length >= 1) {
+				this.view.dxChart({
+					dataSource: this.dataSource,
+					series: this.series,
+					commonSeriesSettings: {
+						argumentField: "year",
+						type: "line"
+					},
+					title: {
+						text: this.dataStructure.dimensions[this.foundation].components[this.component].display_name
+					},
+					legend: {
+						verticalAlignment: "bottom",
+						horizontalAlignment: "center",
+						itemTextPosition: "bottom"
+					},
+					valueAxis: {
+						valueMarginsEnabled: false,
+						min: 0,
+						max: 10
+					},
+					scrollBar: { visible: false },
+					scrollingMode: "all",
+					zoomingMode: "all"
+				});
+			}
+
+			return this;
+		}
+	};
 
 	controller.init();
 })();

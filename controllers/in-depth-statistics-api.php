@@ -47,14 +47,16 @@ class Data {
 					"components" => array()
 				);
 
-				foreach($this->con->query("SELECT * FROM api_components_int_list WHERE dimension='" . $foundation["name"] . "'") as $component) {
+				foreach($this->con->query("SELECT * FROM api_components_" . $table_suffix . "_list WHERE dimension='" . $foundation["name"] . "'") as $component) {
 					$foundations[$index]["dimensions"][$foundation["name"]]["components"][$component["name"]] = array(
 						"display_name" => $component["display_name"],
 						"subcomponents" => array()
 					);
 
-					foreach($this->con->query("SELECT * FROM api_subcomponents_int_list WHERE component='" . $component["name"] . "'") as $subcomponent) {
-						$foundations[$index]["dimensions"][$foundation["name"]]["components"][$component["name"]]["subcomponents"][$subcomponent["name"]] = array();
+					foreach($this->con->query("SELECT * FROM api_subcomponents_" . $table_suffix . "_list WHERE component='" . $component["name"] . "'") as $subcomponent) {
+						$foundations[$index]["dimensions"][$foundation["name"]]["components"][$component["name"]]["subcomponents"][$subcomponent["name"]] = array(
+							"display_name" => $subcomponent["display_name"]
+						);
 					}
 				}
 			}
