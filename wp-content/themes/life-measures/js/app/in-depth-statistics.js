@@ -309,7 +309,7 @@
 			for(var i = 0; i < dataSourceLength; i++) {
 				var data = {};
 				for(var key in this.subcomponents) {
-					data["year"] = controller.locationScores.subcomponents[i].year; 
+					data["year"] = controller.locationScores.subcomponents[i].year;
 					data[key] = Number(parseFloat(controller.locationScores.subcomponents[i][key]).toFixed(2));
 				}
 
@@ -326,33 +326,53 @@
 			return this;
 		},
 		render: function () {
-			console.log(this.dataSource);
-			if(this.dataSource.length >= 1) {
-				this.view.dxChart({
-					dataSource: this.dataSource,
-					series: this.series,
-					commonSeriesSettings: {
-						argumentField: "year",
-						type: "line"
-					},
-					title: {
-						text: this.dataStructure.dimensions[this.foundation].components[this.component].display_name
-					},
-					legend: {
-						verticalAlignment: "bottom",
-						horizontalAlignment: "center",
-						itemTextPosition: "bottom"
-					},
-					valueAxis: {
-						valueMarginsEnabled: false,
-						min: 0,
-						max: 10
-					},
-					scrollBar: { visible: false },
-					scrollingMode: "all",
-					zoomingMode: "all"
-				});
-			}
+			var chartOptions = {
+				dataSource: this.dataSource,
+				series: this.series,
+				commonSeriesSettings: {
+					argumentField: "year",
+					type: "line"
+				},
+				margin: {
+					bottom: 20
+				},
+				argumentAxis: {
+					valueMarginsEnabled: false,
+					discreteAxisDivisionMode: "crossLabels",
+					grid: {
+						visible: true
+					}
+				},
+				valueAxis: {
+					min: 0,
+					max: 10,
+					tickInterval: 1
+				},
+				legend: {
+					verticalAlignment: "bottom",
+					horizontalAlignment: "center",
+					itemTextPosition: "bottom"
+				},
+				title: { 
+					text: this.dataStructure.dimensions[this.foundation].components[this.component].display_name,
+					subtitle: {
+						text: (this.series.length >= 1) ? "(Subcomponents)" : "(No Subcomponents)"
+					}
+				},
+				tooltip: {
+					enabled: true,
+					customizeTooltip: function (arg) {
+						return {
+							text: arg.valueText
+						};
+					}
+				},
+				scrollBar: { visible: false },
+				scrollingMode: "all",
+				zoomingMode: "all"
+			};
+
+			this.view.dxChart(chartOptions);
 
 			return this;
 		}
