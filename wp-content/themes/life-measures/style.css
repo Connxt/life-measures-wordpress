@@ -1,18 +1,11 @@
 @import url("css/app/fonts.css");
 
-/**
- * Remove font watermark 
- */
+/*** Remove font watermark  */
 #mti_wfs_colophon{
     visibility: hidden;
 }
-/**
- * End Remove font watermark 
- */
 
-/**
- *custom css for search page
- */
+/***custom css for search page */
 .search_section{
 	margin: 100px 100px 100px 100px;
 }
