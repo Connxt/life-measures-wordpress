@@ -9487,6 +9487,10 @@ body#your-perfect-place div#container {
 }
 
 /*gragh settings*/
+body#in-depth-statistics{
+    overflow: hidden;
+}
+
 body#in-depth-statistics div#container{
     height: 100%;
     background: #f0f0f0;
