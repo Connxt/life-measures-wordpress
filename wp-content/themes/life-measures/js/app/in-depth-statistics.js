@@ -41,6 +41,7 @@
 
 			self.currentIndex = self.getIndexes().WORLD;
 
+			overlayView.init().show();
 			model.getInitialData().done(function (initialData) {
 				self.locations = initialData.locations;
 				self.dataStructure = initialData.data_structure;
@@ -116,11 +117,16 @@
 			return this;
 		},
 		onChange: function (event, params) {
+			if(! overlayView.isBlocking()) {
+				overlayView.show();
+			}
+
 			var locationAbbr = (params === undefined) ? event.target[0].value : params.selected;
 
 			controller.getLocationScores(controller.currentIndex, locationAbbr).done(function (data) {
 				controller.locationScores = data;
 				foundationsView.init().render();
+				overlayView.hide();
 			});
 		}
 	};
@@ -353,7 +359,7 @@
 					horizontalAlignment: "center",
 					itemTextPosition: "bottom"
 				},
-				title: { 
+				title: {
 					text: this.dataStructure.dimensions[this.foundation].components[this.component].display_name,
 					subtitle: {
 						text: (this.series.length >= 1) ? "(Subcomponents)" : "(No Subcomponents)"
@@ -378,10 +384,31 @@
 		}
 	};
 
+	overlayView = {
+		init: function () {
+			this.view = $("body");
+			this.viewOptions = {
+				message: "<h1><img src='" + TEMPLATE_DIRECTORY_URL + "/images/pre-loader.gif' /></h1>",
+				overlayCSS: { backgroundColor: "#fff" }
+			};
+
+			return this;
+		},
+		show: function () {
+			this.view.block(this.viewOptions);
+		},
+		hide: function () {
+			this.view.unblock();
+		},
+		isBlocking: function () {
+			if($(".blockUI").length) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+	};
+
 	controller.init();
 })();
-
-// $("body").block({ 
-// 	message: "<h1><img src='" + TEMPLATE_DIRECTORY_URL + "/images/pre-loader.gif' /></h1>",
-// 	overlayCSS: { backgroundColor: '#fff' }
-// });
