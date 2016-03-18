@@ -381,7 +381,7 @@
 	controller.init();
 })();
 
-$("body").block({ 
-	message: "<h1><img src='" + TEMPLATE_DIRECTORY_URL + "/images/pre-loader.gif' /></h1>",
-	overlayCSS: { backgroundColor: '#fff' }
-}); 
+// $("body").block({ 
+// 	message: "<h1><img src='" + TEMPLATE_DIRECTORY_URL + "/images/pre-loader.gif' /></h1>",
+// 	overlayCSS: { backgroundColor: '#fff' }
+// });

@@ -29,7 +29,7 @@ div.text-subhead > h3{
 }
 
 .btn.flat.border{
-    border-right: 2px solid;
+    border-right: 2px solid #f0f0f0;
 }
 
 .buttons-container{
@@ -98,7 +98,7 @@ div.text-subhead > h3{
     margin-top: 10px;
 }
 
-.pie_progress.active:before{
+.pie_progress.active::before{
     position: absolute;
     content: "\f10b";
     font-family: "foundation-icons";
@@ -118,6 +118,13 @@ div.text-subhead > h3{
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.pie_progress.active{
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.64);
+    box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.64);
+    border-radius: 100%;
 }
 
 .pie-progress-title{
