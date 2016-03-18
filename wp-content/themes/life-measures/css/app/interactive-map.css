@@ -225,10 +225,10 @@ div.sidebar-body > div.dimension-toggle-world > ul > li > div.dimension.active >
 }
 div.dimension > div.dimension-title-container > p,
 div.dimension > div.dimension-title-container > p{
+    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
     padding: 0px;
     margin: 0px;
     padding: 20px 10px;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
     font-size: 17px;
     font-weight: normal;
     color: #323841;
@@ -238,6 +238,7 @@ div.dimension > div.dimension-title-container > p{
 div.dimension.active div.dimension-title-container > p,
 div.dimension.active div.dimension-title-container > p{
     color:#fff;
+    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
 }
 div.dimension.active > div.dimension-title-container.freedom_and_opportunity,
 div.dimension.active > div.dimension-title-container.freedom_and_opportunity{

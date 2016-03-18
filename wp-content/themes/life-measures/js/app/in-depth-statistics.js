@@ -39,7 +39,7 @@
 		init: function () {
 			var self = this;
 
-			self.currentIndex = self.getIndexes().WORLD;
+			self.currentIndex = self.getIndexes().US;
 
 			overlayView.init().show();
 			model.getInitialData().done(function (initialData) {
