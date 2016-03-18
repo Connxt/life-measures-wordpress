@@ -39,7 +39,7 @@
 		                        <a href="<?php echo home_url(); ?>/interactive-map">Interactive Map</a>
 		                    </li>
 		                    <li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149">
-		                        <a href="<?php echo home_url(); ?>/in-depth-statistics">In-Depth Statistics</a>
+		                        <a href="<?php echo home_url(); ?>/in-depth-results">In-Depth Results</a>
 		                    </li>
 		                    <li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149">
 		                        <a href="<?php echo home_url(); ?>/your-perfect-place">Your Perfect Place</a>
@@ -108,7 +108,7 @@
 			                                <a href="<?php echo home_url(); ?>/interactive-map">Interactive Map</a>
 			                            </li>
 			                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149">
-			                                <a href="<?php echo home_url(); ?>/in-depth-statistics">In-Depth Statistics</a>
+			                                <a href="<?php echo home_url(); ?>/in-depth-results">In-Depth Results</a>
 			                            </li>
 			                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149">
 			                                <a href="<?php echo home_url(); ?>/your-perfect-place">Your Perfect Place</a>

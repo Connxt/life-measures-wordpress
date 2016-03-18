@@ -1,11 +1,11 @@
 @import url("fonts.css");
 
-body#in-depth-statistics .content{
+body#in-depth-results .content{
     margin-bottom: 20px;
     min-height: 290px;
 }
 
-div.in-depth-statistics-container{
+div.in-depth-results-container{
     padding-top:10px;
 }
 

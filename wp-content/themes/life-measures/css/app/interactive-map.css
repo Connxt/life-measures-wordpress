@@ -203,8 +203,8 @@ div.sidebar-body > div.dimension-toggle-world > ul > li > div.dimension > div.se
     background-color: #fff;
     margin: 0 auto;
 }
-div.sidebar-body > div.dimension-toggle-us > ul > li > div.dimension > div.selectedbox > span.check:after,
-div.sidebar-body > div.dimension-toggle-world > ul > li > div.dimension > div.selectedbox > span.check:after{
+div.sidebar-body > div.dimension-toggle-us > ul > li > div.dimension.active > div.selectedbox > span.check:after,
+div.sidebar-body > div.dimension-toggle-world > ul > li > div.dimension.active > div.selectedbox > span.check:after{
     content: "\f126";
     color: #000;
     font-family: foundation-icons;

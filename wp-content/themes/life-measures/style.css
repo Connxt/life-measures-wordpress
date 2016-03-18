@@ -9487,15 +9487,15 @@ body#your-perfect-place div#container {
 }
 
 /*gragh settings*/
-body#in-depth-statistics{
+body#in-depth-results{
     overflow: hidden;
 }
 
-body#in-depth-statistics div#container{
+body#in-depth-results div#container{
     height: 100%;
     background: #f0f0f0;
 }
-body.in-depth-statistics footer.footer{
+body.in-depth-results footer.footer{
     display: none;
 }
 /*end graph*/

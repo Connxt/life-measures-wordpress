@@ -1,7 +1,7 @@
 <?php
-/* template name: In-Depth Statistics template */
+/* template name: In-Depth Results template */
 get_header(); ?>
-<div class="in-depth-statistics-container">
+<div class="in-depth-results-container">
 	<div class="row">
 		<div class="content clearfix">
 			<div class="large-6 medium-6 small-12 margin-on-bottom columns-no-padding">

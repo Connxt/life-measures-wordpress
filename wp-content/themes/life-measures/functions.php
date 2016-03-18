@@ -98,8 +98,8 @@ function qol_header_styles() {
 }
 
 // Load QOL in-depth page scripts
-function qol_page_in_depth_statistics_scripts() {
-    if (is_page('in-depth-statistics')) {
+function qol_page_in_depth_results_scripts() {
+    if (is_page('in-depth-results')) {
         wp_register_script('globalize', get_template_directory_uri() . '/js/globalize/globalize.min.js', array(), '1.0.0');
         wp_enqueue_script('globalize'); // Enqueue it!
 
@@ -118,14 +118,14 @@ function qol_page_in_depth_statistics_scripts() {
         wp_register_script('chosen', get_template_directory_uri() . '/js/choosen/chosen.jquery.js', array(), '1.0.0');
         wp_enqueue_script('chosen'); // Enqueue it!
         
-        wp_register_script('in-depth-statistics', get_template_directory_uri() . '/js/app/in-depth-statistics.js', array(), '1.0.0');
-        wp_enqueue_script('in-depth-statistics'); // Enqueue it!
+        wp_register_script('in-depth-results', get_template_directory_uri() . '/js/app/in-depth-results.js', array(), '1.0.0');
+        wp_enqueue_script('in-depth-results'); // Enqueue it!
     }
 }
 
 // Load QOL in-depth page styles
-function qol_page_in_depth_statistics_styles(){
-    if (is_page('in-depth-statistics')) {
+function qol_page_in_depth_results_styles(){
+    if (is_page('in-depth-results')) {
         wp_register_style('ass_pie_progress', get_template_directory_uri() . '/css/as_pie_progress/progress.css', array(), '1.0');
         wp_enqueue_style('ass_pie_progress'); // Enqueue it!
 
@@ -135,8 +135,8 @@ function qol_page_in_depth_statistics_styles(){
         wp_register_style('chosen', get_template_directory_uri() . '/css/choosen/chosen.css', array(), '1.0');
         wp_enqueue_style('chosen'); // Enqueue it!
 
-        wp_register_style('in-depth-statistics', get_template_directory_uri() . '/css/app/in-depth-statistics.css', array(), '1.0');
-        wp_enqueue_style('in-depth-statistics'); // Enqueue it!
+        wp_register_style('in-depth-results', get_template_directory_uri() . '/css/app/in-depth-results.css', array(), '1.0');
+        wp_enqueue_style('in-depth-results'); // Enqueue it!
 
     }
 }
@@ -474,7 +474,7 @@ add_action('get_header', 'qol_header_styles'); // Add Theme Stylesheet
 add_action('get_footer', 'qol_footer_scripts'); // Add Theme Stylesheet
 
 // QOL ADD ACTIONS FOR PAGES
-add_action('get_header', 'qol_page_in_depth_statistics_styles'); // Add Conditional Page Styles 
+add_action('get_header', 'qol_page_in_depth_results_styles'); // Add Conditional Page Styles 
 add_action('get_header', 'qol_page_your_perfect_place_styles');// Add Conditional Page Styles
 add_action('get_header', 'qol_page_interactive_map_styles');// Add Conditional Page Styles
 add_action('get_header', 'qol_page_your_quality_of_life_measures_styles');// Add Conditional Page Styles
@@ -483,7 +483,7 @@ add_action('get_header', 'qol_results_page_styles');// Add Conditional Page Styl
 //
 
 add_action('get_footer', 'qol_page_your_quality_of_life_measures_scripts', 1);// Add Conditional Page Styles  
-add_action('get_footer', 'qol_page_in_depth_statistics_scripts'); // Add Conditional Page Scripts
+add_action('get_footer', 'qol_page_in_depth_results_scripts'); // Add Conditional Page Scripts
 add_action('get_footer', 'qol_page_your_perfect_place_scripts'); // Add Conditional Page Scripts
 add_action('get_footer', 'qol_page_interactive_map_scripts'); // Add Conditional Page Scripts
 
