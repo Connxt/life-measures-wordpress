@@ -14,7 +14,7 @@ get_header(); ?>
 							<h3>SUBHEAD STYLE</h3>
 						</div>
 						<div class="text-content">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p>This statistics lets you  take a closer look at the scores of the different QOL foundations, their underlying components, and compare how they affect overall quality of life across U.S. states and the world's nations.</p>
 						</div>
 						<div class="buttons-container clearfix">
 							<button class="btn flat blue border index-modifier" id="btn_select_us">U.S MEASUREMENTS</button>

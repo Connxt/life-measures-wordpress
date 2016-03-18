@@ -192,9 +192,6 @@ function qol_page_interactive_map_styles(){
         wp_register_style('jvectormap', get_template_directory_uri() . '/css/jvectormap/jquery-jvectormap-2.0.2.css', array(), '1.0');
         wp_enqueue_style('jvectormap'); // Enqueue it!
 
-        wp_register_style('interactive-map', get_template_directory_uri() . '/css/app/interactive-map.css', array(), '1.0');
-        wp_enqueue_style('interactive-map'); // Enqueue it!
-
         wp_register_style('chardinjs', get_template_directory_uri() . '/css/chardinjs/chardinjs.css', array(), '1.0');
         wp_enqueue_style('chardinjs'); // Enqueue it!
 
