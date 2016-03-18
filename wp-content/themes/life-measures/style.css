@@ -9485,7 +9485,7 @@ body#your-perfect-place div#container {
     margin-bottom: -4px;
     background: #f0f0f0;
 }
-/*end interactive-app settings*/
+
 /*gragh settings*/
 body#in-depth-statistics div#container{
     height: 100%;
@@ -9502,6 +9502,12 @@ div.coach-block {
     top: 0;
     width: 100%;
     z-index: 9999999999999;
+}
+
+
+/*your-quality-of-life-measures body*/
+body#your-quality-of-life-measures div#container{
+    height: 100%;
 }
 
 div.coach-overlay {

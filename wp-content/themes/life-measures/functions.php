@@ -97,7 +97,7 @@ function qol_header_styles() {
     wp_enqueue_style('entypo'); // Enqueue it!
 }
 
-// Load QOL survey page scripts
+// Load QOL in-depth page scripts
 function qol_page_in_depth_statistics_scripts() {
     if (is_page('in-depth-statistics')) {
         wp_register_script('globalize', get_template_directory_uri() . '/js/globalize/globalize.min.js', array(), '1.0.0');
@@ -106,9 +106,9 @@ function qol_page_in_depth_statistics_scripts() {
         wp_register_script('dxchart', get_template_directory_uri() . '/js/dx_chartjs/dx.chartjs.js', array(), '1.0.0');
         wp_enqueue_script('dxchart'); // Enqueue it!
 
-        wp_register_script('canvasjs', get_template_directory_uri() . '/js/canvasjs/jquery.canvasjs.min.js', array(), '1.0.0');
-        wp_enqueue_script('canvasjs'); // Enqueue it!
-
+        wp_register_script('jquery_bock_ui', get_template_directory_uri() . '/js/blockUI/jquery.blockUI.js', array(), '1.0.0');
+        wp_enqueue_script('jquery_bock_ui'); // Enqueue it!
+        
         wp_register_script('doughnut', get_template_directory_uri() . '/js/doughnut/doughnut.js', array(), '1.0.0');
         wp_enqueue_script('doughnut'); // Enqueue it!
 
@@ -123,7 +123,7 @@ function qol_page_in_depth_statistics_scripts() {
     }
 }
 
-// Load QOL survey page styles
+// Load QOL in-depth page styles
 function qol_page_in_depth_statistics_styles(){
     if (is_page('in-depth-statistics')) {
         wp_register_style('ass_pie_progress', get_template_directory_uri() . '/css/as_pie_progress/progress.css', array(), '1.0');
@@ -225,7 +225,7 @@ function qol_page_interactive_map_scripts(){
 
         wp_register_script('Rainbow', get_template_directory_uri() . '/js/RainbowVis-JS-master/rainbowvis.js', array(), '1.0.0');
         wp_enqueue_script('Rainbow'); // Enqueue it!
-
+        
         wp_register_script('chardinjs', get_template_directory_uri() . '/js/chardinjs/chardinjs.js', array(), '1.0.0');
         wp_enqueue_script('chardinjs'); // Enqueue it!
 

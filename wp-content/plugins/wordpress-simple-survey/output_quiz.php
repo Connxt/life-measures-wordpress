@@ -108,7 +108,7 @@ function wpss_getQuiz($quiz_id){
         <div class="clear"></div>';
 
         //$retQuiz .= '<input id="submitButton" type="submit" name="wpss_submit" value="'.$quiz['submit_button_txt'].'" /> - change below
-        $retQuiz .= '<button id="submitButton" type="submit" name="wpss_submit" value="'.$quiz['submit_button_txt'].'"><i class="fa fa-hand-pointer-o"><h4>Click Here</h4></i></button>
+        $retQuiz .= '<button id="submitButton" type="button" name="wpss_submit" value="'.$quiz['submit_button_txt'].'"><i class="fa fa-hand-pointer-o"><h4>Click Here</h4></i></button>
         </fieldset>
       </div>';
       $retQuiz .= '<button id="back" disabled="disabled"><i class="fi-arrow-left"></i> Back</button>';

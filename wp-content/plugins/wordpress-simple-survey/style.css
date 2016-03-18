@@ -1,3 +1,5 @@
+@import url("../../themes/life-measures/css/app/fonts.css");
+
 /* WPSS Super-Container 
 -----------------------------------------------------------*/
 #wpss_survey {
@@ -62,6 +64,9 @@
   font-size:16px;
 /*  width:440px;*/
   margin-bottom:0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 /* Radio Set of Answers*/
@@ -77,6 +82,8 @@
   padding:0;margin: 0px;
   color:#333;
   font-size:14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
 }
 /* radio and checkbox input */
 #wpss_survey .wpss_radio{
@@ -120,7 +127,11 @@
 }
 
 
-#wpss_survey .form-container button#next,#wpss_survey .form-container button#back { float:left; }
+#wpss_survey .form-container button#next,#wpss_survey .form-container button#back { 
+  float:left;
+  font-weight: normal;
+  font-size: 15px;
+}
 
 
 /*  Custom Field Form And Quiz Outro Text
@@ -879,8 +890,9 @@ div#copyright{
   margin-top: 80px;
 }
 small.scale10, small.scale1{
-  font-size: 60%;
-  font-family: 'Source Sans Pro',sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 small.scale10{
   float:right;

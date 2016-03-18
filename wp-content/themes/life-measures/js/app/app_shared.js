@@ -11,7 +11,8 @@ var app = (function () {
 		$resultsPageCards = jQuery("#cards_carousel"),
 		$cardsContainer = jQuery(".cards_container"),
 		$quizSubmitButton = jQuery("#submitButton"),
-		$surveyContainer = jQuery('#wpss_survey');
+		$surveyContainer = jQuery("#wpss_survey"),
+		$surveyForm = jQuery("#wpssform");
 
 	var funcs = {
 
@@ -114,9 +115,14 @@ var app = (function () {
 		});
 
 		$quizSubmitButton.click(function(){
-			$surveyContainer.block({ 
-            	message: "Please wait...", 
-        	}); 
+			jQuery('body').block({ 
+            	message: "<h1><img src='" + TEMPLATE_DIRECTORY_URL + "/images/pre-loader.gif' /></h1>",
+				overlayCSS: { backgroundColor: '#fff' } 
+        	});
+
+        	setTimeout(function(){
+        		$surveyForm.submit();
+			}, 1000);
 		});
 
 		jQuery(document).ready(function(){
