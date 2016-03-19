@@ -45,7 +45,7 @@ get_header(); ?>
 			<div class="large-6 medium-6 small-12 margin-on-bottom columns-no-padding">
 				<div class="charts-container">
 					<div class="text-title">
-						<h2>CHARTS</h2>
+						<h2>FOUNDATIONS</h2>
 					</div>
 					<div class="content-container with-line">
 						<!-- <div class="select-foundations">

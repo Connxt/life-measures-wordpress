@@ -12,7 +12,7 @@
 		getInitialData: function () {
 			var deferred = $.Deferred();
 
-			$.post(BASE_URL + "/controllers/in-depth-statistics-api.php", {
+			$.post(BASE_URL + "/controllers/in-depth-results-api.php", {
 				action: this.actions.GET_INITIAL_DATA
 			}, function (data) {
 				deferred.resolve(JSON.parse(data));
@@ -23,7 +23,7 @@
 		getLocationScores: function (index, abbr) {
 			var deferred = $.Deferred();
 
-			$.post(BASE_URL + "/controllers/in-depth-statistics-api.php", {
+			$.post(BASE_URL + "/controllers/in-depth-results-api.php", {
 				action: this.actions.GET_LOCATION_SCORES,
 				index: index,
 				abbr: abbr
