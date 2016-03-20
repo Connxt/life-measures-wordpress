@@ -41,7 +41,7 @@ div.dimension-title-container{
     background-color: #fff;
 }
 div.sidebar-header > p{
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     color: #FFF;
     font-size: 1.125rem;
     line-height: 1.125rem;
@@ -76,7 +76,7 @@ div.world-toggle > ul{
 }
 div.dimensions  > p{
     padding: 5px 0px 5px;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     display: inline;
@@ -141,7 +141,7 @@ div.sidebar-footer .btn-reset{
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     width: 49%;
     -webkit-transition-property: all;
     transition-property: all;
@@ -225,7 +225,7 @@ div.sidebar-body > div.dimension-toggle-world > ul > li > div.dimension.active >
 }
 div.dimension > div.dimension-title-container > p,
 div.dimension > div.dimension-title-container > p{
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     padding: 0px;
     margin: 0px;
     padding: 20px 10px;
@@ -238,7 +238,7 @@ div.dimension > div.dimension-title-container > p{
 div.dimension.active div.dimension-title-container > p,
 div.dimension.active div.dimension-title-container > p{
     color:#fff;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
 }
 div.dimension.active > div.dimension-title-container.freedom_and_opportunity,
 div.dimension.active > div.dimension-title-container.freedom_and_opportunity{
@@ -275,7 +275,7 @@ div.years-list-header{
 div.years-list-header > p{
     color:#fff;
     padding: 0px;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     margin: 0px;
     padding: 5px 5px;
     font-size: 17px;
@@ -320,7 +320,7 @@ div.selected-states-list-header{
 div.selected-states-list-header > p{
     color:#fff;
     padding: 0px;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     margin: 0px;
     padding: 5px 5px;
     font-size: 17px;
@@ -552,7 +552,7 @@ div.components-world > div.components-title-container > p{
     margin:0px;
     padding:0px 0px 0px 7px;
     font-size: 15px;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     text-transform: uppercase;
 }
 div.components-us > div.components-title-container,
@@ -1023,13 +1023,13 @@ body#interactive-map .dim.bureaucracy_quality,.dimension.bureaucracy_quality {
 }
 
 body#interactive-map #content section.cards .card .face.back .dimension-container .component .name, body#interactive-map #content section.cards .card .face.back .dimension-container .dimension .name {
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
 }
 
 body#interactive-map #content section.cards .card .face.back .dimension-container .component .score, body#interactive-map #content section.cards .card .face.back .dimension-container .dimension .score {
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
 }
 
 body#interactive-map #content section.cards .card .face.front .ranking {
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
 }

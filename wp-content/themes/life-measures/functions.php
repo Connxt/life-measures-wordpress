@@ -78,8 +78,8 @@ function qol_footer_scripts(){
 
 // Load QOL styles in header GLOBAL
 function qol_header_styles() {
-    wp_register_script('fonts', 'http://fast.fonts.net/jsapi/6f53c4ef-71a1-4f73-ab54-7625d6f8af79.js', array(), '2.7.1');
-    wp_enqueue_script('fonts'); // Enqueue it!
+    // wp_register_script('fonts', 'http://fast.fonts.net/jsapi/6f53c4ef-71a1-4f73-ab54-7625d6f8af79.js', array(), '2.7.1');
+    // wp_enqueue_script('fonts'); // Enqueue it!
 
     wp_register_style('qol_styles', get_template_directory_uri() . '/style.css', array(), '1.0');
     wp_enqueue_style('qol_styles'); // Enqueue it!

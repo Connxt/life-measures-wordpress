@@ -6600,7 +6600,7 @@ body {
 }
 
 h1,h2 {
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 32px;
     font-size: 2rem;
     line-height: 32px;
@@ -6619,7 +6619,7 @@ h1,h2 {
 
 h3 {
     color: #333;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 20px;
@@ -6657,7 +6657,7 @@ header.title-group > #six_dimensions {
 
 header.title-group h2 {
     color: #000;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 32px;
     line-height: 32px;
     text-transform: uppercase;
@@ -6900,7 +6900,7 @@ input[type=search]::-webkit-search-cancel-button:after {
     appearance: none;
     border-radius: 3px;
     display: inline-block;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     text-align: center;
     text-transform: uppercase;
     -webkit-transition-property: all;
@@ -6984,7 +6984,7 @@ input[type=search]::-webkit-search-cancel-button:after {
     border-radius: 3px;
     border: 1px solid #fff;
     color: #666;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: .875rem;
     padding: 2px 6px 2px;
 }
@@ -7006,7 +7006,7 @@ div.toggle-dark {
     background: #323841;
     border-radius: 3px;
     border: 1px solid #272c33;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     *zoom: 1;
 }
 
@@ -7059,7 +7059,7 @@ div.toggle-light {
     background: #e3e3e3;
     border-radius: 3px;
     border: 1px solid #d1d1d1;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     *zoom: 1;
 }
 
@@ -7117,7 +7117,7 @@ a.btn.share {
     color: rgba(102,102,102,.5);
     display: inline-block;
     float: left;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 1.125rem;
     padding: 10px 45px 6px 8px;
     position: relative;
@@ -7151,7 +7151,7 @@ a.btn.share:hover:after {
     border-radius: 0;
     color: #fff;
     cursor: pointer;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 1.125rem;
     line-height: 1.125rem;
     padding: 20px 20px 18px;
@@ -7575,7 +7575,7 @@ section.carousel.double.wide li.dimension div.state-name {
 }
 
 section.carousel.double.wide li.dimension div.state-name span.state {
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 16px;
     font-size: 1rem;
     margin: 0 5px;
@@ -7593,7 +7593,7 @@ section.carousel.double.wide li.dimension div.state-name span.border {
 
 section.carousel.double.wide li.dimension p {
     color: #fff;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 38px;
     font-size: 2.375rem;
     line-height: 38px;
@@ -7659,7 +7659,7 @@ section.stats div.state-name span.state {
     background: 0 0;
     color: #fff;
     padding: 3px 10px;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 16px;
     font-size: 1rem;
     margin: 0 5px;
@@ -7675,7 +7675,7 @@ section.stats div.state-name span.border {
 }
 
 section.stats p {
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 38px;
     font-size: 2.375rem;
     line-height: 38px;
@@ -7884,7 +7884,7 @@ table {
 
 table tr th {
     border-bottom: 1px #d9d9d9 solid;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 16px;
     font-size: 1rem;
     font-weight: 300;
@@ -8107,7 +8107,7 @@ header.nav .nav__menu .menu-main-container ul.menu>li.menu-item {
 header.nav .nav__menu .menu-main-container ul.menu>li.menu-item a {
     color: #666;
     display: inline-block;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 16px;
     font-size: 1rem;
     height: 75px;
@@ -8321,7 +8321,7 @@ header.nav .nav__menu--static a {
     color: #666;
     display: inline-block;
     float: left;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 16px;
     font-size: 1rem;
     height: 75px;
@@ -8404,7 +8404,7 @@ section.video span.video__play:after {
 section.video h1 {
     behavior: url(../poly/PIE.htc);
     color: #fff;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 32px;
     font-size: 2rem;
     text-transform: uppercase;
@@ -8997,7 +8997,7 @@ footer .copyright {
 .filter-container .filter-box {
     border: 1px #ccc solid;
     display: inline-block;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 24px;
@@ -9201,7 +9201,7 @@ section.blog-post .sidebar hr,section.search-result .sidebar hr {
 
 .post-tags {
     color: #999!important;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 20px;
@@ -9595,7 +9595,7 @@ div.coach-overlay .centered-text span.subhead {
     text-transform: uppercase;
     font-size: 16px;
     font-size: 1rem;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
 }
 
 div.coach-overlay .centered-text hr {
@@ -9731,7 +9731,7 @@ section.container div.sidebar .sidebar__header {
 section.container div.sidebar .sidebar__header p {
     behavior: url(../poly/PIE.htc);
     color: #fff;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 18px;
@@ -9755,7 +9755,7 @@ section.container div.sidebar .sidebar__inner-header {
 section.container div.sidebar .sidebar__inner-header h2 {
     behavior: url(../poly/PIE.htc);
     color: #fff;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 16px;
     font-size: 1rem;
     line-height: 16px;
@@ -9877,7 +9877,7 @@ section.container div.sidebar .sidebar__dimensions ul li a.dim div.dimension {
 section.container div.sidebar .sidebar__dimensions ul li a.dim div.dimension p {
     height: 35px;
     line-height: 37px;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 16px;
     font-size: 1rem;
     margin: 0 0 0 10px;
@@ -9995,7 +9995,7 @@ section.container div.sidebar .sidebar__components a.dim div.dimension {
 section.container div.sidebar .sidebar__components a.dim div.dimension p {
     height: 35px;
     line-height: 37px;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 16px;
     font-size: 1rem;
     margin: 0 0 0 10px;
@@ -10167,7 +10167,7 @@ section.container div.sidebar .sidebar__components ul li a.com div.component {
 section.container div.sidebar .sidebar__components ul li a.com div.component p {
     height: 30px;
     line-height: 32px;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 14px;
     font-size: .875rem;
     margin: 0 0 0 10px;
@@ -10311,7 +10311,7 @@ section.container div.sidebar .sidebar__locations div.locations-table-head {
 section.container div.sidebar .sidebar__locations div.locations-table-head span {
     behavior: url(../poly/PIE.htc);
     color: rgba(255,255,255,.6);
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 14px;
     font-size: .875rem;
     text-transform: uppercase;
@@ -10343,7 +10343,7 @@ section.container div.sidebar .sidebar__locations ul.locations-table-body li div
     margin-left: -5px;
     *zoom: 1;
     color: #000;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 13px;
     font-size: .8125rem;
     overflow: hidden;
@@ -10700,7 +10700,7 @@ section.container .map-tooltip {
     border: 1px solid #999;
     -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
     box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     height: 80px;
     padding: 4px;
     position: absolute;
@@ -10819,7 +10819,7 @@ body#results .header-bar {
     border-bottom: 1px solid rgba(153,153,153,.5);
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 60px;
     font-size: 3.75rem;
     height: 72px;
@@ -10859,7 +10859,7 @@ body#results .header-bar .social {
 }
 
 body#results .report-years {
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 24px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -10998,7 +10998,7 @@ body#results #content section.cards .card .face.front .image-block svg path {
 }
 
 body#results #content section.cards .card .face.front .ranking {
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 32px;
     font-size: 2rem;
     line-height: 32px;
@@ -11068,7 +11068,7 @@ body#results #content section.cards .card .face.back .dimension-container {
 
 body#results #content section.cards .card .face.back .dimension-container .component,body#results #content section.cards .card .face.back .dimension-container .dimension {
     color: #fff;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 14px;
     font-size: .875rem;
     line-height: 30px;
@@ -11208,7 +11208,7 @@ body#learn-about-the-research header.title-group h2 {
     color: #ccc;
     display: inline-block;
     float: left;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 58px;
@@ -11310,7 +11310,7 @@ body#map section.rankings .slide-container ul.slide-list table tr th {
 }
 
 body#map section.rankings .slide-container ul.slide-list table tr td {
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 18px;
     font-size: 1.125rem;
     text-transform: uppercase;
@@ -11780,7 +11780,7 @@ body#interactive-map #content section.cards .card .face.back .dimension-containe
 
 body#interactive-map #content section.cards .card .face.back .dimension-container .component,body#interactive-map #content section.cards .card .face.back .dimension-container .dimension {
     color: #fff;
-    font-family: 'AlternateGothicW01-No3_691802',Alternate-Gothic;
+    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 14px;
     font-size: .875rem;
     line-height: 30px;

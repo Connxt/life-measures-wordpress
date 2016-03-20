@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'Alternate-Gothic';
-  src: url(../../fonts/ufonts.com_alternate-gothic-no.2-bt.ttf)  format('truetype')
+  font-family: 'AlternateGothicW01-No3_691802';
+  src: url(../../fonts/AlternateGothicW01No3V1.eot);
+  src: url(../../fonts/AlternateGothicW01No3V1.eot?#iefix) format("embedded-opentype"),
+  url(../../fonts/AlternateGothicW01No3V1.woff2) format("woff2"), 
+  url(../../fonts/AlternateGothicW01No3V1.woff) format("woff"), 
+  url(../../fonts/AlternateGothicW01No3V1.ttf) format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
 @font-face {
     font-family: 'Source Sans Pro'; 

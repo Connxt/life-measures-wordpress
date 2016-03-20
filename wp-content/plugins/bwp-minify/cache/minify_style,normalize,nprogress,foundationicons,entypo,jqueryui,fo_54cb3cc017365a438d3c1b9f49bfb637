@@ -574,8 +574,8 @@ footer.footer{display:none}body#interactive-map
 div#container{height:100%;overflow:hidden;margin-bottom:-4px;background:#f0f0f0}body#your-perfect-place{overflow:hidden}body#your-perfect-place header
 .row{min-width:100%}body#your-perfect-place
 footer.footer{display:none}body#your-perfect-place
-div#container{height:100%;overflow:hidden;margin-bottom:-4px;background:#f0f0f0}body#in-depth-statistics
-div#container{height:100%;background:#f0f0f0}body.in-depth-statistics
+div#container{height:100%;overflow:hidden;margin-bottom:-4px;background:#f0f0f0}body#in-depth-results{overflow:hidden}body#in-depth-results
+div#container{height:100%;background:#f0f0f0}body.in-depth-results
 footer.footer{display:none}div.coach-block{height:100%;left:0;position:absolute;top:0;width:100%;z-index:9999999999999}body#your-quality-of-life-measures
 div#container{height:100%}div.coach-overlay{bottom:0;left:0;overflow:auto;position:absolute;right:0;top:0;z-index:998}div.coach-overlay
 .coached{position:absolute;z-index:1}div.coach-overlay .coached

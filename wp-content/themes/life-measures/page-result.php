@@ -258,7 +258,7 @@
 							label: {
 								font: {
 									color: "#333",
-									family: "AlternateGothicW01-No3_691802,Alternate-Gothic",
+									family: "AlternateGothicW01-No3_691802,sans-serif",
 									size: 15,
 									weight: 300
 								},
@@ -290,7 +290,7 @@
 							},
 							font: {
 								color: "#333",
-								family: "AlternateGothicW01-No3_691802,Alternate-Gothic",
+								family: "AlternateGothicW01-No3_691802,sans-serif",
 								size: 15
 							},
 							margin: {
@@ -307,7 +307,7 @@
 							enabled: true,
 							font: {
 								color: "#fff",
-								family: "AlternateGothicW01-No3_691802,Alternate-Gothic",
+								family: "AlternateGothicW01-No3_691802,sans-serif",
 								size: 15
 							},
 							customizeText: function () {
@@ -462,7 +462,7 @@
 								},
 								font: {
 									color: "#333",
-									family: "AlternateGothicW01-No3_691802,Alternate-Gothic",
+									family: "AlternateGothicW01-No3_691802,sans-serif",
 									size: 15
 								},
 								horizontalAlignment: "right",
@@ -480,7 +480,7 @@
 								enabled: true,
 								font: {
 									color: "#fff",
-									family: "AlternateGothicW01-No3_691802,Alternate-Gothic",
+									family: "AlternateGothicW01-No3_691802,sans-serif",
 									size: 15
 								},
 								customizeText: function () {
