@@ -44,24 +44,26 @@ div.text-subhead > h3{
 .select-country-container, .select-components-container{
     width: 100%;
 }
+
 .select-country, .select-components{
     width:50%;
     float:right;
 }
 
-.country-map{
+.location-map{
     margin: 30px 0px 0px 0px;
     text-align: center;
     position: relative;
 }
 
-.country-map svg{
+.location-map svg path{
     /*width: 300px;
     height: 200px;*/
-    /*fill: #fff;*/
+    fill: #ffcf00 !important;
+    stroke: #ccc;
 }
 
-.country-map > .trivia-score{
+.location-map > .trivia-score{
     position: absolute;
     text-align: center;
     margin-top: 60px;
@@ -72,11 +74,11 @@ div.text-subhead > h3{
     line-height: 1px;
 }
 
-.country-map > .trivia-score > h2{
+.location-map > .trivia-score > h2{
     font-size: 55px;
 }
 
-.country-map > .trivia-score > h4{
+.location-map > .trivia-score > h4{
     font-size: 20px;
 }
 
@@ -152,9 +154,22 @@ div.text-subhead > h3{
     padding-top: 40px;
 }
 
+.doughnut-chart {
+    margin: 0 auto;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.doughnut-chart svg{
+    width: 200px;
+    height: 200px;
+}
+
 .subcomponents-graph-container{
     padding-top:40px;
 }
+
 .component-graph {
     padding: 10px 5px 10px 25px;
     height: 312px;
@@ -165,4 +180,102 @@ div.text-subhead > h3{
     padding: 10px 25px 10px 25px;
     width: 100%;
     height: 430px;
+}
+
+/**
+    Mobile View
+**/
+
+@media only screen and (max-width:23em){
+    .btn.flat{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width:64.000em) {
+    .margin-on-bottom{
+        margin-bottom: 50px;
+    }
+
+    .doughnut-chart-container{
+        padding-top: 70px;
+    }
+
+    .doughnut-chart {
+        margin: 0 auto;
+        position: relative;
+        width: 290px;
+        height: 290px;
+    }
+
+    .doughnut-chart svg{
+        width: 300px;
+        height: 300px;
+    }
+
+    .doughnutSummaryNumber{
+        font-size: 45px;
+    }
+
+    .select-country, .select-components{
+        width:100%;
+    }
+
+    .select-components{
+        padding-bottom: 30px;
+    }
+
+    .component-graph{
+        padding:5px;
+    }
+
+    .circular-progressbar{
+        padding-top: 40px;
+        padding-left: 0px;
+    }
+
+    .pie-progress-title{
+        position: relative;
+        left: 0px;
+        top: 0px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .pie-progress-title > h4{
+        width:100px;
+        padding-top: 10px;
+        margin:0px auto;
+    }
+
+    .pie-progress-container:last-of-type{
+        width:100%;
+    }
+
+    .pie-progress-container{
+        width: 50%;
+        float: left;
+    }
+
+    .pie_progress{
+        margin: 0px auto;
+        width: 100px;
+    }
+
+    .pie_progress svg{
+        width: 100px;
+        height: 100px;
+    }
+
+    .pie_progress__content,
+    .pie_progress__number,
+    .pie_progress__label,
+    .pie_progress__icon {
+        font-size: 30px
+    }
+
+    .pie_progress__number{
+        width:100px;
+    }
 }

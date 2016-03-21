@@ -4220,9 +4220,6 @@ label.error {
 }
 
 @media only screen and (max-width:40em) {
-    .margin-on-bottom{
-        margin-bottom: 50px;
-    }
     .orbit-stack-on-small .orbit-slides-container {
         height: auto!important;
     }

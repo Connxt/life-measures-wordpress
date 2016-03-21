@@ -4,7 +4,7 @@ get_header(); ?>
 <div class="in-depth-results-container">
 	<div class="row">
 		<div class="content clearfix">
-			<div class="large-6 medium-6 small-12 margin-on-bottom columns-no-padding">
+			<div class="large-6 medium-12 small-12 margin-on-bottom columns-no-padding">
 				<div class="introduction-text-container">
 					<div class="text-title">
 						<h2>QUALITY OF LIFE MEASURES</h2>
@@ -23,15 +23,15 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			<div class="large-6 medium-6 small-12 margin-on-bottom columns-no-padding">
+			<div class="large-6 medium-12 small-12 margin-on-bottom columns-no-padding">
 				<div class="select-country-container clearfix">
 					<div class="select-country">
 						<h3 class="choose-location">Choose a location:</h3>
 						<select id="location_selection" data-placeholder="Choose a location..." class="chosen-select" tabindex="2"></select>
 					</div>
 				</div>
-				<div class="country-map-container">
-					<div class="country-map">
+				<div class="location-map-container">
+					<div class="location-map">
 						<div class="trivia-score">
 							<h2>12%</h2>
 							<h4>DECLINE IN OPPORTUNITY IN 2012</h4>
@@ -42,7 +42,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="content clearfix">
-			<div class="large-6 medium-6 small-12 margin-on-bottom columns-no-padding">
+			<div class="large-6 medium-12 small-12 margin-on-bottom columns-no-padding">
 				<div class="charts-container">
 					<div class="text-title">
 						<h2>FOUNDATIONS</h2>
@@ -94,7 +94,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			<div class="large-6 medium-6 small-12 margin-on-bottom columns-no-padding">
+			<div class="large-6 medium-12 small-12 margin-on-bottom columns-no-padding">
 				<div class="select-components-container clearfix">
 					<div class="select-components">
 						<h3 class="choose-component">Choose a component:</h3>
