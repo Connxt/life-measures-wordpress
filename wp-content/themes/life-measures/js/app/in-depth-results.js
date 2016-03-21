@@ -407,14 +407,14 @@
 		init: function (abbr) {
 			var index = (controller.currentIndex === controller.getIndexes().WORLD) ? "int" : "us";
 
-			this.path = BASE_URL + "/wp-content/themes/life-measures/images/svg_in_depth_map/" + index + "/" + controller.locationScores.abbr + ".svg";
+			this.path = TEMPLATE_DIRECTORY_URL + "/images/svg_in_depth_map/" + index + "/" + controller.locationScores.abbr + ".svg";
 			this.view = $("#location_map_svg");
 
 			return this;
 		},
 		render: function () {
 			this.view.load(this.path);
-			
+
 			return this;
 		}
 	};
