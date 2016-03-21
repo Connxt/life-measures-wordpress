@@ -406,6 +406,32 @@ var app = (function () {
 		}
 	};
 
+	var overlayView = {
+		init: function () {
+			this.view = $("body");
+			this.viewOptions = {
+				message: "<h1><img src='" + TEMPLATE_DIRECTORY_URL + "/images/pre-loader.gif' /></h1>",
+				overlayCSS: { backgroundColor: "#fff" }
+			};
+
+			return this;
+		},
+		show: function () {
+			this.view.block(this.viewOptions);
+		},
+		hide: function () {
+			this.view.unblock();
+		},
+		isBlocking: function () {
+			if($(".blockUI").length) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+	};
+
 	var events = (function () {
 		$toggleUs.click(function () {
 			$toggleUs.addClass("active");
@@ -489,7 +515,8 @@ var app = (function () {
 		// 	$usScrollContainer.jScrollPane({autoReinitialise: true, autoReinitialiseDelay: 1,});
 		// 	$worldScrollContainer.jScrollPane({autoReinitialise: true, autoReinitialiseDelay: 1,});
 		// });
-
+		
+		overlayView.init().show();
 		funcs.getComponents(config.indexes.WORLD).always(function () {
 			funcs.getMapData(config.indexes.WORLD).always(function () {
 				$worldContainer.show();
@@ -498,25 +525,44 @@ var app = (function () {
 				funcs.generateRankings(config.indexes.WORLD);
 				$worldMap.css("visibility", "visible");
 				$worldContainer.hide();
+			}).always(function () {
+				funcs.getComponents(config.DEFAULT_INDEX).always(function () {
+					funcs.getMapData(config.DEFAULT_INDEX).always(function () {
+						$usContainer.show();
+						$usMap.fadeIn("slow");
+						funcs.generateRankings(config.DEFAULT_INDEX);
+
+						$toggleUs.addClass("active");
+						$toggleWorld.removeClass("active");
+
+						$toggleContainerWorld.hide();
+						$toggleContainerUs.show();
+
+						$sideBarFooterWorld.hide();
+						$sideBarFooterUs.show();
+
+						overlayView.hide();
+					});
+				});
 			});
 		});
 
-		funcs.getComponents(config.indexes.US).always(function () {
-			funcs.getMapData(config.DEFAULT_INDEX).always(function () {
-				$usContainer.show();
-				$usMap.fadeIn("slow");
-				funcs.generateRankings(config.DEFAULT_INDEX);
+		// funcs.getComponents(config.indexes.US).always(function () {
+		// 	funcs.getMapData(config.DEFAULT_INDEX).always(function () {
+		// 		$usContainer.show();
+		// 		$usMap.fadeIn("slow");
+		// 		funcs.generateRankings(config.DEFAULT_INDEX);
 
-				$toggleUs.addClass("active");
-				$toggleWorld.removeClass("active");
+		// 		$toggleUs.addClass("active");
+		// 		$toggleWorld.removeClass("active");
 
-				$toggleContainerWorld.hide();
-				$toggleContainerUs.show();
+		// 		$toggleContainerWorld.hide();
+		// 		$toggleContainerUs.show();
 
-				$sideBarFooterWorld.hide();
-				$sideBarFooterUs.show();
-			});
-		});
+		// 		$sideBarFooterWorld.hide();
+		// 		$sideBarFooterUs.show();
+		// 	});
+		// });
 
 		$btnRankUs.click(function () {
 			funcs.rank(config.indexes.US);

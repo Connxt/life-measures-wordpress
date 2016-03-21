@@ -65,27 +65,44 @@
 			this.selectWorld = $("#btn_select_world");
 			this.selectUs = $("#btn_select_us");
 
+			if(controller.currentIndex === controller.getIndexes().WORLD) {
+				this.selectWorld.attr("disabled", true);
+			}
+			else {
+				this.selectUs.attr("disabled", true);
+			}
+
 			this.selectWorld.unbind("click");
 			this.selectUs.unbind("click");
 
 			return this;
 		},
 		render: function () {
+			var self = this;
+
 			this.selectWorld.click(function () {
 				if(controller.currentIndex != controller.getIndexes().WORLD) {
 					controller.currentIndex = controller.getIndexes().WORLD;
+
 					locationSelectionView
 						.init((controller.currentIndex === controller.getIndexes().WORLD) ? controller.locations.world : controller.locations.us)
 						.render();
+
+					self.selectWorld.attr("disabled", true);
+					self.selectUs.removeAttr("disabled");
 				}
 			});
 
 			this.selectUs.click(function () {
 				if(controller.currentIndex != controller.getIndexes().US) {
 					controller.currentIndex = controller.getIndexes().US;
+
 					locationSelectionView
 						.init((controller.currentIndex === controller.getIndexes().WORLD) ? controller.locations.world : controller.locations.us)
 						.render();
+
+					self.selectUs.attr("disabled", true);
+					self.selectWorld.removeAttr("disabled");
 				}
 			});
 
@@ -396,13 +413,8 @@
 			return this;
 		},
 		render: function () {
-			// console.log(this.path);
 			this.view.load(this.path);
 			
-			// var self = this;
-			// $.get(this.path, function (data) {
-			// 	self.view.append(data);
-			// });
 			return this;
 		}
 	};

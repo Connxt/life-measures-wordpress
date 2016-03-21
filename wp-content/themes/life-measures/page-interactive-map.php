@@ -744,9 +744,9 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="interactive-map-body">
-				<div id="pre_loader">
-					<img src="<?php echo get_template_directory_uri();?>/images/pre-loader.gif">
-				</div>
+				<!-- <div id="pre_loader">
+					<img src="<?php // echo get_template_directory_uri();?>/images/pre-loader.gif">
+				</div> -->
 				<div id="us_map"></div>
 				<div id="world_map"></div>
 				<div id="dummy_map" style="position: absolute;"></div>

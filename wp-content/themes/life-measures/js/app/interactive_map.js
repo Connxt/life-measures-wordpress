@@ -121,8 +121,8 @@ var InteractiveMap = (function () {
 		$showCoach = $("#show_coach"),
 		$btnCloseCoach = $("#btn_close_coach"),
 		$inputUsSearchRegion = $("#input_us_search_region"),
-		$inputWorldSearchRegion = $("#input_world_search_region"),
-		$preLoader = $("#pre_loader");
+		$inputWorldSearchRegion = $("#input_world_search_region");
+		// $preLoader = $("#pre_loader");
 
 	var getData = function () {
 		return $.post(BASE_URL + "/controllers/interactive_map.php", {}, function (data) {
@@ -987,7 +987,34 @@ var InteractiveMap = (function () {
 		worldMap.updateSize();
 	};
 
+	var overlayView = {
+		init: function () {
+			this.view = $("body");
+			this.viewOptions = {
+				message: "<h1><img src='" + TEMPLATE_DIRECTORY_URL + "/images/pre-loader.gif' /></h1>",
+				overlayCSS: { backgroundColor: "#fff" }
+			};
+
+			return this;
+		},
+		show: function () {
+			this.view.block(this.viewOptions);
+		},
+		hide: function () {
+			this.view.unblock();
+		},
+		isBlocking: function () {
+			if($(".blockUI").length) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+	};
+
 	var events = (function () {
+		overlayView.init().show();
 		getData().done(function () {
 			isReady = true;
 
@@ -1190,7 +1217,8 @@ var InteractiveMap = (function () {
 			// end
 
 			// for the loading indicator in the map
-			$preLoader.fadeOut();
+			// $preLoader.fadeOut();
+			overlayView.hide();
 			// end
 		});
 
