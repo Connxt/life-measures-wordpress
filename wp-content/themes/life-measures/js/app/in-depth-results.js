@@ -125,6 +125,8 @@
 
 			controller.getLocationScores(controller.currentIndex, locationAbbr).done(function (data) {
 				controller.locationScores = data;
+
+				locationMapSVGView.init().render();
 				foundationsView.init().render();
 				overlayView.hide();
 			});
@@ -384,7 +386,28 @@
 		}
 	};
 
-	overlayView = {
+	var locationMapSVGView = {
+		init: function (abbr) {
+			var index = (controller.currentIndex === controller.getIndexes().WORLD) ? "int" : "us";
+
+			this.path = BASE_URL + "/wp-content/themes/life-measures/images/svg_in_depth_map/" + index + "/" + controller.locationScores.abbr + ".svg";
+			this.view = $("#location_map_svg");
+
+			return this;
+		},
+		render: function () {
+			// console.log(this.path);
+			this.view.load(this.path);
+			
+			// var self = this;
+			// $.get(this.path, function (data) {
+			// 	self.view.append(data);
+			// });
+			return this;
+		}
+	};
+
+	var overlayView = {
 		init: function () {
 			this.view = $("body");
 			this.viewOptions = {

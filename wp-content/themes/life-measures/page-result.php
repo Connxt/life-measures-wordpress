@@ -60,9 +60,9 @@
 			$sql .= ')';
 
 			$data = array();
-			$res = mysql_query($sql);
+			$res = mysqli_query($link, $sql);
 
-			while ($row = mysql_fetch_assoc($res)) {
+			while ($row = $res->fetch_assoc()) {
 				foreach($row as $k => $r) {
 					if( in_array($k, $search) ) {
 						$data[ $row[$location_type] ][$search_type][$row['year']][$k] = $r * 1.0;
