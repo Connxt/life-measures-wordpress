@@ -36,7 +36,8 @@ get_header(); ?>
 							<h2>12%</h2>
 							<h4>DECLINE IN OPPORTUNITY IN 2012</h4>
 						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/svg_in_depth_map/int/PH.svg" class="svg" />
+						<!-- <img src="<?php //echo get_template_directory_uri(); ?>/images/svg_in_depth_map/int/PH.svg" class="svg" /> -->
+						<div id="location_map_svg" class="svg replaced-svg image-block"></div>
 					</div>
 				</div>
 			</div>
