@@ -172,6 +172,9 @@ function qol_page_your_perfect_place_scripts(){
         wp_register_script('jvectormap_world', get_template_directory_uri() . '/js/jvectormap/jquery-jvectormap-world-mill-en.js', array(), '1.0.0');
         wp_enqueue_script('jvectormap_world'); // Enqueue it!
 
+        wp_register_script('jquery_bock_ui', get_template_directory_uri() . '/js/blockUI/jquery.blockUI.js', array(), '1.0.0');
+        wp_enqueue_script('jquery_bock_ui'); // Enqueue it!
+
         wp_register_script('chardinjs', get_template_directory_uri() . '/js/chardinjs/chardinjs.js', array(), '1.0.0');
         wp_enqueue_script('chardinjs'); // Enqueue it!
         
@@ -222,6 +225,9 @@ function qol_page_interactive_map_scripts(){
 
         wp_register_script('Rainbow', get_template_directory_uri() . '/js/RainbowVis-JS-master/rainbowvis.js', array(), '1.0.0');
         wp_enqueue_script('Rainbow'); // Enqueue it!
+        
+        wp_register_script('jquery_bock_ui', get_template_directory_uri() . '/js/blockUI/jquery.blockUI.js', array(), '1.0.0');
+        wp_enqueue_script('jquery_bock_ui'); // Enqueue it!
         
         wp_register_script('chardinjs', get_template_directory_uri() . '/js/chardinjs/chardinjs.js', array(), '1.0.0');
         wp_enqueue_script('chardinjs'); // Enqueue it!
