@@ -1044,3 +1044,20 @@ body#interactive-map #content section.cards .card .face.front .ranking {
     font-family: "Source Sans Pro",sans-serif;
     font-size: 12px;
 }
+
+
+/*jquery ui customize css*/
+.ui-dialog,.ui-dialog,.ui-widget, .ui-widget-content, .ui-corner-all, .foo, .ui-draggable, .ui-resizable {
+    background: #323841 !important;
+    border: 0px !important;
+    color: #fff !important;
+    padding: 5px !important;
+    max-height: 300px !important;
+    overflow-y: auto !important;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden !important;
+}​
+
+.ui-menu-item{
+    padding: 5px !important;
+}

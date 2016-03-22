@@ -119,10 +119,6 @@
 	top: 0;
 	left: 0;
 	cursor: default;
-	max-height: 300px;
-    overflow-y: auto;
-    /* prevent horizontal scrollbar */
-    overflow-x: hidden;
 }
 .ui-button {
 	display: inline-block;
@@ -470,6 +466,7 @@ button.ui-button::-moz-focus-inner {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	padding: 5px;
 	/* support: IE10, see #8844 */
 	list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
 }
