@@ -74,15 +74,19 @@
 			</div>
 			<div class="list-results-us" id="us_results">
 				<div class="top-ranking-us">
-					<h3>TOP</h3>
-					<div class="top-ranking-content-us">
-						<ul id="top_us"></ul>
+					<div class="top-ranking-container">
+						<h3>TOP</h3>
+						<div class="top-ranking-content-us">
+							<ul id="top_us"></ul>
+						</div>
 					</div>
 				</div>
 				<div class="bottom-ranking-us">
-					<h3>BOTTOM</h3>
-					<div class="bottom-ranking-content-us">
-						<ul id="bottom_us"></ul>
+					<div class="bottom-ranking-container">
+						<h3>BOTTOM</h3>
+						<div class="bottom-ranking-content-us">
+							<ul id="bottom_us"></ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -154,15 +158,19 @@
 
 			<div class="list-results-world" id="world_results">
 				<div class="top-ranking-world">
-					<h3>TOP</h3>
-					<div class="top-ranking-content-world">
-						<ul id="top_world"></ul>
+					<div class="top-ranking-container">
+						<h3>TOP</h3>
+						<div class="top-ranking-content-world">
+							<ul id="top_world"></ul>
+						</div>
 					</div>
 				</div>
 				<div class="bottom-ranking-world">
-					<h3>BOTTOM</h3>
-					<div class="bottom-ranking-content-world">
-						<ul id="bottom_world"></ul>
+					<div class="bottom-ranking-container">
+						<h3>BOTTOM</h3>
+						<div class="bottom-ranking-content-world">
+							<ul id="bottom_world"></ul>
+						</div>
 					</div>
 				</div>
 			</div>

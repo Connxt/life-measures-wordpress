@@ -88,20 +88,21 @@ div.world-toggle > ul{
     height: 100%;
     margin:0;
 }
-div.dimensions  > p{
+div.dimensions > p{
     padding: 5px 0px 5px;
-    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
-    font-size: 16px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 12px;
     text-transform: uppercase;
     display: inline;
 }
 div.component-title-container > h3{
-    font-size: 15px;
     color:#fff;
-    font-weight: normal;
     text-transform: uppercase;
     padding: 0px 10px 0px 10px;
     margin: 0px;
+    font-weight: normal;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 11px;
 }
 div.component-title-container{
     width: 65%;
@@ -340,12 +341,12 @@ div.world-toggle div.bureaucracy-quality{
  * Map section
  */
 div.list-results-us, div.list-results-world{
-    width: 98%;
+    width: 96.5%;
     height: 82%;
-    margin-left:40px;
-    margin-top: 40px;
+    padding-top: 60px;
     text-align: center;
     display: none;
+    margin: 0px auto;
 }
 div.top-ranking-us, div.top-ranking-world{
     float:left;
@@ -355,28 +356,30 @@ div.bottom-ranking-us, div.bottom-ranking-world{
     float:right;
     width: 50%;
 }
-div.top-ranking-us > h3, div.top-ranking-world > h3{
+div.top-ranking-container, div.bottom-ranking-container{
+    margin:0px auto;
+    width: 40%;
+}
+div.top-ranking-us > .top-ranking-container > h3, div.top-ranking-world > .top-ranking-container > h3{
     font-size: 44px;
     color:#008291;
+    text-align: left;
 }
-div.bottom-ranking-us > h3, div.bottom-ranking-world > h3{
+div.bottom-ranking-us > .bottom-ranking-container > h3, div.bottom-ranking-world > .bottom-ranking-container > h3{
     font-size:44px;
-    color:#78246b;
+    color: #78246b;
+    text-align: left;
 }
 div.top-ranking-content-us,  div.bottom-ranking-content-us, div.top-ranking-content-world,  div.bottom-ranking-content-world{
     margin-top:30px;
 }
-div.bottom-ranking-content-us > ul, div.top-ranking-content-us > ul{
-    margin-left:40%;
-    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
-    font-size: 17px;
-    text-align: left;
-}
+div.bottom-ranking-content-us > ul, div.top-ranking-content-us > ul,
 div.bottom-ranking-content-world > ul, div.top-ranking-content-world > ul{
-    margin-left:42%;
+    /*margin-left:40%;*/
     font-family: 'AlternateGothicW01-No3_691802',sans-serif;
     font-size: 17px;
     text-align: left;
+    margin: 0px auto;
 }
 
 div.show-list-us, div.show-list-world{
