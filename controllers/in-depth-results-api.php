@@ -1,4 +1,6 @@
 <?php
+require_once("db_parameters.php");
+
 abstract class Index {
 	const WORLD = "world";
 	const US = "us";
@@ -15,11 +17,11 @@ abstract class Action {
 class Data {
 	private $con;
 
-	public function __construct() {
+	public function __construct($username, $password) {
 		$this->con = new mysqli(
 			"localhost",
-			"root",
-			"",
+			$username,
+			$password,
 			"quality_of_life"
 		);
 	}
@@ -156,7 +158,7 @@ class Data {
 
 if(isset($_POST["action"])) {
 	$action = $_POST["action"];
-	$data = new Data();
+	$data = new Data($username, $password);
 
 	if($action == Action::GET_INITIAL_DATA) {
 		echo json_encode($data->get_initial_data());
