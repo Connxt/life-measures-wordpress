@@ -34,6 +34,8 @@ div.text-subhead > h3{
 
 .buttons-container{
     width: 100%;
+    position: relative;
+    padding-top: 15px;
 }
 .choose-component, .choose-location, .choose-foundation{
     font-family: "Source Sans Pro",sans-serif;
@@ -194,6 +196,10 @@ div.text-subhead > h3{
 }
 
 @media only screen and (max-width:64.000em) {
+    .location-map svg, .location-map svg path{
+        width: 250px;
+        height: 250px;
+    }
     .margin-on-bottom{
         margin-bottom: 50px;
     }

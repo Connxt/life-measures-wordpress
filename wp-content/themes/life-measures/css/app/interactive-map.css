@@ -555,7 +555,7 @@ div.components-world > div.components-title-container{
 div.components-us > div.components-title-container > p,
 div.components-world > div.components-title-container > p{
     margin:0px;
-    padding:0px 0px 0px 7px;
+    padding:3px 0px 3px 7px;
     font-size: 11px;
     font-family: 'Source Sans Pro',sans-serif;
     text-transform: uppercase;
@@ -811,7 +811,7 @@ div.interactive-map-header > div.map-search input[type="search"]{
     font-family: source-sans-pro,sans-serif;
     font-size: 1.125rem;
     margin: 0px;
-    width: 60%;
+    width: 100%;
 }
 div.map-buttons{
     width: 500px;

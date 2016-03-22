@@ -11,7 +11,8 @@ get_header(); ?>
 					</div>
 					<div class="content-container with-line">
 						<div class="text-subhead">
-							<h3>SUBHEAD STYLE</h3>
+							<!-- <h3>SUBHEAD STYLE</h3> -->
+							<br>
 						</div>
 						<div class="text-content">
 							<p>This statistics lets you  take a closer look at the scores of the different QOL foundations, their underlying components, and compare how they affect overall quality of life across U.S. states and the world's nations.</p>
