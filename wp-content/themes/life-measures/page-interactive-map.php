@@ -360,7 +360,7 @@ get_header(); ?>
 									<li>
 										<div id="us_component_peace_and_security_perceptions" class="components-us us_peace_and_security_perceptions active">
 											<div class="components-title-container">
-												<p>Peace and Security Perceptions</p>
+												<p>Peace & Security Perceptions</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -481,9 +481,9 @@ get_header(); ?>
 										</div>
 									</li>
 									<li>
-										<div id="world_component_employment" class="components-world world_employment active">
+										<div id="world_component_education" class="components-world world_education active">
 											<div class="components-title-container">
-												<p>Employment</p>
+												<p>Education</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -507,7 +507,7 @@ get_header(); ?>
 									<li>
 										<div id="world_component_physical_health" class="components-world world_physical_health active">
 											<div class="components-title-container">
-												<p>Poverty</p>
+												<p>Physical Health</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -517,7 +517,7 @@ get_header(); ?>
 									<li>
 										<div id="world_component_mental_health" class="components-world world_mental_health active">
 											<div class="components-title-container">
-												<p>Employment</p>
+												<p>Mental Health</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -527,7 +527,7 @@ get_header(); ?>
 									<li>
 										<div id="world_component_environmental_health" class="components-world world_environmental_health active">
 											<div class="components-title-container">
-												<p>Community Basics</p>
+												<p>Environmental Health</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -569,9 +569,9 @@ get_header(); ?>
 										</div>
 									</li>
 									<li>
-										<div id="world_component_resources" class="components-world world_resources active">
+										<div id="world_component_essential_resources" class="components-world world_essential_resources active">
 											<div class="components-title-container">
-												<p>Resources</p>
+												<p>Essential Resources</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -593,19 +593,9 @@ get_header(); ?>
 								</div>
 								<ul>
 									<li>
-										<div id="world_component_violence_and_ethnic_warfare" class="components-world world_violence_and_ethnic_warfare active">
+										<div id="world_component_violence_and_human_rights" class="components-world world_violence_and_human_rights active">
 											<div class="components-title-container">
-												<p>Violence & Ethnic Warfare</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="world_component_human_rights_violations" class="components-world world_human_rights_violations active">
-											<div class="components-title-container">
-												<p>Human Rights Violations</p>
+												<p>Violence & Human Rights</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>
@@ -616,36 +606,6 @@ get_header(); ?>
 										<div id="world_component_law_and_order" class="components-world world_law_and_order active">
 											<div class="components-title-container">
 												<p>Law & Order</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="world_component_trust_in_national_institutions" class="components-world world_trust_in_national_institutions active">
-											<div class="components-title-container">
-												<p>Trust in National Institutions</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="world_component_corruption_in_business_and_government" class="components-world world_corruption_in_business_and_government active">
-											<div class="components-title-container">
-												<p>Corruptions in Business & Government</p>
-											</div>
-											<div class="selectedbox">
-												<span class="check"></span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div id="world_component_bureaucracy_quality" class="components-world world_bureaucracy_quality active">
-											<div class="components-title-container">
-												<p>Bureaucracy Quality</p>
 											</div>
 											<div class="selectedbox">
 												<span class="check"></span>

@@ -88,7 +88,8 @@ body#results .dim.poverty,.dimension.poverty {
     background-color: #00B666;
 }
 
-body#results .dim.resources,.dimension.resources, .dimension.living_standard_perceptions{
+body#results .dim.essential_resources,.dimension.essential_resources, 
+body#results .dimension.living_standard_perceptions{
     background-color: #00b66c;
 }
 
@@ -103,26 +104,12 @@ body#results .dim.peace_and_security_perceptions,.dimension.peace_and_security_p
     background-color: #921E92;
 }
 
-body#results .dim.violence_and_ethnic_warfare,.dimension.violence_and_ethnic_warfare {
-    background-color: rgb(134, 28, 134);
-}
 
-body#results .dim.human_rights_violations,.dimension.human_rights_violations {
-    background-color: rgb(146, 30, 146);
+body#results .dim.violence_and_human_rights,.dimension.violence_and_human_rights {
+    background-color: #861C86;
 }
 
 body#results .dim.law_and_order,.dimension.law_and_order {
-    background-color: rgb(159, 33, 159);
+    background-color: #921E92;
 }
 
-body#results .dim.trust_in_national_institutions,.dimension.trust_in_national_institutions {
-    background-color: rgb(171, 35, 171);
-}
-
-body#results .dim.corruption_in_business_and_government,.dimension.corruption_in_business_and_government {
-    background-color: rgb(183, 38, 183);
-}
-
-body#results .dim.bureaucracy_quality,.dimension.bureaucracy_quality {
-    background-color: rgb(195, 40, 195);
-}

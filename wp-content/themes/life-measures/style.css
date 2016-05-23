@@ -10898,7 +10898,7 @@ body#results #content section.cards .card {
     -ms-perspective: 600px;
     perspective: 600px;
     position: relative;
-    width: 190px;
+    width: 210px;
 }
 
 body#results #content section.cards .card:first-of-type {
@@ -11016,7 +11016,7 @@ body#results #content section.cards .card .face.front .dimension-container {
     left: 1px;
     position: absolute;
     table-layout: fixed;
-    width: 186px;
+    width: 206px;
 }
 
 body#results #content section.cards .card .face.front .dimension-container .component,body#results #content section.cards .card .face.front .dimension-container .dimension {
@@ -11060,14 +11060,14 @@ body#results #content section.cards .card .face.back .dimension-container {
     left: 4px;
     margin-top: 10px;
     position: absolute;
-    width: 180px;
+    width: 200px;
 }
 
 body#results #content section.cards .card .face.back .dimension-container .component,body#results #content section.cards .card .face.back .dimension-container .dimension {
     color: #fff;
-    font-family: 'AlternateGothicW01-No3_691802',sans-serif;
-    font-size: 14px;
-    font-size: .875rem;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 11px;
+    /*font-size: .875rem;*/
     line-height: 30px;
     line-height: 1.875rem;
     margin-top: 1px;

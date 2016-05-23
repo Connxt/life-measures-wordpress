@@ -609,7 +609,7 @@ div.components-world.world_entrepreneurship.active > div.components-title-contai
     background-color: #6d7ef1;
     color:#fff;
 }
-div.components-world.world_employment.active > div.components-title-container{
+div.components-world.world_education.active > div.components-title-container{
     background-color: #6d7ef6;
     color:#fff;
 }
@@ -640,35 +640,19 @@ div.components-world.world_poverty.active > div.components-title-container{
     background-color: #00B666;
     color:#fff;
 }
-div.components-world.world_resources.active > div.components-title-container{
+div.components-world.world_essential_resources.active > div.components-title-container{
     background-color: #00b66c;
     color:#fff;
 }
 /**
  *peace_and_security
  */
-div.components-world.world_violence_and_ethnic_warfare.active > div.components-title-container{
+div.components-world.world_violence_and_human_rights.active > div.components-title-container{
     background-color: #861C86;
-    color:#fff;
-}
-div.components-world.world_human_rights_violations.active > div.components-title-container{
-    background-color: #921E92;
     color:#fff;
 }
 div.components-world.world_law_and_order.active > div.components-title-container{
     background-color: #921E92;
-    color:#fff;
-}
-div.components-world.world_trust_in_national_institutions.active > div.components-title-container{
-    background-color: #9F219F;
-    color:#fff;
-}
-div.components-world.world_corruption_in_business_and_government.active > div.components-title-container{
-    background-color: #B726B7;
-    color:#fff;
-}
-div.components-world.world_bureaucracy_quality.active > div.components-title-container{
-    background-color: #C328C3;
     color:#fff;
 }
 
@@ -988,7 +972,8 @@ body#interactive-map .dim.poverty,.dimension.poverty {
     background-color: #00B666;
 }
 
-body#interactive-map .dim.resources,.dimension.resources, .dimension.living_standard_perceptions{
+body#interactive-map .dim.essential_resources,.dimension.essential_resources, 
+body#interactive-map .dimension.living_standard_perceptions{
     background-color: #00b66c;
 }
 
@@ -1003,28 +988,13 @@ body#interactive-map .dim.peace_and_security_perceptions,.dimension.peace_and_se
     background-color: #921E92;
 }
 
-body#interactive-map .dim.violence_and_ethnic_warfare,.dimension.violence_and_ethnic_warfare {
-    background-color: rgb(134, 28, 134);
-}
 
-body#interactive-map .dim.human_rights_violations,.dimension.human_rights_violations {
+body#interactive-map .dim.violence_and_human_rights,.dimension.violence_and_human_rights {
     background-color: rgb(146, 30, 146);
 }
 
 body#interactive-map .dim.law_and_order,.dimension.law_and_order {
     background-color: rgb(159, 33, 159);
-}
-
-body#interactive-map .dim.trust_in_national_institutions,.dimension.trust_in_national_institutions {
-    background-color: rgb(171, 35, 171);
-}
-
-body#interactive-map .dim.corruption_in_business_and_government,.dimension.corruption_in_business_and_government {
-    background-color: rgb(183, 38, 183);
-}
-
-body#interactive-map .dim.bureaucracy_quality,.dimension.bureaucracy_quality {
-    background-color: rgb(195, 40, 195);
 }
 
 body#interactive-map #content section.cards .card .face.back .dimension-container .component .name, body#interactive-map #content section.cards .card .face.back .dimension-container .dimension .name {

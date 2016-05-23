@@ -421,12 +421,12 @@
 									<div id="world_entrepreneurship" class="weight-slider"></div>
 								</div>
 							</div>
-							<div class="employment components">
+							<div class="education components">
 								<div class="component-title-container">
-									<h3>Employment</h3>
+									<h3>Educations</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="world_employment" class="weight-slider"></div>
+									<div id="world_education" class="weight-slider"></div>
 								</div>
 							</div>
 
@@ -482,12 +482,12 @@
 									<div id="world_poverty" class="weight-slider"></div>
 								</div>
 							</div>
-							<div class="resources components">
+							<div class="essential-resources components">
 								<div class="component-title-container">
-									<h3>Resources</h3>
+									<h3>Essential Resources</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="world_resources" class="weight-slider"></div>
+									<div id="world_essential_resources" class="weight-slider"></div>
 								</div>
 							</div>
 						</li>
@@ -496,20 +496,12 @@
 								<img src="<?php echo get_template_directory_uri(); ?>/images/dimensions_symbol/Symbol-PeaceSecurity.png" id="image-container">
 								<p>Peace & Security</p>
 							</div>
-							<div class="violence-and-ethnic-warfare components">
+							<div class="violence-and-human-rights components">
 								<div class="component-title-container">
-									<h3>Violence & Ethnic Warfare</h3>
+									<h3>Violence & Human Rights</h3>
 								</div>
 								<div class="range-slider-container">
-									<div id="world_violence_and_ethnic_warfare" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="human-rights-violation components">
-								<div class="component-title-container">
-									<h3>Human Rights Violation</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="world_human_rights_violations" class="weight-slider"></div>
+									<div id="world_violence_and_human_rights" class="weight-slider"></div>
 								</div>
 							</div>
 							<div class="law-and-order components">
@@ -518,30 +510,6 @@
 								</div>
 								<div class="range-slider-container">
 									<div id="world_law_and_order" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="trust-in-national-institutions components">
-								<div class="component-title-container">
-									<h3>Trust in National Institution</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="world_trust_in_national_institutions" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="corruption-in-business-and-goverment components">
-								<div class="component-title-container">
-									<h3>Corruption in Business and Goverment</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="world_corruption_in_business_and_government" class="weight-slider"></div>
-								</div>
-							</div>
-							<div class="bureaucracy-quality components">
-								<div class="component-title-container">
-									<h3>Bureaucracy Quality</h3>
-								</div>
-								<div class="range-slider-container">
-									<div id="world_bureaucracy_quality" class="weight-slider"></div>
 								</div>
 							</div>
 						</li>

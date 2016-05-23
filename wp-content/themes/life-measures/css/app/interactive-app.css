@@ -269,7 +269,7 @@ div.world-toggle div.perceived-opportunities{
 div.world-toggle div.entrepreneurship{
     background-color:#6d7ef1;
 }
-div.world-toggle div.employment{
+div.world-toggle div.education{
     background-color:#6d7ef6;
 }
 
@@ -306,7 +306,7 @@ div.world-toggle div.income{
 div.world-toggle div.poverty{
     background-color:#00B666;
 }
-div.world-toggle div.resources{
+div.world-toggle div.essential-resources{
     background-color:#00B666;
 }
 
@@ -318,23 +318,11 @@ div.world-toggle div.peace-and-security-header{
     color:#861C86;
     padding: 3px 0px 3px 0px;
 }
-div.world-toggle div.violence-and-ethnic-warfare{
+div.world-toggle div.violence-and-human-rights{
     background-color:#861C86;
 }
-div.world-toggle div.human-rights-violation{
-    background-color:#921E92;
-}
 div.world-toggle div.law-and-order{
-    background-color:#9F219F;
-}
-div.world-toggle div.trust-in-national-institutions{
-    background-color:#AB23AB;
-}
-div.world-toggle div.corruption-in-business-and-goverment{
-    background-color:#B726B7;
-}
-div.world-toggle div.bureaucracy-quality{
-    background-color:#C328C3;
+    background-color:#921E92;
 }
 
 /**
