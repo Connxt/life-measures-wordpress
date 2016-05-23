@@ -15,7 +15,7 @@ get_header(); ?>
 							<br>
 						</div>
 						<div class="text-content">
-							<p>This statistics lets you  take a closer look at the scores of the different QOL foundations, their underlying components, and compare how they affect overall quality of life across U.S. states and the world's nations.</p>
+							<p>This page gives you the opportunity to take a closer look at how the world's countries and the various U.S. states performs on the variables and components that the five foundations of quality of life is composed of.</p>
 						</div>
 						<div class="buttons-container clearfix">
 							<button class="btn flat blue border index-modifier" id="btn_select_us">U.S MEASUREMENTS</button>
