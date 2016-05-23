@@ -162,7 +162,7 @@
 				peace_and_security: "#501050"
 			};
 
-			for(var foundation in this.dataStructure.dimensions) {
+			for(var foundation in this.dataStructure.foundations) {
 				var id = foundation + "_chart";
 
 				this[id] = $("#" + id).asPieProgress({
@@ -188,10 +188,11 @@
 		render: function () {
 			var overallData = [];
 
-			for(var foundation in this.dataStructure.dimensions) {
+			for(var foundation in this.dataStructure.foundations) {
 				var id = foundation + "_chart",
 					foundationScore = parseFloat(this.data[foundation]).toFixed(1),
-					numOfFoundations = Object.keys(this.dataStructure.dimensions).length;
+					numOfFoundations = Object.keys(this.dataStructure.foundations).length,
+					foundationWeight = parseFloat(this.dataStructure.foundations[foundation].weight);
 
 				this[id]
 					.asPieProgress("go", foundationScore * 10)
@@ -200,10 +201,9 @@
 				if(this[id].hasClass("active")) {
 					this[id].click();
 				}
-
 				overallData.push({
 					title: foundation.display_name,
-					value: foundationScore / numOfFoundations,
+					value: foundationScore * foundationWeight,
 					color: this.colors[foundation]
 				});
 			}
@@ -213,7 +213,7 @@
 			return this;
 		},
 		onFoundationClick: function () {
-			for(var foundation in foundationsView.dataStructure.dimensions) {
+			for(var foundation in foundationsView.dataStructure.foundations) {
 				var id = foundation + "_chart";
 
 				if($(this).attr("id") != (foundation + "_chart")) {
@@ -236,10 +236,10 @@
 			this.view.unbind("change");
 
 			this.components = [];
-			for(var component in this.dataStructure.dimensions[foundation].components) {
+			for(var component in this.dataStructure.foundations[foundation].components) {
 				this.components.push({
 					value: component,
-					displayName: this.dataStructure.dimensions[foundation].components[component].display_name
+					displayName: this.dataStructure.foundations[foundation].components[component].display_name
 				});
 			}
 
@@ -324,7 +324,7 @@
 			this.dataStructure = (controller.currentIndex === controller.getIndexes().WORLD) ? controller.dataStructure.world : controller.dataStructure.us;
 			this.view = $("#subcomponents_chart");
 
-			this.subcomponents = this.dataStructure.dimensions[this.foundation].components[this.component].subcomponents;
+			this.subcomponents = this.dataStructure.foundations[this.foundation].components[this.component].subcomponents;
 			var subcomponentsLength = Object.keys(this.subcomponents).length;
 
 			var dataSourceLength = controller.locationScores.subcomponents.length;
@@ -379,7 +379,7 @@
 					itemTextPosition: "bottom"
 				},
 				title: {
-					text: this.dataStructure.dimensions[this.foundation].components[this.component].display_name,
+					text: this.dataStructure.foundations[this.foundation].components[this.component].display_name,
 					subtitle: {
 						text: (this.series.length >= 1) ? "(Subcomponents)" : "(No Subcomponents)"
 					}

@@ -44,19 +44,20 @@ class Data {
 			$table_suffix = ($index == Index::WORLD) ? "int" : "state";
 
 			foreach($this->con->query("SELECT * FROM api_dimensions_list") as $foundation) {
-				$foundations[$index]["dimensions"][$foundation["name"]] = array(
+				$foundations[$index]["foundations"][$foundation["name"]] = array(
 					"display_name" => $foundation["display_name"],
+					"weight" => $foundation["weight"],
 					"components" => array()
 				);
 
 				foreach($this->con->query("SELECT * FROM api_components_" . $table_suffix . "_list WHERE dimension='" . $foundation["name"] . "'") as $component) {
-					$foundations[$index]["dimensions"][$foundation["name"]]["components"][$component["name"]] = array(
+					$foundations[$index]["foundations"][$foundation["name"]]["components"][$component["name"]] = array(
 						"display_name" => $component["display_name"],
 						"subcomponents" => array()
 					);
 
 					foreach($this->con->query("SELECT * FROM api_subcomponents_" . $table_suffix . "_list WHERE component='" . $component["name"] . "'") as $subcomponent) {
-						$foundations[$index]["dimensions"][$foundation["name"]]["components"][$component["name"]]["subcomponents"][$subcomponent["name"]] = array(
+						$foundations[$index]["foundations"][$foundation["name"]]["components"][$component["name"]]["subcomponents"][$subcomponent["name"]] = array(
 							"display_name" => $subcomponent["display_name"]
 						);
 					}
