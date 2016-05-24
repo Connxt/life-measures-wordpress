@@ -34,6 +34,7 @@
 			$map_category = ($map_type == "us") ? "state" : "int";
 			$location_type = ($map_type == "us") ? "state" : "country";
 			$search_category = ($search_type == "foundations") ? "dimensions" : "components";
+			$dimension_css_class = $map_type == "us" ? "us" : "world";
 
 			$sql = "SELECT
 					   api_" . $map_category . "_summary_score.*,
@@ -174,7 +175,7 @@
 							</div>
 							<div class="dimension-container">
 								<?php foreach($search as $s) { ?>
-									<div class="dimension <?php echo $s; ?>"></div>
+									<div class="dimension <?php echo $dimension_css_class . " " . $s; ?>"></div>
 								<?php } ?>
 							</div>
 						</div>
@@ -197,7 +198,7 @@
 								foreach($search as $s) {
 									$search_container[$s] = $search_container[$s] / count($years);
 								?>
-								<div class="dimension <?php echo $s; ?>">
+								<div class="dimension <?php echo $dimension_css_class . " " . $s; ?>">
 									<div class="name"><?php echo get_search_criteria($s); ?></div>
 									<div class="score"><?php echo number_format(round($search_container[$s], 1), 1); ?></div>
 								</div>
