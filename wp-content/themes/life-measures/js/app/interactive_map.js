@@ -457,7 +457,6 @@ var InteractiveMap = (function () {
 								"	<div class='name'>" + key.split("_").join(" ").split("and").join("&") + "</div>" +
 								"	<div class='score'>" + ((score >= 10) ? parseFloat(score).toFixed(1) : parseFloat(score).toFixed(2)) + "</div>" +
 								"</div>";
-							console.log(tip);
 						}
 
 						tip += "</div></div></div></div></section></div>";
