@@ -203,7 +203,7 @@
 									<div class="score">
 									<?php
 										if($search_container[$s] >= 10) {
-											echo $search_container[$s];
+											echo $search_container[$s] . '&nbsp;';
 										}
 										else {
 											echo number_format(round($search_container[$s], 1), 1);
