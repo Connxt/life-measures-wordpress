@@ -1188,6 +1188,11 @@ select {
         width: 20%;
     }
 
+    .large-4-half-plus-half{
+        position: relative;
+        width: 35%;
+    }
+
     .large-5 {
         position: relative;
         width: 41.66667%;
@@ -1201,6 +1206,11 @@ select {
     .large-7 {
         position: relative;
         width: 58.33333%;
+    }
+
+    .large-7-half{
+        position: relative;
+        width: 65%;
     }
 
     .large-8 {
@@ -7461,12 +7471,12 @@ section.carousel .owl-controls .owl-buttons div.owl-next i {
     };
 }
 
-section.carousel.single.wide {
+/*section.carousel.single.wide {
     padding: 50px 0 40px;
     width: 63%;
     position: relative;
     float: right;
-}
+}*/
 
 @media only screen and (max-width:640px) {
     section.carousel.single.wide {
@@ -8523,11 +8533,11 @@ section.video .player>.time {
 }
 
 section.learnmore {
-   /* background-color: #009855;*/
-    padding: 30px 0;
     text-align: center;
-    float: left;
-    margin-top:25px;
+}
+
+section.learnmore, section.carousel.single.wide{
+    margin-top: 50px;
 }
 
 @media only screen and (max-width:640px) {
@@ -8538,11 +8548,11 @@ section.learnmore {
 
 section.learnmore a {
     margin-top: 120px;
+    margin-bottom: 20px;
     text-align: center;
 }
 section.learnmore p {
-    color: #222;
-    margin-bottom: 20px;
+    margin:0px auto;    
     text-align: left;
     width: 330px;
 }
@@ -11591,7 +11601,7 @@ body.win7.chrome .search-bar input[type=search]::-webkit-search-cancel-button:af
 /*section slide image map*/
 
 div.section-with-slide{
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     position: relative;
 }
 
@@ -11636,70 +11646,9 @@ section.constructing-the-measures > div.row > .slide-list > .owl-controls > .owl
     display: none;
 }
 
-/*get the data changes*/
-/*.header-using-the-api, .header-the-report{
-    height: 200px;
-}*/
-.margin_post{
-    margin-top: 20px;
-}
-div.content{
-    position: relative;
-    top:20px;
-    margin-bottom: 50px;
-}
-.using-the-api, .the-report{
-    width: 45%;
-    text-align: center;
-    margin-left:2%;
-    margin-right: 5%;
-}
 .btn-data{
-    margin-left: 10px;
-}
-.header-using-the-api hr{
-    text-align: center;
-    margin-left: 20%;
-}
-.header-the-report hr{
-    text-align: center;
-    margin-left: 15%;
-}
-/*additional for mobile landing page*/
-@media screen and (max-width: 1150px) {
-    .section-with-slide{
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-    .using-the-api, .the-report{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1030px) {
-    section.learnmore {
-        float:none;
-        width: 100%;
-    }
-    section.learnmore p{
-        margin: 0 auto;
-        width: 500px;
-    }
-    section.learnmore a {
-        margin-top: 50px;
-    }
-    section.carousel.single.wide {
-        margin:0 auto;
-        width: 90%;
-        position: relative;
-        float: none;
-    }
-}
-@media screen and (max-width: 600px) {
-    section.learnmore p{
-        margin: 0 auto;
-        width: 100%;
-    }
+   margin-top:50px;
+   margin-left: 20px;
 }
 
 /**
