@@ -4,112 +4,168 @@
  * Results Page
  */
 
-/**
+/** 
  *Community and Relationships 
  */
-body#results .dim.community_life,.dimension.community_life {
-    background-color: rgb(240, 44, 57);
+
+/* US COMPONENTS COLOR */
+body#results .dim.us.community_life,.dimension.us.community_life {
+    background-color: #F02C39;
 }
 
-body#results .dim.family_life,.dimension.family_life {
-    background-color: rgb(255, 48, 62);
+body#results .dim.us.family_life,.dimension.us.family_life {
+    background-color: #FF303E;
 }
 
-/** 
+/* WORLD COMPONENTS COLOR */
+body#results .dim.world.community_life,.dimension.world.community_life {
+    background-color: #F02C39;
+}
+
+body#results .dim.world.family_life,.dimension.world.family_life {
+    background-color: #FF303E;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/**
  *Freedom and Opportunity 
  */
-body#results .dim.personal_freedom,.dimension.personal_freedom, .dimension.political_freedom {
+
+/* US COMPONENTS COLOR */
+body#results .dim.us.personal_freedom,.dimension.us.personal_freedom{
     background-color: #5663B2;
 }
 
-body#results .dim.civil_liberties,.dimension.civil_liberties {
+body#results .dim.us.economic_freedom,.dimension.us.economic_freedom{
     background-color: #5E6CC2;
 }
 
-body#results .dim.religious_freedom,.dimension.religious_freedom {
+body#results .dim.us.work,.dimension.us.work{
     background-color: #6575D3;
 }
 
-body#results .dim.economic_freedom,.dimension.economic_freedom {
+body#results .dim.us.local_opportunity,.dimension.us.local_opportunity{
     background-color: #6D7EE3;
 }
 
-body#results .dim.perceived_opportunities,.dimension.perceived_opportunities {
+body#results .dim.us.education,.dimension.us.education{
     background-color: #6d7eed;
 }
 
-body#results .dim.entrepreneurship,.dimension.entrepreneurship {
-    background-color: #6d7ef1;
-}
-
-body#results .dim.employment,.dimension.employment {
-    background-color: #6d7ef6;
-}
-
-body#results .dim.personal_freedom,.dimension.personal_freedom {
+/* WORLD COMPONENTS COLOR */
+body#results .dim.world.political_freedom,.dimension.world.political_freedom{
     background-color: #5663B2;
 }
 
-body#results .dim.work,.dimension.work {
+body#results .dim.world.civil_liberties,.dimension.world.civil_liberties{
+    background-color: #5E6CC2;
+}
+
+body#results .dim.world.religious_freedom,.dimension.world.religious_freedom{
     background-color: #6575D3;
 }
 
-body#results .dim.local_opportunity,.dimension.local_opportunity {
+body#results .dim.world.economic_freedom,.dimension.world.economic_freedom{
     background-color: #6D7EE3;
 }
 
-body#results .dim.education,.dimension.education {
+body#results .dim.world.perceived_opportunities,.dimension.world.perceived_opportunities{
     background-color: #6d7eed;
 }
 
-/** 
- * Health and Environment 
+body#results .dim.world.entrepreneurship,.dimension.world.entrepreneurship{
+    background-color: #6d7ef1;
+}
+
+body#results .dim.world.education,.dimension.world.education{
+    background-color: #6d7ef6;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/**
+ *Health and Environment 
  */
-body#results .dim.physical_health,.dimension.physical_health {
-    background-color: rgb(255, 112, 0);
+
+/* US COMPONENTS COLOR */
+body#results .dim.us.physical_health,.dimension.us.physical_health {
+    background-color: #FF7000;
 }
 
-body#results .dim.mental_health,.dimension.mental_health {
-    background-color: rgb(255, 122, 0);
+body#results .dim.us.mental_health,.dimension.us.mental_health {
+    background-color: #FF7A00;
 }
 
-body#results .dim.environmental_health,.dimension.environmental_health {
-    background-color: rgb(255, 133, 0);
+body#results .dim.us.environmental_health,.dimension.us.environmental_health {
+    background-color: #FF8500;
 }
+
+/* WORLD COMPONENTS COLOR */
+body#results .dim.world.physical_health,.dimension.world.physical_health {
+    background-color: #FF8500;
+}
+body#results .dim.world.mental_health,.dimension.world.mental_health {
+    background-color: #FF8500;
+}
+body#results .dim.world.environmental_health,.dimension.world.environmental_health {
+    background-color: #FF8500;
+}
+
+/*--------------------------------------------------------------------------------*/
 
 /** 
  *Living Standard 
  */
-body#results .dim.income,.dimension.income {
+
+/* US COMPONENTS COLOR */
+
+body#results .dim.us.income,.dimension.us.income {
     background-color: #00A75E;
 }
 
-body#results .dim.poverty,.dimension.poverty {
+body#results .dim.us.poverty,.dimension.us.poverty {
     background-color: #00B666;
 }
 
-body#results .dim.essential_resources,.dimension.essential_resources, 
-body#results .dimension.living_standard_perceptions{
+body#results .dim.us.living_standard_perceptions,.dimension.us.living_standard_perceptions{
     background-color: #00b66c;
 }
+
+/* WORLD COMPONENTS COLOR */
+
+body#results .dim.world.income,.dimension.world.income {
+    background-color: #00A75E;
+}
+
+body#results .dim.world.poverty,.dimension.world.poverty {
+    background-color: #00B666;
+}
+
+body#results .dim.world.essential_resources,.dimension.world.essential_resources{
+    background-color: #00b66c;
+}
+
+/*--------------------------------------------------------------------------------*/
 
 /** 
  *Peace and Security 
  */
-body#results .dim.crime,.dimension.crime {
+
+/* US COMPONENTS COLOR */
+body#results .dim.us.crime,.dimension.us.crime {
     background-color: #861C86;
 }
 
-body#results .dim.peace_and_security_perceptions,.dimension.peace_and_security_perceptions {
+body#results .dim.us.peace_and_security_perceptions,.dimension.us.peace_and_security_perceptions {
     background-color: #921E92;
 }
 
-
-body#results .dim.violence_and_human_rights,.dimension.violence_and_human_rights {
+/* world COMPONENTS COLOR */
+body#results .dim.world.violence_and_human_rights,.dimension.world.violence_and_human_rights {
     background-color: #861C86;
 }
 
-body#results .dim.law_and_order,.dimension.law_and_order {
+body#results .dim.world.law_and_order,.dimension.world.law_and_order {
     background-color: #921E92;
 }
-
