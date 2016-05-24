@@ -4,8 +4,9 @@
 <main role="main">
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 	<?php
-		require_once("api/db.php");
-
+		// require_once("api/db.php");
+		require_once(realpath(__DIR__ . '/../../../') . "/api/db.php");
+		
 		global $wp_query;
 
 		if (isset($wp_query->query_vars['map_type'])){
