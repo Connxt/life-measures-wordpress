@@ -200,7 +200,16 @@
 								?>
 								<div class="dimension <?php echo $dimension_css_class . " " . $s; ?>">
 									<div class="name"><?php echo get_search_criteria($s); ?></div>
-									<div class="score"><?php echo number_format(round($search_container[$s], 1), 1); ?></div>
+									<div class="score">
+									<?php
+										if($search_container[$s] >= 10) {
+											echo $search_container[$s];
+										}
+										else {
+											echo number_format(round($search_container[$s], 1), 1);
+										}
+									?>
+									</div>
 								</div>
 							<?php
 							}
@@ -281,7 +290,7 @@
 							?>
 						],
 						scrollBar: { visible: false },
-						scrollingMode: "all", 
+						scrollingMode: "all",
 						zoomingMode: "all",
 						legend: {
 							customizeText: function () { return this.seriesName.toUpperCase(); },
@@ -327,7 +336,7 @@
 					}).dxChart("instance");
 
 					$trendsChart.zoomArgument(300, 500);
-					
+
 					// jQuery("#trends-chart").dxChart({
 					// 	argumentAxis: {
 					// 		label: {
@@ -451,7 +460,7 @@
 								}
 							?>],
 							scrollBar: { visible: false },
-							scrollingMode: "all", 
+							scrollingMode: "all",
 							zoomingMode: "all",
 							legend: {
 								customizeText: function () {
